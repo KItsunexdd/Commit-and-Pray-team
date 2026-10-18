@@ -1,0 +1,313 @@
+[
+  {
+    "id": "bns_kato",
+    "title": "БНС: КАТО НК РК 11-2025, XLSX от 18.09.2026",
+    "organization": "Бюро национальной статистики РК",
+    "authority": "national_government",
+    "url": "https://stat.gov.kz/ru/classifiers/statistical/21/",
+    "data_url": "https://stat.gov.kz/upload/iblock/a7d/eqogm92xc0udumlzfzffhcrutk0fjhb4/%D0%9A%D0%90%D0%A2%D0%9E_18.09.2026.xlsx",
+    "local_file": "research/raw/stat_kato_xlsx.bin",
+    "specification_local_file": "research/raw/stat_kato_docx.bin",
+    "access_status": "downloaded",
+    "retrieved_on": "2026-10-16",
+    "snapshot_date": "2026-09-18",
+    "contents": [
+      "administrative_codes",
+      "names_ru",
+      "names_kk",
+      "code_structure"
+    ],
+    "limitations": "Файл содержит 9-значные te. Иерархические связи вычислены по доступным административным префиксам; номера улиц, зданий, квартир отсутствуют. Это производная исследовательская база, а не официальное издание классификатора."
+  },
+  {
+    "id": "bns_population_september",
+    "title": "БНС: численность населения на 01.09.2026",
+    "organization": "Бюро национальной статистики РК",
+    "authority": "national_government",
+    "url": "https://stat.gov.kz/ru/industries/social-statistics/demography/spreadsheets/",
+    "data_url": "https://stat.gov.kz/api/iblock/element/341329/file/ru/",
+    "local_file": "research/raw/stat_population_september.bin",
+    "access_status": "downloaded",
+    "retrieved_on": "2026-10-16",
+    "snapshot_date": "2026-09-01",
+    "published_on": "2026-10-01",
+    "contents": [
+      "population_by_region",
+      "population_republican_cities"
+    ]
+  },
+  {
+    "id": "bns_population_cities_july",
+    "title": "БНС: население областей, городов, районов и посёлков на 01.07.2026, таблица 3",
+    "organization": "Бюро национальной статистики РК",
+    "authority": "national_government",
+    "url": "https://stat.gov.kz/ru/industries/social-statistics/demography/spreadsheets/",
+    "data_url": "https://stat.gov.kz/api/iblock/element/341326/file/ru/",
+    "local_file": "research/raw/stat_population_localities_july.bin",
+    "access_status": "downloaded",
+    "retrieved_on": "2026-10-16",
+    "snapshot_date": "2026-07-01",
+    "contents": [
+      "city_population"
+    ],
+    "limitations": "Присоединены только однозначные совпадения названия города в пределах области. Население городской администрации не подменяет население города."
+  },
+  {
+    "id": "karaganda_geonims",
+    "title": "Геопортал Карагандинской области: геонимы",
+    "organization": "Геопортал Карагандинской области",
+    "authority": "regional_government_geoportal",
+    "url": "https://geo.qarobl.kz/",
+    "data_url": "https://geo.qarobl.kz/api/list?collection=geonim-noedit&context%5Badmterr_id%5D=kz.35.10&lang=ru",
+    "local_file": "research/karaganda_geonims.json",
+    "access_status": "downloaded_all_pages_in_selected_context",
+    "retrieved_on": "2026-10-16",
+    "snapshot_date": null,
+    "contents": [
+      "geonim_ids",
+      "names_ru",
+      "names_kk",
+      "types",
+      "parent_geonim_ids"
+    ],
+    "limitations": "Геонимы включают гаражные массивы, линии, ряды и учётные кварталы; не каждый геоним является улицей. Внутренние ID геопортала нельзя автоматически считать кодами КАТО."
+  },
+  {
+    "id": "karaganda_buildings",
+    "title": "Геопортал Карагандинской области: первичные адресные объекты",
+    "authority": "regional_government_geoportal",
+    "url": "https://geo.qarobl.kz/",
+    "data_url": "https://geo.qarobl.kz/api/list?collection=addreg-building_noedit&context%5Badmterr_id%5D=kz.35.10&lang=ru",
+    "local_file": "research/karaganda_buildings.json",
+    "access_status": "partially_downloaded_with_cursor",
+    "retrieved_on": "2026-10-16",
+    "snapshot_date": null,
+    "contents": [
+      "rka",
+      "house_number",
+      "geonim_id",
+      "corpus_block",
+      "point",
+      "secondary_premise_count"
+    ],
+    "limitations": "Количество в колонке «Количество квартир» фактически включает нежилые помещения. Отсутствие значения не означает ноль квартир. Полнота и актуальность каждого здания не удостоверены."
+  },
+  {
+    "id": "karaganda_building_passports",
+    "title": "Геопортал Карагандинской области: паспорта зданий с выгруженными помещениями",
+    "authority": "regional_government_geoportal",
+    "url": "https://geo.qarobl.kz/",
+    "data_url_template": "https://geo.qarobl.kz/api/passport?collection=addreg-building_noedit&feature_id={building_rka}&lang=ru",
+    "local_file": "research/karaganda_building_verification.json",
+    "access_status": "50_building_passports_checked",
+    "retrieved_on": "2026-10-16",
+    "observed_database_snapshot_date": "2025-12-19",
+    "limitations": "49 зданий помечены актуальными в снимке, одно — неактуальным. Для остальных зданий признак актуальности ещё не проверен."
+  },
+  {
+    "id": "karaganda_premises",
+    "title": "Геопортал Карагандинской области: связанные вторичные адресные объекты",
+    "authority": "regional_government_geoportal",
+    "url": "https://geo.qarobl.kz/",
+    "data_url_template": "https://geo.qarobl.kz/api/list?collection=addreg-flat&origincollection=addreg-building_noedit&relations%5B0%5D%5Bcollection%5D=addreg-flat&relations%5B0%5D%5Brelfield_id%5D=building_addreg_id&relfeature_id={building_rka}&lang=ru",
+    "local_files": [
+      "research/karaganda_flats.json",
+      "research/karaganda_flats_extended.json"
+    ],
+    "access_status": "selected_buildings_enumerated",
+    "retrieved_on": "2026-10-16",
+    "contents": [
+      "premise_rka",
+      "parent_building_rka",
+      "actual_premise_number"
+    ],
+    "limitations": "Название collection=addreg-flat не доказывает, что помещение является квартирой. Тип проверяется отдельно по паспортам; подъезды и этажи в списке отсутствуют."
+  },
+  {
+    "id": "karaganda_premise_passports",
+    "title": "Геопортал Карагандинской области: проверка типа и актуальности помещений по РКА",
+    "authority": "regional_government_geoportal",
+    "url": "https://geo.qarobl.kz/",
+    "data_url_template": "https://geo.qarobl.kz/api/passport?collection=addreg-flat&origincollection=addreg-building_noedit&relations%5B0%5D%5Bcollection%5D=addreg-flat&relations%5B0%5D%5Brelfield_id%5D=building_addreg_id&feature_id={premise_rka}&lang=ru",
+    "local_file": "research/karaganda_premise_verification.json",
+    "access_status": "individual_passports_checked",
+    "retrieved_on": "2026-10-16",
+    "observed_database_snapshot_date": "2025-12-19",
+    "contents": [
+      "roomtype_id",
+      "roomtype_code",
+      "actual",
+      "full_address",
+      "modified",
+      "db_updated_date"
+    ],
+    "limitations": "Признак actual относится к снимку источника, а не к независимой проверке на местности. Сохранены только адресные поля. Проверенные соответствия: roomtype_id=1/roomtype_code=300 — квартира; 2/360 — нежилое помещение."
+  },
+  {
+    "id": "osm_geofabrik",
+    "title": "OpenStreetMap contributors, выгрузка Казахстана Geofabrik",
+    "authority": "community_map",
+    "url": "https://download.geofabrik.de/asia/kazakhstan.html",
+    "data_url": "https://download.geofabrik.de/asia/kazakhstan-latest.osm.pbf",
+    "local_file": "research/raw/osm_kazakhstan_pbf.bin",
+    "derived_file": "research/osm_observations.json",
+    "access_status": "country_pbf_downloaded_three_cities_extracted",
+    "retrieved_on": "2026-10-16",
+    "license": "ODbL 1.0",
+    "license_url": "https://www.openstreetmap.org/copyright",
+    "attribution": "© OpenStreetMap contributors; extract by Geofabrik",
+    "object_url_template": "https://www.openstreetmap.org/{record_id}",
+    "contents": [
+      "mapped_addresses",
+      "streets",
+      "building_types",
+      "entrances",
+      "administrative_boundaries",
+      "old_name_tags"
+    ],
+    "limitations": "Не государственный адресный реестр. Совпадение адреса и координат подтверждает наблюдение в двух источниках, но не является юридическим удостоверением. Названия не переводились автоматически. Квартиры из количества этажей/квартир не генерировались."
+  },
+  {
+    "id": "egov_address_register",
+    "title": "eGov: Адресный регистр — s_ats, s_geonims, s_buildings, s_pb",
+    "authority": "national_government",
+    "url": "https://data.egov.kz/services/rka",
+    "dataset_urls": [
+      "https://data.egov.kz/datasets/view?index=s_ats",
+      "https://data.egov.kz/datasets/view?index=s_geonims",
+      "https://data.egov.kz/datasets/view?index=s_buildings",
+      "https://data.egov.kz/datasets/view?index=s_pb"
+    ],
+    "metadata_url_template": "https://data.egov.kz/datasets/getmeta?index={dataset}&version=data",
+    "api_url_template": "https://data.egov.kz/api/v4/{dataset}/data?apiKey={your_key}",
+    "access_status": "metadata_downloaded_records_not_downloaded",
+    "retrieved_on": "2026-10-16",
+    "observed_restrictions": [
+      "datasets_marked_archived",
+      "api_without_key_returned_403",
+      "public_preview_returned_404",
+      "web_export_has_captcha"
+    ],
+    "potential_contents": [
+      "countrywide_administrative_hierarchy",
+      "geonims",
+      "buildings",
+      "premises",
+      "old_full_addresses",
+      "rka_foreign_keys"
+    ],
+    "next_step": "Проверить доступность наборов с собственным ключом eGov либо получить официальную выгрузку. Ключ не гарантирует доступность архивного набора."
+  },
+  {
+    "id": "bns_housing_register",
+    "title": "Статистический регистр жилищного фонда: описание каталогов домов и квартир",
+    "authority": "national_government",
+    "url": "https://adilet.zan.kz/rus/docs/V1700015246",
+    "access_status": "methodology_found_no_open_record_dump_obtained",
+    "retrieved_on": "2026-10-16",
+    "potential_contents": [
+      "HOUSE_ID",
+      "FLAT_ID",
+      "RKA",
+      "NUM",
+      "FLAT_TYPE",
+      "FLATS"
+    ],
+    "limitations": "Методика подтверждает существование каталогов, но не публичность поадресной выгрузки. В JSON не включены выдуманные записи из этого регистра."
+  },
+  {
+    "id": "qazpost_address_api",
+    "title": "QazPost: поиск почтового индекса по адресу или РКА",
+    "authority": "national_postal_operator",
+    "url": "https://open.post.kz/services/details/26",
+    "api_url_template": "https://open.post.kz/npi-integration/api/npi/search?query={address_or_rka}",
+    "access_status": "documentation_found_no_address_dump_obtained",
+    "retrieved_on": "2026-10-16",
+    "potential_contents": [
+      "building_address_ru",
+      "building_address_kk",
+      "postcode",
+      "address_parts"
+    ],
+    "limitations": "Документация требует Bearer token. Старый api.post.kz вернул 404. Наличие адресного поиска не означает доступность полной выгрузки или сведений о квартирах."
+  },
+  {
+    "id": "2gis_apartments",
+    "title": "2ГИС: сведения о подъездах и квартирах",
+    "authority": "commercial_map",
+    "url": "https://docs.2gis.com/en/platform-manager/subscription/services",
+    "access_status": "documentation_found_requires_authorized_paid_fields",
+    "retrieved_on": "2026-10-16",
+    "potential_contents": [
+      "items.links.database_entrances.apartments_info",
+      "items.structure_info.apartments_count",
+      "items.structure_info.porch_count"
+    ],
+    "limitations": "Документация указывает отдельный доступ/дополнительную оплату. Коммерческие ключи не использовались, записи не выгружены."
+  },
+  {
+    "id": "astana_government_geoportal",
+    "title": "Официальный геоинформационный портал Астаны",
+    "authority": "municipal_government",
+    "url": "https://gis.esaulet.kz/portal/sharing/rest/portals/self?f=pjson",
+    "government_reference_url": "https://www.gov.kz/org/astana-saulet/press/news/details/324850?lang=ru",
+    "access_status": "portal_metadata_obtained_address_layers_unavailable",
+    "retrieved_on": "2026-10-16",
+    "observed_failure": "Несколько опубликованных MapServer/FeatureServer/GeocodeServer возвращают HTTP 200 с JSON status=error: сервер не может подключиться к своим компьютерам. Это не успешная выдача адресов."
+  },
+  {
+    "id": "almaty_government_geoportals",
+    "title": "Проверенные городские картографические и коммунальные порталы Алматы",
+    "authority": "municipal_services",
+    "url": "https://ialma.kz/",
+    "other_urls": [
+      "https://mapalmaty.kz/",
+      "https://almaty.genplan.kz/"
+    ],
+    "access_status": "no_public_address_dump_obtained",
+    "retrieved_on": "2026-10-16",
+    "observed_failures": [
+      "mapalmaty.kz: HTTP 500",
+      "ialma.kz: адресный API HTTP 403",
+      "almaty.genplan.kz: ошибка проверки TLS-сертификата"
+    ],
+    "limitations": "Административные названия в клиентских данных ialma.kz местами расходятся с КАТО; они не заменяют официальный классификатор."
+  },
+  {
+    "id": "rename_astana_2022",
+    "title": "Указ Президента РК №1017 от 17.09.2022: Нур-Султан → Астана",
+    "authority": "official_legal_act",
+    "url": "https://adilet.zan.kz/rus/docs/U2200001017",
+    "bilingual_index_url": "https://www.adilet.zan.kz/kaz/docs/U2200001017/compare",
+    "access_status": "primary_source_indexed_text_checked_direct_response_js_shell",
+    "retrieved_on": "2026-10-16"
+  },
+  {
+    "id": "rename_karaganda_district",
+    "title": "Переименование Октябрьского района Караганды в район Әлихан Бөкейхан",
+    "authority": "official_legal_act",
+    "url": "https://adilet.zan.kz/rus/docs/V21K0026419",
+    "access_status": "primary_source_indexed_text_checked_direct_response_js_shell",
+    "retrieved_on": "2026-10-16"
+  },
+  {
+    "id": "rename_furmanov_almaty",
+    "title": "Алматы: улица Фурманова → проспект Нұрсұлтан Назарбаев, акт №1430",
+    "authority": "official_legal_act",
+    "url": "https://adilet.zan.kz/rus/docs/V17R0001430",
+    "access_status": "act_found_entity_link_requires_review",
+    "retrieved_on": "2026-10-16",
+    "limitations": "Акт найден, но не привязан автоматически ко всем одноимённым объектам OSM. Связь с конкретным геонимом требует однозначной идентификации."
+  },
+  {
+    "id": "bns_administrative_summary_july",
+    "title": "BNS administrative-territorial summary, 2026-07-01",
+    "authority": "national_government",
+    "url": "https://stat.gov.kz/ru/industries/social-statistics/demography/publications/335821/",
+    "data_url": "https://stat.gov.kz/api/iblock/element/335828/file/ru/",
+    "local_file": "research/raw/stat_administrative_summary.bin",
+    "access_status": "downloaded_and_compared_to_kato",
+    "retrieved_on": "2026-10-16",
+    "snapshot_date": "2026-07-01"
+  }
+]

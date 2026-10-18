@@ -1,0 +1,409 @@
+[
+  {
+    "id": "stat_classifiers",
+    "url": "https://stat.gov.kz/ru/classifiers/statistical/21/",
+    "retrieved_at": "2026-10-16T17:27:06.699950+00:00",
+    "status": 200,
+    "final_url": "https://stat.gov.kz/ru/classifiers/statistical/21/",
+    "content_type": "text/html; charset=UTF-8",
+    "file": "raw/stat_classifiers.bin",
+    "bytes": 60169,
+    "sha256": "c7340234b14907b48b8d52619ff0f9dafef56c0c7ea5d39b1c6e56c68fa907eb"
+  },
+  {
+    "id": "egov_ats",
+    "url": "https://data.egov.kz/datasets/view?index=s_ats",
+    "retrieved_at": "2026-10-16T17:27:06.699950+00:00",
+    "status": 200,
+    "final_url": "https://data.egov.kz/datasets/view?index=s_ats",
+    "content_type": "text/html; charset=utf-8",
+    "file": "raw/egov_ats.bin",
+    "bytes": 113882,
+    "sha256": "5019bd8c46229032322dee6aa066be4c231eb415e1acdba8d39bdf063a6f1452"
+  },
+  {
+    "id": "egov_search_geonims",
+    "url": "https://data.egov.kz/datasets/search?text=geonim",
+    "retrieved_at": "2026-10-16T17:27:06.702959+00:00",
+    "status": 200,
+    "final_url": "https://data.egov.kz/datasets/search?text=geonim",
+    "content_type": "text/html; charset=utf-8",
+    "file": "raw/egov_search_geonims.bin",
+    "bytes": 57619,
+    "sha256": "5da7090e10ce260b696d190a0943ae7a85c01505940e9284c465b213608a739a"
+  },
+  {
+    "id": "astana_services",
+    "url": "https://gis.esaulet.kz/server/rest/services?f=pjson",
+    "retrieved_at": "2026-10-16T17:27:06.702959+00:00",
+    "status": 200,
+    "final_url": "https://gis.esaulet.kz/server/rest/services?f=pjson",
+    "content_type": "application/json; charset=utf-8",
+    "file": "raw/astana_services.bin",
+    "bytes": 221,
+    "sha256": "0471c76bc6e9158241547d37ab909d946dc581ce17994ba1cb1def57a16ed480"
+  },
+  {
+    "id": "astana_layers",
+    "url": "https://gis.esaulet.kz/server/rest/services/Sloi_geoportala_otkrytiy_kontur_0702/MapServer?f=pjson",
+    "retrieved_at": "2026-10-16T17:27:06.819229+00:00",
+    "status": 200,
+    "final_url": "https://gis.esaulet.kz/server/rest/services/Sloi_geoportala_otkrytiy_kontur_0702/MapServer?f=pjson",
+    "content_type": "application/json; charset=utf-8",
+    "file": "raw/astana_layers.bin",
+    "bytes": 221,
+    "sha256": "0471c76bc6e9158241547d37ab909d946dc581ce17994ba1cb1def57a16ed480"
+  },
+  {
+    "id": "egov_rka",
+    "url": "https://data.egov.kz/services/rka",
+    "retrieved_at": "2026-10-16T17:27:41.518090+00:00",
+    "status": 200,
+    "final_url": "https://data.egov.kz/services/rka",
+    "content_type": "text/html; charset=utf-8",
+    "file": "raw/egov_rka.bin",
+    "bytes": 81486,
+    "sha256": "8b343ab5b64f698c625bbfb59920224dccfa9860d2e6d66b193cb090ba6b0529"
+  },
+  {
+    "id": "egov_ats_data",
+    "url": "https://data.egov.kz/datasets/getdata?index=s_ats&version=data&iDisplayStart=0&iDisplayLength=100",
+    "retrieved_at": "2026-10-16T17:27:41.518090+00:00",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "egov_geonims",
+    "url": "https://data.egov.kz/datasets/view?index=s_geonims",
+    "retrieved_at": "2026-10-16T17:27:41.519927+00:00",
+    "status": 200,
+    "final_url": "https://data.egov.kz/datasets/view?index=s_geonims",
+    "content_type": "text/html; charset=utf-8",
+    "file": "raw/egov_geonims.bin",
+    "bytes": 117105,
+    "sha256": "50e76758075dec29cc6a602ffc70d4b5ebcfdbc6d916205265238c7bfdb557e1"
+  },
+  {
+    "id": "egov_buildings",
+    "url": "https://data.egov.kz/datasets/view?index=s_buildings",
+    "retrieved_at": "2026-10-16T17:27:41.519927+00:00",
+    "status": 200,
+    "final_url": "https://data.egov.kz/datasets/view?index=s_buildings",
+    "content_type": "text/html; charset=utf-8",
+    "file": "raw/egov_buildings.bin",
+    "bytes": 114174,
+    "sha256": "8c4d235b9b76a503b45baacc80e9c956e922a2a022cbf29f36bab862882b1cb2"
+  },
+  {
+    "id": "egov_rooms",
+    "url": "https://data.egov.kz/datasets/view?index=s_pb",
+    "retrieved_at": "2026-10-16T17:27:41.523548+00:00",
+    "status": 200,
+    "final_url": "https://data.egov.kz/datasets/view?index=s_pb",
+    "content_type": "text/html; charset=utf-8",
+    "file": "raw/egov_rooms.bin",
+    "bytes": 114076,
+    "sha256": "ed56d9c77f6dd4edb6ad2cdf001e9e162d4a6ba7a501f80bd2fbd9ba8b43041a"
+  },
+  {
+    "id": "karaganda_portal",
+    "url": "https://geo.qarobl.kz/",
+    "retrieved_at": "2026-10-16T17:27:42.074519+00:00",
+    "status": 200,
+    "final_url": "https://geo.qarobl.kz/",
+    "content_type": "text/html; charset=utf-8",
+    "file": "raw/karaganda_portal.bin",
+    "bytes": 441002,
+    "sha256": "4d404912c369bc5c9e4613c52c2c412ec6ab5d80d86697e23befb8e0cdc100a5"
+  },
+  {
+    "id": "stat_kato_api",
+    "url": "https://old.stat.gov.kz/api/rcut/ru",
+    "retrieved_at": "2026-10-16T17:27:42.479998+00:00",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "stat_kato_docx",
+    "url": "https://stat.gov.kz/upload/iblock/b79/39nf76eyu5gsa6jn83vsz6u6leiiz1hv/%D0%9D%D0%9A%20%D0%A0%D0%9A%2011-2025.docx",
+    "retrieved_at": "2026-10-16T17:28:08.576750+00:00",
+    "status": 200,
+    "final_url": "https://stat.gov.kz/upload/iblock/b79/39nf76eyu5gsa6jn83vsz6u6leiiz1hv/%D0%9D%D0%9A%20%D0%A0%D0%9A%2011-2025.docx",
+    "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "file": "raw/stat_kato_docx.bin",
+    "bytes": 61417,
+    "sha256": "499ed872460619224641adf6e686c236abd72d46bb8c2fe491451c2f00ed3f5c"
+  },
+  {
+    "id": "egov_s_ats_preview",
+    "url": "https://data.egov.kz/datasets/getdata?index=s_ats&version=data&page=1&count=5&text=&column=&order=",
+    "retrieved_at": "2026-10-16T17:28:08.580102+00:00",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "egov_s_geonims_preview",
+    "url": "https://data.egov.kz/datasets/getdata?index=s_geonims&version=data&page=1&count=5&text=&column=&order=",
+    "retrieved_at": "2026-10-16T17:28:08.580102+00:00",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "egov_s_buildings_preview",
+    "url": "https://data.egov.kz/datasets/getdata?index=s_buildings&version=data&page=1&count=5&text=&column=&order=",
+    "retrieved_at": "2026-10-16T17:28:08.596901+00:00",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "egov_s_pb_preview",
+    "url": "https://data.egov.kz/datasets/getdata?index=s_pb&version=data&page=1&count=5&text=&column=&order=",
+    "retrieved_at": "2026-10-16T17:28:08.673636+00:00",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "stat_kato_xlsx",
+    "url": "https://stat.gov.kz/upload/iblock/a7d/eqogm92xc0udumlzfzffhcrutk0fjhb4/%D0%9A%D0%90%D0%A2%D0%9E_18.09.2026.xlsx",
+    "retrieved_at": "2026-10-16T17:28:23.058541+00:00",
+    "status": 200,
+    "final_url": "https://stat.gov.kz/upload/iblock/a7d/eqogm92xc0udumlzfzffhcrutk0fjhb4/%D0%9A%D0%90%D0%A2%D0%9E_18.09.2026.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "file": "raw/stat_kato_xlsx.bin",
+    "bytes": 916101,
+    "sha256": "7b87e0a8a72818ca5adcc7b4a7792dd0afd1a3165ed163197012c7c154d4e990"
+  },
+  {
+    "id": "karaganda_js",
+    "url": "https://geo.qarobl.kz/ui/pages/geoportal/page.js?esm",
+    "retrieved_at": "2026-10-16T17:28:23.058541+00:00",
+    "status": 200,
+    "final_url": "https://geo.qarobl.kz/ui/pages/geoportal/page.js?esm",
+    "content_type": "application/javascript; charset=utf-8",
+    "file": "raw/karaganda_js.bin",
+    "bytes": 10013593,
+    "sha256": "1f320960dcaf497438bf348575bc2f59350218d4476920cf215cef1d39883330"
+  },
+  {
+    "id": "egov_meta_ats",
+    "url": "https://data.egov.kz/datasets/getmeta?index=s_ats&version=data",
+    "retrieved_at": "2026-10-16T17:28:23.058541+00:00",
+    "status": 200,
+    "final_url": "https://data.egov.kz/datasets/getmeta?index=s_ats&version=data",
+    "content_type": "application/json; charset=utf-8",
+    "file": "raw/egov_meta_ats.bin",
+    "bytes": 4497,
+    "sha256": "9b9a721018cfc6c3321288331a2b63e961d55f2d1df5d69008ce3f4116ddcf51"
+  },
+  {
+    "id": "egov_meta_rooms",
+    "url": "https://data.egov.kz/datasets/getmeta?index=s_pb&version=data",
+    "retrieved_at": "2026-10-16T17:28:23.060004+00:00",
+    "status": 200,
+    "final_url": "https://data.egov.kz/datasets/getmeta?index=s_pb&version=data",
+    "content_type": "application/json; charset=utf-8",
+    "file": "raw/egov_meta_rooms.bin",
+    "bytes": 5042,
+    "sha256": "850366fcfccdfbb988a949fcfd5ef9a48fc3d0f9fc33e9396aa4102e8f959485"
+  },
+  {
+    "id": "egov_api_rooms",
+    "url": "https://data.egov.kz/api/v4/s_pb/data",
+    "retrieved_at": "2026-10-16T17:28:23.060004+00:00",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "kar_buildings_probe",
+    "url": "https://geo.qarobl.kz/api/list?collection=addreg-building_noedit&context[admterr_id]=kz.35.10.10.100&lang=ru",
+    "retrieved_at": "2026-10-16T17:29:16.959897+00:00",
+    "status": 200,
+    "final_url": "https://geo.qarobl.kz/api/list?collection=addreg-building_noedit&context[admterr_id]=kz.35.10.10.100&lang=ru",
+    "content_type": "application/json; charset=utf-8",
+    "file": "raw/kar_buildings_probe.bin",
+    "bytes": 2144,
+    "sha256": "5520764d26a9e0aefcc4cef5b096bd3800a78be9a2eb4f936d4b22438e2015d1"
+  },
+  {
+    "id": "kar_streets_probe",
+    "url": "https://geo.qarobl.kz/api/list?collection=geonim-noedit&lang=ru",
+    "retrieved_at": "2026-10-16T17:29:16.959897+00:00",
+    "status": 200,
+    "final_url": "https://geo.qarobl.kz/api/list?collection=geonim-noedit&lang=ru",
+    "content_type": "application/json; charset=utf-8",
+    "file": "raw/kar_streets_probe.bin",
+    "bytes": 45103,
+    "sha256": "c3dabfe39907700867b08b02c42005b9514bbe42fb7fe9ff6a7f38834321b01c"
+  },
+  {
+    "id": "kar_building_schema",
+    "url": "https://geo.qarobl.kz/api/collection?collection=addreg-building_noedit&lang=ru",
+    "retrieved_at": "2026-10-16T17:29:16.959897+00:00",
+    "status": 200,
+    "final_url": "https://geo.qarobl.kz/api/collection?collection=addreg-building_noedit&lang=ru",
+    "content_type": "application/json; charset=utf-8",
+    "file": "raw/kar_building_schema.bin",
+    "bytes": 1712,
+    "sha256": "4412cadb3ac87991520159e66a4223d7956fca74f36df1f8af4468a745f1bfb0"
+  },
+  {
+    "id": "almaty_portal",
+    "url": "https://mapalmaty.kz/",
+    "retrieved_at": "2026-10-16T17:29:16.959897+00:00",
+    "error": "HTTP Error 500: Internal Server Error"
+  },
+  {
+    "id": "almaty_ialma",
+    "url": "https://ialma.kz/",
+    "retrieved_at": "2026-10-16T17:29:16.959897+00:00",
+    "status": 200,
+    "final_url": "https://ialma.kz/",
+    "content_type": "text/html; charset=utf-8",
+    "file": "raw/almaty_ialma.bin",
+    "bytes": 349763,
+    "sha256": "ce825dff5e736be46fad0540eee2dd9f150e0b7c79f7b1dd3fe97292eea25041"
+  },
+  {
+    "id": "kar_city_buildings",
+    "url": "https://geo.qarobl.kz/api/list?collection=addreg-building_noedit&context[admterr_id]=kz.35.10.10&lang=ru&limit=1000",
+    "retrieved_at": "2026-10-16T17:29:46.064918+00:00",
+    "status": 200,
+    "final_url": "https://geo.qarobl.kz/api/list?collection=addreg-building_noedit&context[admterr_id]=kz.35.10.10&lang=ru&limit=1000",
+    "content_type": "application/json; charset=utf-8",
+    "file": "raw/kar_city_buildings.bin",
+    "bytes": 2140,
+    "sha256": "28eee0ff4694c18a4cbef00a1a9fa6c6a546d4d5d1ea761fa11656ac93f90864"
+  },
+  {
+    "id": "kar_city_geonims",
+    "url": "https://geo.qarobl.kz/api/list?collection=geonim-noedit&context[admterr_id]=kz.35.10.10&lang=ru",
+    "retrieved_at": "2026-10-16T17:29:46.064918+00:00",
+    "status": 200,
+    "final_url": "https://geo.qarobl.kz/api/list?collection=geonim-noedit&context[admterr_id]=kz.35.10.10&lang=ru",
+    "content_type": "application/json; charset=utf-8",
+    "file": "raw/kar_city_geonims.bin",
+    "bytes": 1455,
+    "sha256": "df555facaaeeb5fd295dccfc55a78d4e9b47493e9d87d309a1837bba663d943c"
+  },
+  {
+    "id": "kar_city_building_shapes",
+    "url": "https://geo.qarobl.kz/api/list?collection=nedpol-noedit&context[admterr_id]=kz.35.10.10&lang=ru",
+    "retrieved_at": "2026-10-16T17:29:46.064918+00:00",
+    "status": 200,
+    "final_url": "https://geo.qarobl.kz/api/list?collection=nedpol-noedit&context[admterr_id]=kz.35.10.10&lang=ru",
+    "content_type": "application/json; charset=utf-8",
+    "file": "raw/kar_city_building_shapes.bin",
+    "bytes": 1767,
+    "sha256": "3244f33d3c738ca2fd99861722e4c023c4a881f23dab9e163982139e6476dd24"
+  },
+  {
+    "id": "almaty_public_list",
+    "url": "https://ialma.kz/api/list?collection=addreg-building_noedit&lang=ru",
+    "retrieved_at": "2026-10-16T17:29:46.064918+00:00",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "almaty_map",
+    "url": "https://almaty.genplan.kz/",
+    "retrieved_at": "2026-10-16T17:29:46.064918+00:00",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)>"
+  },
+  {
+    "id": "astana_map_public",
+    "url": "https://gis.esaulet.kz/portal/sharing/rest/content/items/b1f26734c76e4dfcbb0bafee1ac5a003/data?f=json",
+    "retrieved_at": "2026-10-16T17:29:46.425317+00:00",
+    "status": 200,
+    "final_url": "https://gis.esaulet.kz/portal/sharing/rest/content/items/b1f26734c76e4dfcbb0bafee1ac5a003/data?f=json",
+    "content_type": "application/json;charset=utf-8",
+    "file": "raw/astana_map_public.bin",
+    "bytes": 2804604,
+    "sha256": "d7abf0eec162707bccb8d8086b7aeebc55c97abfc7bb992b249aa424bcf48d5a"
+  },
+  {
+    "id": "kar_buildings_all_probe",
+    "url": "https://geo.qarobl.kz/api/list?collection=addreg-building_noedit&lang=ru",
+    "retrieved_at": "2026-10-16T17:30:10.116713+00:00",
+    "status": 200,
+    "final_url": "https://geo.qarobl.kz/api/list?collection=addreg-building_noedit&lang=ru",
+    "content_type": "application/json; charset=utf-8",
+    "file": "raw/kar_buildings_all_probe.bin",
+    "bytes": 61974,
+    "sha256": "4fd16818ccd0b9585321222c99aa2c01def4172f71c0688a0d74662b67872ba2"
+  },
+  {
+    "id": "kar_buildings_municipality",
+    "url": "https://geo.qarobl.kz/api/list?collection=addreg-building_noedit&context[admterr_id]=kz.35.10&lang=ru",
+    "retrieved_at": "2026-10-16T17:30:10.117814+00:00",
+    "status": 200,
+    "final_url": "https://geo.qarobl.kz/api/list?collection=addreg-building_noedit&context[admterr_id]=kz.35.10&lang=ru",
+    "content_type": "application/json; charset=utf-8",
+    "file": "raw/kar_buildings_municipality.bin",
+    "bytes": 62006,
+    "sha256": "534294a90d5f17af430356aad1bee6ccb2eba7f66a2a365578ad5dc9668044aa"
+  },
+  {
+    "id": "kar_flats_probe",
+    "url": "https://geo.qarobl.kz/api/list?collection=addreg-flat&lang=ru",
+    "retrieved_at": "2026-10-16T17:30:10.117814+00:00",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "kar_geonims_municipality",
+    "url": "https://geo.qarobl.kz/api/list?collection=geonim-noedit&context[admterr_id]=kz.35.10&lang=ru",
+    "retrieved_at": "2026-10-16T17:30:10.117814+00:00",
+    "status": 200,
+    "final_url": "https://geo.qarobl.kz/api/list?collection=geonim-noedit&context[admterr_id]=kz.35.10&lang=ru",
+    "content_type": "application/json; charset=utf-8",
+    "file": "raw/kar_geonims_municipality.bin",
+    "bytes": 43450,
+    "sha256": "bf04bab2443fc325b36708b8402b999fe92d3aa78f8f37847d0ddf569c1829b2"
+  },
+  {
+    "id": "almaty_egov_old",
+    "url": "https://data.egov.kz/datasets/getmeta?index=s_geonims&version=data",
+    "retrieved_at": "2026-10-16T17:30:10.186765+00:00",
+    "status": 200,
+    "final_url": "https://data.egov.kz/datasets/getmeta?index=s_geonims&version=data",
+    "content_type": "application/json; charset=utf-8",
+    "file": "raw/almaty_egov_old.bin",
+    "bytes": 4651,
+    "sha256": "eadd0c81a5070ab9f74fd2a7fee8a341f6834c5c1ec49a82cf74db3eafec3564"
+  },
+  {
+    "id": "kar_flat_relation_correct",
+    "url": "https://geo.qarobl.kz/api/list?collection=addreg-flat&origincollection=addreg-building_noedit&relations[0][collection]=addreg-flat&relations[0][relfield_id]=building_addreg_id&relfeature_id=0201300205108001&lang=ru",
+    "retrieved_at": "2026-10-16T17:32:05.348935+00:00",
+    "status": 200,
+    "final_url": "https://geo.qarobl.kz/api/list?collection=addreg-flat&origincollection=addreg-building_noedit&relations[0][collection]=addreg-flat&relations[0][relfield_id]=building_addreg_id&relfeature_id=0201300205108001&lang=ru",
+    "content_type": "application/json; charset=utf-8",
+    "file": "raw/kar_flat_relation_correct.bin",
+    "bytes": 1778,
+    "sha256": "f64c9ed6b6008f38b006b5a446ebe9b5c48e27c8fa6d3bbba180204bdb86f82a"
+  },
+  {
+    "id": "osm_kazakhstan_page",
+    "url": "https://download.geofabrik.de/asia/kazakhstan.html",
+    "retrieved_at": "2026-10-16T17:31:01.842765+00:00",
+    "status": 200,
+    "final_url": "https://download.geofabrik.de/asia/kazakhstan.html",
+    "content_type": "text/html",
+    "file": "raw/osm_kazakhstan_page.bin",
+    "bytes": 22501,
+    "sha256": "7fcb282e77e78bd12cfacb08fb4df13863c91f8cbe3f25c7ba3d31c2253e8484"
+  },
+  {
+    "id": "osm_kazakhstan_pbf",
+    "url": "https://download.geofabrik.de/asia/kazakhstan-latest.osm.pbf",
+    "retrieved_at": "2026-10-16T17:31:01.843917+00:00",
+    "status": 200,
+    "final_url": "https://download.geofabrik.de/asia/kazakhstan-261015.osm.pbf",
+    "content_type": "application/octet-stream",
+    "file": "raw/osm_kazakhstan_pbf.bin",
+    "bytes": 224479350,
+    "sha256": "6fbb73b1b247dc2241993cebdb54549d453e354e275da132fb1c5657b4f9b2d2"
+  },
+  {
+    "id": "kar_building_passport",
+    "url": "https://geo.qarobl.kz/api/passport?collection=addreg-building_noedit&feature_id=0201300205108001&lang=ru",
+    "retrieved_at": "2026-10-16T17:31:01.843917+00:00",
+    "status": 200,
+    "final_url": "https://geo.qarobl.kz/api/passport?collection=addreg-building_noedit&feature_id=0201300205108001&lang=ru",
+    "content_type": "application/json; charset=utf-8",
+    "file": "raw/kar_building_passport.bin",
+    "bytes": 6979,
+    "sha256": "629d5d17eebb5c95c3f4e92ed8b7b81ecee0fe349780251fc008731dfe90d40c"
+  }
+]

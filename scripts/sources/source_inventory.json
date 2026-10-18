@@ -1,0 +1,436 @@
+[
+  {
+    "file": "raw\\almaty_egov_old.bin",
+    "bytes": 4651,
+    "sha256": "eadd0c81a5070ab9f74fd2a7fee8a341f6834c5c1ec49a82cf74db3eafec3564"
+  },
+  {
+    "file": "raw\\almaty_ialma.bin",
+    "bytes": 349763,
+    "sha256": "ce825dff5e736be46fad0540eee2dd9f150e0b7c79f7b1dd3fe97292eea25041"
+  },
+  {
+    "file": "raw\\astana_layers.bin",
+    "bytes": 221,
+    "sha256": "0471c76bc6e9158241547d37ab909d946dc581ce17994ba1cb1def57a16ed480"
+  },
+  {
+    "file": "raw\\astana_map_public.bin",
+    "bytes": 2804604,
+    "sha256": "d7abf0eec162707bccb8d8086b7aeebc55c97abfc7bb992b249aa424bcf48d5a"
+  },
+  {
+    "file": "raw\\astana_osm_boundary.bin",
+    "bytes": 7092,
+    "sha256": "053f1871905cab3fe2a3247ed74072c704d32cf1a9804e0e05bba3ecda4195b1"
+  },
+  {
+    "file": "raw\\astana_portal_meta.bin",
+    "bytes": 78140,
+    "sha256": "8abf893adcdc435356a970f21f5f0a71313ce64f0bd68278f2620070944ba3f3"
+  },
+  {
+    "file": "raw\\astana_service_0.bin",
+    "bytes": 134,
+    "sha256": "71943e3460a5c30a3d7c136867d9db15b57fc1a43e3e0d5e283f3804c8c39d1a"
+  },
+  {
+    "file": "raw\\astana_service_3.bin",
+    "bytes": 221,
+    "sha256": "0471c76bc6e9158241547d37ab909d946dc581ce17994ba1cb1def57a16ed480"
+  },
+  {
+    "file": "raw\\astana_service_4.bin",
+    "bytes": 221,
+    "sha256": "0471c76bc6e9158241547d37ab909d946dc581ce17994ba1cb1def57a16ed480"
+  },
+  {
+    "file": "raw\\astana_service_5.bin",
+    "bytes": 221,
+    "sha256": "0471c76bc6e9158241547d37ab909d946dc581ce17994ba1cb1def57a16ed480"
+  },
+  {
+    "file": "raw\\astana_service_6.bin",
+    "bytes": 221,
+    "sha256": "0471c76bc6e9158241547d37ab909d946dc581ce17994ba1cb1def57a16ed480"
+  },
+  {
+    "file": "raw\\astana_service_7.bin",
+    "bytes": 221,
+    "sha256": "0471c76bc6e9158241547d37ab909d946dc581ce17994ba1cb1def57a16ed480"
+  },
+  {
+    "file": "raw\\astana_service_8.bin",
+    "bytes": 221,
+    "sha256": "0471c76bc6e9158241547d37ab909d946dc581ce17994ba1cb1def57a16ed480"
+  },
+  {
+    "file": "raw\\astana_services.bin",
+    "bytes": 221,
+    "sha256": "0471c76bc6e9158241547d37ab909d946dc581ce17994ba1cb1def57a16ed480"
+  },
+  {
+    "file": "raw\\egov_ats.bin",
+    "bytes": 113882,
+    "sha256": "5019bd8c46229032322dee6aa066be4c231eb415e1acdba8d39bdf063a6f1452"
+  },
+  {
+    "file": "raw\\egov_buildings.bin",
+    "bytes": 114174,
+    "sha256": "8c4d235b9b76a503b45baacc80e9c956e922a2a022cbf29f36bab862882b1cb2"
+  },
+  {
+    "file": "raw\\egov_buildings_metadata.bin",
+    "bytes": 6006,
+    "sha256": "98e5fde9b3679e7c81962b81f846e6498ab53747bdc2637cadc9671335c6df99"
+  },
+  {
+    "file": "raw\\egov_geonims.bin",
+    "bytes": 117105,
+    "sha256": "50e76758075dec29cc6a602ffc70d4b5ebcfdbc6d916205265238c7bfdb557e1"
+  },
+  {
+    "file": "raw\\egov_meta_ats.bin",
+    "bytes": 4497,
+    "sha256": "9b9a721018cfc6c3321288331a2b63e961d55f2d1df5d69008ce3f4116ddcf51"
+  },
+  {
+    "file": "raw\\egov_meta_rooms.bin",
+    "bytes": 5042,
+    "sha256": "850366fcfccdfbb988a949fcfd5ef9a48fc3d0f9fc33e9396aa4102e8f959485"
+  },
+  {
+    "file": "raw\\egov_rka.bin",
+    "bytes": 81486,
+    "sha256": "8b343ab5b64f698c625bbfb59920224dccfa9860d2e6d66b193cb090ba6b0529"
+  },
+  {
+    "file": "raw\\egov_room_types.bin",
+    "bytes": 2834,
+    "sha256": "d3779623b8564dab5be73ebf5f26a6e1dd6dbcdf2c1fca2c91bbd450470a78f5"
+  },
+  {
+    "file": "raw\\egov_rooms.bin",
+    "bytes": 114076,
+    "sha256": "ed56d9c77f6dd4edb6ad2cdf001e9e162d4a6ba7a501f80bd2fbd9ba8b43041a"
+  },
+  {
+    "file": "raw\\egov_search_geonims.bin",
+    "bytes": 57619,
+    "sha256": "5da7090e10ce260b696d190a0943ae7a85c01505940e9284c465b213608a739a"
+  },
+  {
+    "file": "raw\\flat_passport_1201300173497920.bin",
+    "bytes": 5245,
+    "sha256": "d7ebef3f56a4773a7a3718e916177a4f7e7e93f1cf4a78002dbba4baf9a08191"
+  },
+  {
+    "file": "raw\\flat_passport_1201300173498020.bin",
+    "bytes": 5245,
+    "sha256": "a6a63a9a4be8f18b7161684e86d844323bc313e96f44a06d5e8251d5c4a04636"
+  },
+  {
+    "file": "raw\\flat_passport_1201300174069126.bin",
+    "bytes": 5864,
+    "sha256": "f9caf5fba8929f1c54315b5229b37609eb37ec285c16995cf35ecfc624033259"
+  },
+  {
+    "file": "raw\\flat_passport_1201300174069228.bin",
+    "bytes": 5864,
+    "sha256": "8f8ae8e53b14bb8d7e9b5254c5c3e5d200bdafe69a4e616bf534ab22ff358d93"
+  },
+  {
+    "file": "raw\\flat_passport_1201800093371143.bin",
+    "bytes": 5848,
+    "sha256": "91d162845a91a545e3df204dfcfc366cc83bca7f7565f01e8cc845b4f4a29143"
+  },
+  {
+    "file": "raw\\flat_passport_1201800095903943.bin",
+    "bytes": 5848,
+    "sha256": "997923fa95a7662560072cce45a558a046d6d4d091bf9004d7b1b8519cd11b65"
+  },
+  {
+    "file": "raw\\flat_passport_1202100135514550.bin",
+    "bytes": 5272,
+    "sha256": "c9b94690cd5892e28afcb3d8d973e5ac652cdb1756905419e890ba26f91d21c5"
+  },
+  {
+    "file": "raw\\flat_passport_1202400041219034.bin",
+    "bytes": 6832,
+    "sha256": "7340dede95d245486796e294932102da7fe0a41839a4fc85235d18d6bfbf9b21"
+  },
+  {
+    "file": "raw\\kar_building_passport.bin",
+    "bytes": 7130,
+    "sha256": "dfe724e2e5e3328f7c87edacb73bcc8bc6ae1f3943efc1a36225f20cd0a6e6f9",
+    "original_response_sha256": "629d5d17eebb5c95c3f4e92ed8b7b81ecee0fe349780251fc008731dfe90d40c",
+    "redacted_irrelevant_metadata_keys": [
+      "__lastchange_user_id"
+    ]
+  },
+  {
+    "file": "raw\\kar_building_schema.bin",
+    "bytes": 1712,
+    "sha256": "4412cadb3ac87991520159e66a4223d7956fca74f36df1f8af4468a745f1bfb0"
+  },
+  {
+    "file": "raw\\kar_buildings_all_probe.bin",
+    "bytes": 61974,
+    "sha256": "4fd16818ccd0b9585321222c99aa2c01def4172f71c0688a0d74662b67872ba2"
+  },
+  {
+    "file": "raw\\kar_buildings_municipality.bin",
+    "bytes": 62006,
+    "sha256": "534294a90d5f17af430356aad1bee6ccb2eba7f66a2a365578ad5dc9668044aa"
+  },
+  {
+    "file": "raw\\kar_buildings_probe.bin",
+    "bytes": 2144,
+    "sha256": "5520764d26a9e0aefcc4cef5b096bd3800a78be9a2eb4f936d4b22438e2015d1"
+  },
+  {
+    "file": "raw\\kar_city_building_shapes.bin",
+    "bytes": 1767,
+    "sha256": "3244f33d3c738ca2fd99861722e4c023c4a881f23dab9e163982139e6476dd24"
+  },
+  {
+    "file": "raw\\kar_city_buildings.bin",
+    "bytes": 2140,
+    "sha256": "28eee0ff4694c18a4cbef00a1a9fa6c6a546d4d5d1ea761fa11656ac93f90864"
+  },
+  {
+    "file": "raw\\kar_city_geonims.bin",
+    "bytes": 1455,
+    "sha256": "df555facaaeeb5fd295dccfc55a78d4e9b47493e9d87d309a1837bba663d943c"
+  },
+  {
+    "file": "raw\\kar_city_shapes_municipality.bin",
+    "bytes": 41795,
+    "sha256": "5b445764b1bd8250dbe4cf5e0ba72e5220dac523c17e9091e0de8ea3d21797d3"
+  },
+  {
+    "file": "raw\\kar_flat_relation_correct.bin",
+    "bytes": 1778,
+    "sha256": "f64c9ed6b6008f38b006b5a446ebe9b5c48e27c8fa6d3bbba180204bdb86f82a"
+  },
+  {
+    "file": "raw\\kar_flats_counted_probe.bin",
+    "bytes": 26038,
+    "sha256": "60909cce36de1878cd51439459d15942d6731b9b33887548897fa36e29027540"
+  },
+  {
+    "file": "raw\\kar_geonims_municipality.bin",
+    "bytes": 43450,
+    "sha256": "bf04bab2443fc325b36708b8402b999fe92d3aa78f8f37847d0ddf569c1829b2"
+  },
+  {
+    "file": "raw\\kar_streets_probe.bin",
+    "bytes": 45103,
+    "sha256": "c3dabfe39907700867b08b02c42005b9514bbe42fb7fe9ff6a7f38834321b01c"
+  },
+  {
+    "file": "raw\\karaganda_js.bin",
+    "bytes": 10013593,
+    "sha256": "1f320960dcaf497438bf348575bc2f59350218d4476920cf215cef1d39883330"
+  },
+  {
+    "file": "raw\\karaganda_portal.bin",
+    "bytes": 441002,
+    "sha256": "4d404912c369bc5c9e4613c52c2c412ec6ab5d80d86697e23befb8e0cdc100a5"
+  },
+  {
+    "file": "raw\\kazpost_docs.bin",
+    "bytes": 919,
+    "sha256": "08e13f9b1283bcac7c5e05afdc97d2e91615abbfb7240d25ff9f3c6cb87b546b"
+  },
+  {
+    "file": "raw\\osm_almaty_boundary.bin",
+    "bytes": 4951,
+    "sha256": "6b058465d73b4195f9d7366766229359743f871a26f79e1e2fc3f2d3f24e83d2"
+  },
+  {
+    "file": "raw\\osm_karaganda_boundary.bin",
+    "bytes": 1033,
+    "sha256": "0a5eaf6a841ec0256a0dfb40f982b00b5f830f4728d37136ba3501342951ef50"
+  },
+  {
+    "file": "raw\\osm_kazakhstan_page.bin",
+    "bytes": 22501,
+    "sha256": "7fcb282e77e78bd12cfacb08fb4df13863c91f8cbe3f25c7ba3d31c2253e8484"
+  },
+  {
+    "file": "raw\\osm_kazakhstan_pbf.bin",
+    "bytes": 224479350,
+    "sha256": "6fbb73b1b247dc2241993cebdb54549d453e354e275da132fb1c5657b4f9b2d2"
+  },
+  {
+    "file": "raw\\osm_license.bin",
+    "bytes": 21314,
+    "sha256": "b44e190a630ed23a64688ac8173c8d3615189f2cdf0127354f45ad161223b093"
+  },
+  {
+    "file": "raw\\post_frontend_js.bin",
+    "bytes": 2240448,
+    "sha256": "d9953bc003c972d70ad6ead45dffab2d7b99edc57cc66a87992ab4d467770118"
+  },
+  {
+    "file": "raw\\post_public_home.bin",
+    "bytes": 16905,
+    "sha256": "5cd2e7d1ce27ccd44087b952d95ca29889d2e39e2b747e27118f27af50eba5b7"
+  },
+  {
+    "file": "raw\\rename_astana_2022.bin",
+    "bytes": 1573,
+    "sha256": "f81c0b92ac67379941db84601d55ba36dcc3706b2a38decac8222c757133216d"
+  },
+  {
+    "file": "raw\\rename_furmanov_gov.bin",
+    "bytes": 1209,
+    "sha256": "71e77cc009e14df08941d4ad67c69fb3705e9d0557a4e8d81ae4523286b248e7"
+  },
+  {
+    "file": "raw\\rename_karaganda_district_2021.bin",
+    "bytes": 1573,
+    "sha256": "f81c0b92ac67379941db84601d55ba36dcc3706b2a38decac8222c757133216d"
+  },
+  {
+    "file": "raw\\rename_karaganda_old.bin",
+    "bytes": 37354,
+    "sha256": "2f6abe5c441319169e7a87883c229885700cbf6766deb634f7fb7b3ab0a289b2"
+  },
+  {
+    "file": "raw\\stat_administrative_summary.bin",
+    "bytes": 73681,
+    "sha256": "02b25ac5ff456478250d940d9196da5a9fbf393d26f4a522eaaa70ca70d015fb"
+  },
+  {
+    "file": "raw\\stat_administrative_summary_xlsx.bin",
+    "bytes": 201959,
+    "sha256": "5949e00ae87ce848a7686c67c881e07db60e218b78dfce71b0c174440cf69465"
+  },
+  {
+    "file": "raw\\stat_classifiers.bin",
+    "bytes": 60169,
+    "sha256": "c7340234b14907b48b8d52619ff0f9dafef56c0c7ea5d39b1c6e56c68fa907eb"
+  },
+  {
+    "file": "raw\\stat_demography_tables.bin",
+    "bytes": 76683,
+    "sha256": "81ece09ccf4b40ace7657bd483adeddb9a58d0ab7ec7b9b1530fb3befb922211"
+  },
+  {
+    "file": "raw\\stat_kato_docx.bin",
+    "bytes": 61417,
+    "sha256": "499ed872460619224641adf6e686c236abd72d46bb8c2fe491451c2f00ed3f5c"
+  },
+  {
+    "file": "raw\\stat_kato_xlsx.bin",
+    "bytes": 916101,
+    "sha256": "7b87e0a8a72818ca5adcc7b4a7792dd0afd1a3165ed163197012c7c154d4e990"
+  },
+  {
+    "file": "raw\\stat_population_july.bin",
+    "bytes": 73082,
+    "sha256": "f81002ffb662f3c16fa10bd5273090857ef2c3b77329f6e27d31e435f06e4daf"
+  },
+  {
+    "file": "raw\\stat_population_localities_july.bin",
+    "bytes": 202937,
+    "sha256": "bf5b42259af7f57680b22a47474daddc4ed64053c21e758b7492d978388d6218"
+  },
+  {
+    "file": "raw\\stat_population_page.bin",
+    "bytes": 119628,
+    "sha256": "c59855f75ab28d5b94bf1c684d2d00fcde248f66643b8fa15d3b4871ac2ab0b7"
+  },
+  {
+    "file": "raw\\stat_population_september.bin",
+    "bytes": 131934,
+    "sha256": "529d75df7893ea21e8d584638ecd5af48999ca8758a08f5b37ae1a921e793dc0"
+  },
+  {
+    "file": "raw\\stat_population_xlsx_0.bin",
+    "bytes": 15069,
+    "sha256": "38f081ce0c27b4f4099daf37e01db724fbb03d3ecadfa3b420e08b81297be574"
+  },
+  {
+    "file": "raw\\stat_population_xlsx_1.bin",
+    "bytes": 15358,
+    "sha256": "aff84f3a4225521d5f8bcb864783def8cb1b704844e5b2ae6d9a055ac4eb0de0"
+  },
+  {
+    "file": "build_summary.json",
+    "bytes": 3411,
+    "sha256": "bcef888c8ce9740a2d8f4a65a3d010f99bb2ae56325ec2021e4ff5b6c130fc28"
+  },
+  {
+    "file": "download_manifest.json",
+    "bytes": 18314,
+    "sha256": "20f8132aeb3ce3677b11041c71a92a1b6b4f30eee656e924226ba17260fdfd3f"
+  },
+  {
+    "file": "jobs_conflicts.json",
+    "bytes": 2040,
+    "sha256": "96f362a3ff892b0119eb4b559a25d0579a99ea5b6ba19953ddec0657c48cbbfa"
+  },
+  {
+    "file": "jobs_initial.json",
+    "bytes": 732,
+    "sha256": "1b7990c2de9d560ecc3ada646063b803ca228f310cadeddf8dedeacc55966ec5"
+  },
+  {
+    "file": "jobs_population.json",
+    "bytes": 365,
+    "sha256": "894b90e41c734b12841fcdf080ef88803f0fb0b0b950445a2e1bea10c7a7ba97"
+  },
+  {
+    "file": "jobs_services.json",
+    "bytes": 1238,
+    "sha256": "0dbd37c6277cfa3274e75f21697cb759eaa3e82ea51073838338279cc423de76"
+  },
+  {
+    "file": "karaganda_building_verification.json",
+    "bytes": 80339,
+    "sha256": "2fc763d11139a9cd1e0f15d26a8e26c908a6955efc636de21e170c361e67ba51"
+  },
+  {
+    "file": "karaganda_buildings.json",
+    "bytes": 30346233,
+    "sha256": "ca23fa6e4c047490c916fec19b4008cfa362a418ce2490210c8aae7ca67b9b12"
+  },
+  {
+    "file": "karaganda_flats.json",
+    "bytes": 47334,
+    "sha256": "431958d2e96bb524baecd2ee5806fa3360252803e9ca8c8eb118f856d647f3b1"
+  },
+  {
+    "file": "karaganda_flats_extended.json",
+    "bytes": 5464519,
+    "sha256": "e2aa7883d1a2f12b19f9e74e9dbfc8c171383ee1a5e8f697183ab22163af11a0"
+  },
+  {
+    "file": "karaganda_geonims.json",
+    "bytes": 4155493,
+    "sha256": "975a672cabb6ab0c33cae88362d853ac6dafdebd95ca6f7e435b68cac2d5910d"
+  },
+  {
+    "file": "karaganda_premise_verification.json",
+    "bytes": 6995615,
+    "sha256": "c276ebcfb4a2a519e40107e3f2600d33c72aabb7a54527631e326aa897e59d2c"
+  },
+  {
+    "file": "osm_observations.json",
+    "bytes": 321614103,
+    "sha256": "16248f6672e6444f744d283a86425458a7bd765711e1a18a2b8e727b0891b655"
+  },
+  {
+    "file": "sources_catalog.json",
+    "bytes": 17651,
+    "sha256": "342150ec79f1b75ad7dc96626a37c4b7984e073e4fa1970811e7c5ee86a30c68"
+  },
+  {
+    "file": "validation_report.json",
+    "bytes": 2478,
+    "sha256": "f8353f5641c8a32b1faee64c07f9c20267608a23b4287ab5654997e4b00082c9"
+  }
+]

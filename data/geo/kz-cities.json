@@ -1,0 +1,3227 @@
+[
+  {
+    "name": "Алматы",
+    "name_kz": "Алматы",
+    "name_en": "Almaty",
+    "aliases": [
+      "Almaty",
+      "Алма-Ата"
+    ],
+    "region_id": "KZ-75",
+    "province": "Алматы",
+    "kind": "city",
+    "population": 2332400,
+    "lat": 43.23639,
+    "lon": 76.94573,
+    "is_region_center": true,
+    "osm_id": 26544289
+  },
+  {
+    "name": "Астана",
+    "name_kz": "Астана",
+    "name_en": "Astana",
+    "aliases": [
+      "Astana",
+      "Акмола",
+      "Нур-Султан",
+      "Нұр-Сұлтан",
+      "Целиноград"
+    ],
+    "region_id": "KZ-71",
+    "province": "Астана",
+    "kind": "city",
+    "population": 1601490,
+    "lat": 51.12828,
+    "lon": 71.43047,
+    "is_region_center": true,
+    "osm_id": 27548009
+  },
+  {
+    "name": "Шымкент",
+    "name_kz": "Шымкент",
+    "name_en": "Shymkent",
+    "aliases": [
+      "Shymkent",
+      "Чимкент"
+    ],
+    "region_id": "KZ-79",
+    "province": "Шымкент",
+    "kind": "city",
+    "population": 1222055,
+    "lat": 42.3147,
+    "lon": 69.58833,
+    "is_region_center": true,
+    "osm_id": 1466716533
+  },
+  {
+    "name": "Актобе",
+    "name_kz": "Ақтөбе",
+    "name_en": "Aktobe",
+    "aliases": [
+      "Aktobe",
+      "Актюбинск",
+      "Ақтөбе"
+    ],
+    "region_id": "KZ-15",
+    "province": "Актюбинская область",
+    "kind": "city",
+    "population": 570452,
+    "lat": 50.28369,
+    "lon": 57.22981,
+    "is_region_center": true,
+    "osm_id": 241035125
+  },
+  {
+    "name": "Караганда",
+    "name_kz": "Қарағанды",
+    "name_en": "Karaganda",
+    "aliases": [
+      "Karaganda",
+      "Қарағанды"
+    ],
+    "region_id": "KZ-35",
+    "province": "Карагандинская область",
+    "kind": "city",
+    "population": 520486,
+    "lat": 49.81613,
+    "lon": 73.10266,
+    "is_region_center": true,
+    "osm_id": 240865457
+  },
+  {
+    "name": "Тараз",
+    "name_kz": "Тараз",
+    "name_en": "Taraz",
+    "aliases": [
+      "Taraz",
+      "Аулие-Ата",
+      "Джамбул"
+    ],
+    "region_id": "KZ-31",
+    "province": "Жамбылская область",
+    "kind": "city",
+    "population": 431160,
+    "lat": 42.90159,
+    "lon": 71.37693,
+    "is_region_center": true,
+    "osm_id": 240470924
+  },
+  {
+    "name": "Усть-Каменогорск",
+    "name_kz": "Өскемен",
+    "name_en": "Öskemen",
+    "aliases": [
+      "Öskemen",
+      "Оскемен",
+      "Өскемен"
+    ],
+    "region_id": "KZ-63",
+    "province": "Восточно-Казахстанская область",
+    "kind": "city",
+    "population": 354770,
+    "lat": 49.94844,
+    "lon": 82.62748,
+    "is_region_center": true,
+    "osm_id": 240993564
+  },
+  {
+    "name": "Павлодар",
+    "name_kz": "Павлодар",
+    "name_en": "Pavlodar",
+    "aliases": [
+      "Pavlodar"
+    ],
+    "region_id": "KZ-55",
+    "province": "Павлодарская область",
+    "kind": "city",
+    "population": 334830,
+    "lat": 52.28576,
+    "lon": 76.9455,
+    "is_region_center": true,
+    "osm_id": 240872918
+  },
+  {
+    "name": "Атырау",
+    "name_kz": "Атырау",
+    "name_en": "Atyrau",
+    "aliases": [
+      "Atyrau",
+      "Гурьев"
+    ],
+    "region_id": "KZ-23",
+    "province": "Атырауская область",
+    "kind": "city",
+    "population": 323295,
+    "lat": 47.10672,
+    "lon": 51.9139,
+    "is_region_center": true,
+    "osm_id": 98022062
+  },
+  {
+    "name": "Семей",
+    "name_kz": "Семей",
+    "name_en": "Semey",
+    "aliases": [
+      "Semey",
+      "Семипалатинск"
+    ],
+    "region_id": "KZ-10",
+    "province": "Абайская область",
+    "kind": "city",
+    "population": 310456,
+    "lat": 50.40438,
+    "lon": 80.24966,
+    "is_region_center": true,
+    "osm_id": 27524816
+  },
+  {
+    "name": "Кызылорда",
+    "name_kz": "Қызылорда",
+    "name_en": "Kyzylorda",
+    "aliases": [
+      "Kyzylorda",
+      "Кзыл-Орда",
+      "Қызылорда"
+    ],
+    "region_id": "KZ-43",
+    "province": "Кызылординская область",
+    "kind": "city",
+    "population": 281887,
+    "lat": 44.84268,
+    "lon": 65.50362,
+    "is_region_center": true,
+    "osm_id": 241492821
+  },
+  {
+    "name": "Актау",
+    "name_kz": "Ақтау",
+    "name_en": "Aktau",
+    "aliases": [
+      "Aktau",
+      "Ақтау",
+      "Шевченко"
+    ],
+    "region_id": "KZ-47",
+    "province": "Мангистауская область",
+    "kind": "city",
+    "population": 273830,
+    "lat": 43.63534,
+    "lon": 51.16822,
+    "is_region_center": true,
+    "osm_id": 729610410
+  },
+  {
+    "name": "Костанай",
+    "name_kz": "Қостанай",
+    "name_en": "Kostanay",
+    "aliases": [
+      "Kostanay",
+      "Кустанай",
+      "Қостанай"
+    ],
+    "region_id": "KZ-39",
+    "province": "Костанайская область",
+    "kind": "city",
+    "population": 268182,
+    "lat": 53.21466,
+    "lon": 63.63261,
+    "is_region_center": true,
+    "osm_id": 448814768
+  },
+  {
+    "name": "Уральск",
+    "name_kz": "Орал",
+    "name_en": "Oral",
+    "aliases": [
+      "Oral",
+      "Орал"
+    ],
+    "region_id": "KZ-27",
+    "province": "Западно-Казахстанская область",
+    "kind": "city",
+    "population": 256960,
+    "lat": 51.20407,
+    "lon": 51.37079,
+    "is_region_center": true,
+    "osm_id": 1832841848
+  },
+  {
+    "name": "Туркестан",
+    "name_kz": "Түркістан",
+    "name_en": "Turkistan",
+    "aliases": [
+      "Turkistan",
+      "Түркістан"
+    ],
+    "region_id": "KZ-61",
+    "province": "Туркестанская область",
+    "kind": "city",
+    "population": 228003,
+    "lat": 43.30195,
+    "lon": 68.27037,
+    "is_region_center": true,
+    "osm_id": 214887132
+  },
+  {
+    "name": "Петропавловск",
+    "name_kz": "Петропавл",
+    "name_en": "Petropavl",
+    "aliases": [
+      "Petropavl",
+      "Петропавл"
+    ],
+    "region_id": "KZ-59",
+    "province": "Северо-Казахстанская область",
+    "kind": "city",
+    "population": 222703,
+    "lat": 54.86681,
+    "lon": 69.1335,
+    "is_region_center": true,
+    "osm_id": 1457457600
+  },
+  {
+    "name": "Кокшетау",
+    "name_kz": "Көкшетау",
+    "name_en": "Kokshetau",
+    "aliases": [
+      "Kokshetau",
+      "Кокчетав",
+      "Көкшетау"
+    ],
+    "region_id": "KZ-11",
+    "province": "Акмолинская область",
+    "kind": "city",
+    "population": 176849,
+    "lat": 53.28521,
+    "lon": 69.38147,
+    "is_region_center": true,
+    "osm_id": 241542056
+  },
+  {
+    "name": "Талдыкорган",
+    "name_kz": "Талдықорған",
+    "name_en": "Taldykorgan",
+    "aliases": [
+      "Taldykorgan",
+      "Талды-Курган",
+      "Талдықорған"
+    ],
+    "region_id": "KZ-33",
+    "province": "Жетысуская область",
+    "kind": "city",
+    "population": 169462,
+    "lat": 45.01772,
+    "lon": 78.38205,
+    "is_region_center": true,
+    "osm_id": 241679356
+  },
+  {
+    "name": "Жезказган",
+    "name_kz": "Жезқазған",
+    "name_en": "Jezqazğan",
+    "aliases": [
+      "Jezqazğan",
+      "Джезказган",
+      "Жезқазған"
+    ],
+    "region_id": "KZ-62",
+    "province": "Улытауская область",
+    "kind": "city",
+    "population": 89283,
+    "lat": 47.80434,
+    "lon": 67.71457,
+    "is_region_center": true,
+    "osm_id": 271203690
+  },
+  {
+    "name": "Конаев",
+    "name_kz": "Қонаев",
+    "name_en": "Qonaev",
+    "aliases": [
+      "Qonaev",
+      "Капчагай",
+      "Капшагай",
+      "Қапшағай",
+      "Қонаев"
+    ],
+    "region_id": "KZ-19",
+    "province": "Алматинская область",
+    "kind": "city",
+    "population": 56436,
+    "lat": 43.85517,
+    "lon": 77.06146,
+    "is_region_center": true,
+    "osm_id": 242465214
+  },
+  {
+    "name": "Темиртау",
+    "name_kz": "Теміртау",
+    "name_en": "Temirtau",
+    "aliases": [
+      "Temirtau",
+      "Теміртау"
+    ],
+    "region_id": "KZ-35",
+    "province": "Карагандинская область",
+    "kind": "city",
+    "population": 171609,
+    "lat": 50.05878,
+    "lon": 72.95357,
+    "is_region_center": false,
+    "osm_id": 241455373
+  },
+  {
+    "name": "Экибастуз",
+    "name_kz": "Екібастұз",
+    "name_en": "Ekibastuz",
+    "aliases": [
+      "Ekibastuz",
+      "Екібастұз"
+    ],
+    "region_id": "KZ-55",
+    "province": "Павлодарская область",
+    "kind": "city",
+    "population": 128551,
+    "lat": 51.72758,
+    "lon": 75.32885,
+    "is_region_center": false,
+    "osm_id": 537561303
+  },
+  {
+    "name": "Рудный",
+    "name_kz": "Рудный",
+    "name_en": "Rudny",
+    "aliases": [
+      "Rudny"
+    ],
+    "region_id": "KZ-39",
+    "province": "Костанайская область",
+    "kind": "city",
+    "population": 111908,
+    "lat": 52.96446,
+    "lon": 63.13349,
+    "is_region_center": false,
+    "osm_id": 241549456
+  },
+  {
+    "name": "Каскелен",
+    "name_kz": "Қаскелең",
+    "name_en": "Qaskelen",
+    "aliases": [
+      "Qaskelen",
+      "Қаскелең"
+    ],
+    "region_id": "KZ-19",
+    "province": "Алматинская область",
+    "kind": "city",
+    "population": 84199,
+    "lat": 43.19769,
+    "lon": 76.63039,
+    "is_region_center": false,
+    "osm_id": 1282416486
+  },
+  {
+    "name": "Жанаозен",
+    "name_kz": "Жаңаөзен",
+    "name_en": "Jañaözen",
+    "aliases": [
+      "Jañaözen",
+      "Жаңаөзен",
+      "Новый Узень"
+    ],
+    "region_id": "KZ-47",
+    "province": "Мангистауская область",
+    "kind": "city",
+    "population": 75604,
+    "lat": 43.3381,
+    "lon": 52.85562,
+    "is_region_center": false,
+    "osm_id": 253063867
+  },
+  {
+    "name": "Кентау",
+    "name_kz": "Кентау",
+    "name_en": "Kentau",
+    "aliases": [
+      "Kentau"
+    ],
+    "region_id": "KZ-61",
+    "province": "Туркестанская область",
+    "kind": "city",
+    "population": 74659,
+    "lat": 43.51659,
+    "lon": 68.4996,
+    "is_region_center": false,
+    "osm_id": 241772277
+  },
+  {
+    "name": "Балхаш",
+    "name_kz": "Балқаш",
+    "name_en": "Balqaş",
+    "aliases": [
+      "Balqaş",
+      "Балқаш"
+    ],
+    "region_id": "KZ-35",
+    "province": "Карагандинская область",
+    "kind": "town",
+    "population": 73450,
+    "lat": 46.84332,
+    "lon": 74.97733,
+    "is_region_center": false,
+    "osm_id": 244017974
+  },
+  {
+    "name": "Сатпаев",
+    "name_kz": "Сәтбаев",
+    "name_en": "Sätbaev",
+    "aliases": [
+      "Sätbaev",
+      "Сәтбаев"
+    ],
+    "region_id": "KZ-62",
+    "province": "Улытауская область",
+    "kind": "city",
+    "population": 68740,
+    "lat": 47.90495,
+    "lon": 67.53058,
+    "is_region_center": false,
+    "osm_id": 271312178
+  },
+  {
+    "name": "Кульсары",
+    "name_kz": "Құлсары",
+    "name_en": "Qūlsary",
+    "aliases": [
+      "Qūlsary",
+      "Құлсары"
+    ],
+    "region_id": "KZ-23",
+    "province": "Атырауская область",
+    "kind": "city",
+    "population": 66580,
+    "lat": 46.96215,
+    "lon": 54.01292,
+    "is_region_center": false,
+    "osm_id": 253716507
+  },
+  {
+    "name": "Талгар",
+    "name_kz": "Талғар",
+    "name_en": "Talgar",
+    "aliases": [
+      "Talgar",
+      "Талғар"
+    ],
+    "region_id": "KZ-19",
+    "province": "Алматинская область",
+    "kind": "city",
+    "population": 63883,
+    "lat": 43.30272,
+    "lon": 77.23947,
+    "is_region_center": false,
+    "osm_id": 27522202
+  },
+  {
+    "name": "Зачаганск",
+    "name_kz": "Зашаған",
+    "name_en": "Zaşağan",
+    "aliases": [
+      "Zaşağan",
+      "Зашаған"
+    ],
+    "region_id": "KZ-27",
+    "province": "Западно-Казахстанская область",
+    "kind": "town",
+    "population": 62631,
+    "lat": 51.18098,
+    "lon": 51.3057,
+    "is_region_center": false,
+    "osm_id": 11524419696
+  },
+  {
+    "name": "Сарыагаш",
+    "name_kz": "Сарыағаш",
+    "name_en": "Sarıağaş",
+    "aliases": [
+      "Sarıağaş",
+      "Сарыағаш"
+    ],
+    "region_id": "KZ-61",
+    "province": "Туркестанская область",
+    "kind": "city",
+    "population": 62215,
+    "lat": 41.46733,
+    "lon": 69.17051,
+    "is_region_center": false,
+    "osm_id": 244532522
+  },
+  {
+    "name": "Бейнеу",
+    "name_kz": "Бейнеу",
+    "name_en": "Beineu",
+    "aliases": [
+      "Beineu"
+    ],
+    "region_id": "KZ-47",
+    "province": "Мангистауская область",
+    "kind": "town",
+    "population": 57990,
+    "lat": 45.32138,
+    "lon": 55.18623,
+    "is_region_center": false,
+    "osm_id": 253983700
+  },
+  {
+    "name": "Косшы",
+    "name_kz": "Қосшы",
+    "name_en": "Kosshy",
+    "aliases": [
+      "Kosshy",
+      "Қосшы"
+    ],
+    "region_id": "KZ-11",
+    "province": "Акмолинская область",
+    "kind": "city",
+    "population": 55160,
+    "lat": 50.97541,
+    "lon": 71.35495,
+    "is_region_center": false,
+    "osm_id": 3764326166
+  },
+  {
+    "name": "Жаркент",
+    "name_kz": "Жаркент",
+    "name_en": "Zharkent",
+    "aliases": [
+      "Zharkent"
+    ],
+    "region_id": "KZ-33",
+    "province": "Жетысуская область",
+    "kind": "city",
+    "population": 53144,
+    "lat": 44.16566,
+    "lon": 80.00274,
+    "is_region_center": false,
+    "osm_id": 243657575
+  },
+  {
+    "name": "Арысь",
+    "name_kz": "Арыс",
+    "name_en": "Arys",
+    "aliases": [
+      "Arys",
+      "Арыс"
+    ],
+    "region_id": "KZ-61",
+    "province": "Туркестанская область",
+    "kind": "city",
+    "population": 52123,
+    "lat": 42.43247,
+    "lon": 68.81349,
+    "is_region_center": false,
+    "osm_id": 241781833
+  },
+  {
+    "name": "Аксу",
+    "name_kz": "Ақсу",
+    "name_en": "Aksu",
+    "aliases": [
+      "Aksu",
+      "Ақсу"
+    ],
+    "region_id": "KZ-55",
+    "province": "Павлодарская область",
+    "kind": "city",
+    "population": 51728,
+    "lat": 52.03542,
+    "lon": 76.93411,
+    "is_region_center": false,
+    "osm_id": 293607451
+  },
+  {
+    "name": "Степногорск",
+    "name_kz": "Степногорск",
+    "name_en": "Stepnogorsk",
+    "aliases": [
+      "Stepnogorsk"
+    ],
+    "region_id": "KZ-11",
+    "province": "Акмолинская область",
+    "kind": "city",
+    "population": 49116,
+    "lat": 52.34637,
+    "lon": 71.88049,
+    "is_region_center": false,
+    "osm_id": 339945971
+  },
+  {
+    "name": "Узынагаш",
+    "name_kz": "Ұзынағаш",
+    "name_en": "Uzynagash",
+    "aliases": [
+      "Uzynagash",
+      "Ұзынағаш"
+    ],
+    "region_id": "KZ-19",
+    "province": "Алматинская область",
+    "kind": "town",
+    "population": 48602,
+    "lat": 43.21184,
+    "lon": 76.31597,
+    "is_region_center": false,
+    "osm_id": 243998902
+  },
+  {
+    "name": "Щучинск",
+    "name_kz": "Щучинск",
+    "name_en": "Shchuchinsk",
+    "aliases": [
+      "Shchuchinsk"
+    ],
+    "region_id": "KZ-11",
+    "province": "Акмолинская область",
+    "kind": "town",
+    "population": 46744,
+    "lat": 52.93875,
+    "lon": 70.18576,
+    "is_region_center": false,
+    "osm_id": 2028869783
+  },
+  {
+    "name": "Айтеке би",
+    "name_kz": "Әйтеке би кенті",
+    "name_en": "Ayteke Bi",
+    "aliases": [
+      "Ayteke Bi",
+      "Әйтеке би кенті"
+    ],
+    "region_id": "KZ-43",
+    "province": "Кызылординская область",
+    "kind": "town",
+    "population": 46237,
+    "lat": 45.84488,
+    "lon": 62.15302,
+    "is_region_center": false,
+    "osm_id": 271077515
+  },
+  {
+    "name": "Шу",
+    "name_kz": "Шу",
+    "name_en": "Şu",
+    "aliases": [
+      "Şu"
+    ],
+    "region_id": "KZ-31",
+    "province": "Жамбылская область",
+    "kind": "city",
+    "population": 45531,
+    "lat": 43.60876,
+    "lon": 73.76075,
+    "is_region_center": false,
+    "osm_id": 240505390
+  },
+  {
+    "name": "Риддер",
+    "name_kz": "Риддер",
+    "name_en": "Ridder",
+    "aliases": [
+      "Ridder"
+    ],
+    "region_id": "KZ-63",
+    "province": "Восточно-Казахстанская область",
+    "kind": "city",
+    "population": 45072,
+    "lat": 50.33893,
+    "lon": 83.50616,
+    "is_region_center": false,
+    "osm_id": 244147213
+  },
+  {
+    "name": "Жетысай",
+    "name_kz": "Жетісай",
+    "name_en": "Jetisay",
+    "aliases": [
+      "Jetisay",
+      "Жетісай"
+    ],
+    "region_id": "KZ-61",
+    "province": "Туркестанская область",
+    "kind": "city",
+    "population": 44105,
+    "lat": 40.77713,
+    "lon": 68.32468,
+    "is_region_center": false,
+    "osm_id": 247318618
+  },
+  {
+    "name": "Аягоз",
+    "name_kz": "Аягөз",
+    "name_en": "Ayagöz",
+    "aliases": [
+      "Ayagöz",
+      "Аягөз"
+    ],
+    "region_id": "KZ-10",
+    "province": "Абайская область",
+    "kind": "city",
+    "population": 42010,
+    "lat": 47.96512,
+    "lon": 80.4366,
+    "is_region_center": false,
+    "osm_id": 5011408337
+  },
+  {
+    "name": "Есик",
+    "name_kz": "Есік",
+    "name_en": "Esik",
+    "aliases": [
+      "Esik",
+      "Есік"
+    ],
+    "region_id": "KZ-19",
+    "province": "Алматинская область",
+    "kind": "city",
+    "population": 41517,
+    "lat": 43.35325,
+    "lon": 77.46409,
+    "is_region_center": false,
+    "osm_id": 243743625
+  },
+  {
+    "name": "Кордай",
+    "name_kz": "Қордай",
+    "name_en": "Qorday",
+    "aliases": [
+      "Qorday",
+      "Қордай"
+    ],
+    "region_id": "KZ-31",
+    "province": "Жамбылская область",
+    "kind": "town",
+    "population": 39288,
+    "lat": 43.04297,
+    "lon": 74.71448,
+    "is_region_center": false,
+    "osm_id": 244458811
+  },
+  {
+    "name": "Шахтинск",
+    "name_kz": "Шахтинск",
+    "name_en": "Shakhtinsk",
+    "aliases": [
+      "Shakhtinsk"
+    ],
+    "region_id": "KZ-35",
+    "province": "Карагандинская область",
+    "kind": "city",
+    "population": 38961,
+    "lat": 49.70566,
+    "lon": 72.59484,
+    "is_region_center": false,
+    "osm_id": 301716913
+  },
+  {
+    "name": "Шиели",
+    "name_kz": "Шиелі",
+    "name_en": "Şïeli",
+    "aliases": [
+      "Şïeli",
+      "Шиелі"
+    ],
+    "region_id": "KZ-43",
+    "province": "Кызылординская область",
+    "kind": "town",
+    "population": 37258,
+    "lat": 44.17603,
+    "lon": 66.74096,
+    "is_region_center": false,
+    "osm_id": 535064260
+  },
+  {
+    "name": "Арал",
+    "name_kz": "Арал",
+    "name_en": "Aral",
+    "aliases": [
+      "Aral"
+    ],
+    "region_id": "KZ-43",
+    "province": "Кызылординская область",
+    "kind": "city",
+    "population": 37183,
+    "lat": 46.79798,
+    "lon": 61.66122,
+    "is_region_center": false,
+    "osm_id": 271080647
+  },
+  {
+    "name": "Аксай",
+    "name_kz": "Ақсай",
+    "name_en": "Aqsai",
+    "aliases": [
+      "Aqsai",
+      "Ақсай"
+    ],
+    "region_id": "KZ-27",
+    "province": "Западно-Казахстанская область",
+    "kind": "city",
+    "population": 36034,
+    "lat": 51.17389,
+    "lon": 53.01148,
+    "is_region_center": false,
+    "osm_id": 435393175
+  },
+  {
+    "name": "Алтай",
+    "name_kz": "Алтай",
+    "name_en": "Altai",
+    "aliases": [
+      "Altai",
+      "Зыряновск"
+    ],
+    "region_id": "KZ-63",
+    "province": "Восточно-Казахстанская область",
+    "kind": "city",
+    "population": 35746,
+    "lat": 49.72424,
+    "lon": 84.27515,
+    "is_region_center": false,
+    "osm_id": 244198209
+  },
+  {
+    "name": "Кандыагаш",
+    "name_kz": "Қандыағаш",
+    "name_en": "Qandyağaş",
+    "aliases": [
+      "Qandyağaş",
+      "Қандыағаш"
+    ],
+    "region_id": "KZ-15",
+    "province": "Актюбинская область",
+    "kind": "town",
+    "population": 35699,
+    "lat": 49.47184,
+    "lon": 57.42246,
+    "is_region_center": false,
+    "osm_id": 254144883
+  },
+  {
+    "name": "Мангистау",
+    "name_kz": "Маңғыстау",
+    "name_en": "Mañğystau",
+    "aliases": [
+      "Mañğystau",
+      "Маңғыстау"
+    ],
+    "region_id": "KZ-47",
+    "province": "Мангистауская область",
+    "kind": "town",
+    "population": 35604,
+    "lat": 43.69232,
+    "lon": 51.30471,
+    "is_region_center": false,
+    "osm_id": 3714027780
+  },
+  {
+    "name": "Житикара",
+    "name_kz": "Жітіқара",
+    "name_en": "Jitiqara",
+    "aliases": [
+      "Jitiqara",
+      "Жітіқара"
+    ],
+    "region_id": "KZ-39",
+    "province": "Костанайская область",
+    "kind": "city",
+    "population": 35298,
+    "lat": 52.19053,
+    "lon": 61.20475,
+    "is_region_center": false,
+    "osm_id": 704397626
+  },
+  {
+    "name": "Сарань",
+    "name_kz": "Саран",
+    "name_en": "Saran",
+    "aliases": [
+      "Saran",
+      "Саран"
+    ],
+    "region_id": "KZ-35",
+    "province": "Карагандинская область",
+    "kind": "city",
+    "population": 34507,
+    "lat": 49.80171,
+    "lon": 72.82851,
+    "is_region_center": false,
+    "osm_id": 271311686
+  },
+  {
+    "name": "Ленгер",
+    "name_kz": "Леңгір",
+    "name_en": "Leñgir",
+    "aliases": [
+      "Leñgir",
+      "Леңгір"
+    ],
+    "region_id": "KZ-61",
+    "province": "Туркестанская область",
+    "kind": "town",
+    "population": 34145,
+    "lat": 42.18217,
+    "lon": 69.88732,
+    "is_region_center": false,
+    "osm_id": 244529371
+  },
+  {
+    "name": "Байконур",
+    "name_kz": "Байқоңыр",
+    "name_en": "Baikonur",
+    "aliases": [
+      "Baikonur",
+      "Байқоңыр"
+    ],
+    "region_id": "KZ-43",
+    "province": "Кызылординская область",
+    "kind": "city",
+    "population": 33817,
+    "lat": 45.6322,
+    "lon": 63.32092,
+    "is_region_center": false,
+    "osm_id": 271092323
+  },
+  {
+    "name": "Жанакорган",
+    "name_kz": "Жаңақорған",
+    "name_en": "Jañaqorğan",
+    "aliases": [
+      "Jañaqorğan",
+      "Жаңақорған"
+    ],
+    "region_id": "KZ-43",
+    "province": "Кызылординская область",
+    "kind": "town",
+    "population": 33639,
+    "lat": 43.90984,
+    "lon": 67.24946,
+    "is_region_center": false,
+    "osm_id": 469687233
+  },
+  {
+    "name": "Шардара",
+    "name_kz": "Шардара",
+    "name_en": "Şardara",
+    "aliases": [
+      "Şardara"
+    ],
+    "region_id": "KZ-61",
+    "province": "Туркестанская область",
+    "kind": "city",
+    "population": 32107,
+    "lat": 41.25586,
+    "lon": 67.97527,
+    "is_region_center": false,
+    "osm_id": 247319161
+  },
+  {
+    "name": "Атбасар",
+    "name_kz": "Атбасар",
+    "name_en": "Atbasar",
+    "aliases": [
+      "Atbasar"
+    ],
+    "region_id": "KZ-11",
+    "province": "Акмолинская область",
+    "kind": "city",
+    "population": 31434,
+    "lat": 51.80974,
+    "lon": 68.35734,
+    "is_region_center": false,
+    "osm_id": 303913171
+  },
+  {
+    "name": "Лисаковск",
+    "name_kz": "Лисаковск",
+    "name_en": "Lisakovsk",
+    "aliases": [
+      "Lisakovsk"
+    ],
+    "region_id": "KZ-39",
+    "province": "Костанайская область",
+    "kind": "city",
+    "population": 31090,
+    "lat": 52.54586,
+    "lon": 62.4892,
+    "is_region_center": false,
+    "osm_id": 248057498
+  },
+  {
+    "name": "Хромтау",
+    "name_kz": "Хромтау",
+    "name_en": "Hromtau",
+    "aliases": [
+      "Hromtau"
+    ],
+    "region_id": "KZ-15",
+    "province": "Актюбинская область",
+    "kind": "town",
+    "population": 30304,
+    "lat": 50.25782,
+    "lon": 58.43267,
+    "is_region_center": false,
+    "osm_id": 271183751
+  },
+  {
+    "name": "Текели",
+    "name_kz": "Текелі",
+    "name_en": "Tekeli",
+    "aliases": [
+      "Tekeli",
+      "Текелі"
+    ],
+    "region_id": "KZ-33",
+    "province": "Жетысуская область",
+    "kind": "city",
+    "population": 30179,
+    "lat": 44.86152,
+    "lon": 78.76294,
+    "is_region_center": false,
+    "osm_id": 242793665
+  },
+  {
+    "name": "Деркул",
+    "name_kz": "Деркөл",
+    "name_en": "Derköl",
+    "aliases": [
+      "Derköl",
+      "Деркөл"
+    ],
+    "region_id": "KZ-27",
+    "province": "Западно-Казахстанская область",
+    "kind": "town",
+    "population": 29945,
+    "lat": 51.25603,
+    "lon": 51.29272,
+    "is_region_center": false,
+    "osm_id": 1832841860
+  },
+  {
+    "name": "Абай",
+    "name_kz": "Абай",
+    "name_en": "Abay",
+    "aliases": [
+      "Abay"
+    ],
+    "region_id": "KZ-35",
+    "province": "Карагандинская область",
+    "kind": "city",
+    "population": 28722,
+    "lat": 49.6299,
+    "lon": 72.87221,
+    "is_region_center": false,
+    "osm_id": 299923721
+  },
+  {
+    "name": "Тобыл",
+    "name_kz": "Тобыл",
+    "name_en": "Tobyl",
+    "aliases": [
+      "Tobyl"
+    ],
+    "region_id": "KZ-39",
+    "province": "Костанайская область",
+    "kind": "city",
+    "population": 28586,
+    "lat": 53.20706,
+    "lon": 63.70311,
+    "is_region_center": false,
+    "osm_id": 1630461155
+  },
+  {
+    "name": "Каратау",
+    "name_kz": "Қаратау",
+    "name_en": "Karatau",
+    "aliases": [
+      "Karatau",
+      "Қаратау"
+    ],
+    "region_id": "KZ-31",
+    "province": "Жамбылская область",
+    "kind": "city",
+    "population": 28422,
+    "lat": 43.1762,
+    "lon": 70.46489,
+    "is_region_center": false,
+    "osm_id": 240707056
+  },
+  {
+    "name": "Аркалык",
+    "name_kz": "Арқалық",
+    "name_en": "Arkalyk",
+    "aliases": [
+      "Arkalyk",
+      "Арқалық"
+    ],
+    "region_id": "KZ-39",
+    "province": "Костанайская область",
+    "kind": "city",
+    "population": 28334,
+    "lat": 50.25328,
+    "lon": 66.91499,
+    "is_region_center": false,
+    "osm_id": 299982128
+  },
+  {
+    "name": "Шалкар",
+    "name_kz": "Шалқар",
+    "name_en": "Şalqar",
+    "aliases": [
+      "Şalqar",
+      "Шалқар"
+    ],
+    "region_id": "KZ-15",
+    "province": "Актюбинская область",
+    "kind": "city",
+    "population": 27971,
+    "lat": 47.8273,
+    "lon": 59.61592,
+    "is_region_center": false,
+    "osm_id": 271147978
+  },
+  {
+    "name": "Казыгурт",
+    "name_kz": "Қазығұрт",
+    "name_en": "Qazyqurt",
+    "aliases": [
+      "Qazyqurt",
+      "Қазығұрт"
+    ],
+    "region_id": "KZ-61",
+    "province": "Туркестанская область",
+    "kind": "town",
+    "population": 27539,
+    "lat": 41.7588,
+    "lon": 69.38565,
+    "is_region_center": false,
+    "osm_id": 2111854093
+  },
+  {
+    "name": "Боралдай",
+    "name_kz": "Боралдай",
+    "name_en": "Boraldai",
+    "aliases": [
+      "Boraldai"
+    ],
+    "region_id": "KZ-19",
+    "province": "Алматинская область",
+    "kind": "town",
+    "population": 27188,
+    "lat": 43.35847,
+    "lon": 76.85905,
+    "is_region_center": false,
+    "osm_id": 3726640330
+  },
+  {
+    "name": "Село имени Турара Рыскулова",
+    "name_kz": "Тұрар Рысқұлов ауылы",
+    "name_en": null,
+    "aliases": [
+      "Тұрар Рысқұлов ауылы"
+    ],
+    "region_id": "KZ-61",
+    "province": "Туркестанская область",
+    "kind": "town",
+    "population": 25722,
+    "lat": 42.53442,
+    "lon": 70.35018,
+    "is_region_center": false,
+    "osm_id": 1952574888
+  },
+  {
+    "name": "Жанатас",
+    "name_kz": "Жаңатас",
+    "name_en": null,
+    "aliases": [
+      "Жаңатас"
+    ],
+    "region_id": "KZ-31",
+    "province": "Жамбылская область",
+    "kind": "city",
+    "population": 25693,
+    "lat": 43.55675,
+    "lon": 69.72655,
+    "is_region_center": false,
+    "osm_id": 240711925
+  },
+  {
+    "name": "Алга",
+    "name_kz": "Алға",
+    "name_en": "Alğa",
+    "aliases": [
+      "Alğa",
+      "Алға"
+    ],
+    "region_id": "KZ-15",
+    "province": "Актюбинская область",
+    "kind": "town",
+    "population": 22798,
+    "lat": 49.89626,
+    "lon": 57.3303,
+    "is_region_center": false,
+    "osm_id": 471942685
+  },
+  {
+    "name": "Чунджа",
+    "name_kz": "Шонжы",
+    "name_en": null,
+    "aliases": [
+      "Шонжы"
+    ],
+    "region_id": "KZ-19",
+    "province": "Алматинская область",
+    "kind": "town",
+    "population": 22317,
+    "lat": 43.53728,
+    "lon": 79.46594,
+    "is_region_center": false,
+    "osm_id": 243693248
+  },
+  {
+    "name": "Учарал",
+    "name_kz": "Ушарал",
+    "name_en": "Üşaral",
+    "aliases": [
+      "Üşaral",
+      "Ушарал"
+    ],
+    "region_id": "KZ-33",
+    "province": "Жетысуская область",
+    "kind": "city",
+    "population": 21188,
+    "lat": 46.17612,
+    "lon": 80.95257,
+    "is_region_center": false,
+    "osm_id": 243235602
+  },
+  {
+    "name": "Атакент",
+    "name_kz": "Атакент",
+    "name_en": "Atakent",
+    "aliases": [
+      "Atakent"
+    ],
+    "region_id": "KZ-61",
+    "province": "Туркестанская область",
+    "kind": "town",
+    "population": 20900,
+    "lat": 40.84443,
+    "lon": 68.50902,
+    "is_region_center": false,
+    "osm_id": 247318653
+  },
+  {
+    "name": "Алатау",
+    "name_kz": "Алатау",
+    "name_en": "Alatau",
+    "aliases": [
+      "Alatau"
+    ],
+    "region_id": "KZ-19",
+    "province": "Алматинская область",
+    "kind": "city",
+    "population": 20418,
+    "lat": 43.67391,
+    "lon": 77.10797,
+    "is_region_center": false,
+    "osm_id": 457864354
+  },
+  {
+    "name": "Жосалы",
+    "name_kz": "Жосалы",
+    "name_en": "Zhosaly",
+    "aliases": [
+      "Zhosaly"
+    ],
+    "region_id": "KZ-43",
+    "province": "Кызылординская область",
+    "kind": "town",
+    "population": 20269,
+    "lat": 45.48402,
+    "lon": 64.0849,
+    "is_region_center": false,
+    "osm_id": 271100134
+  },
+  {
+    "name": "Шолаккорган",
+    "name_kz": "Шолаққорған",
+    "name_en": null,
+    "aliases": [
+      "Шолаққорған"
+    ],
+    "region_id": "KZ-61",
+    "province": "Туркестанская область",
+    "kind": "town",
+    "population": 19704,
+    "lat": 43.7667,
+    "lon": 69.17688,
+    "is_region_center": false,
+    "osm_id": 1496102346
+  },
+  {
+    "name": "Карабулак",
+    "name_kz": "Қарабұлақ",
+    "name_en": "Qarabulaq",
+    "aliases": [
+      "Qarabulaq",
+      "Қарабұлақ"
+    ],
+    "region_id": "KZ-33",
+    "province": "Жетысуская область",
+    "kind": "town",
+    "population": 19661,
+    "lat": 44.90817,
+    "lon": 78.49119,
+    "is_region_center": false,
+    "osm_id": 242792776
+  },
+  {
+    "name": "Уштобе",
+    "name_kz": "Үштөбе",
+    "name_en": "Ushtobe",
+    "aliases": [
+      "Ushtobe",
+      "Үштөбе"
+    ],
+    "region_id": "KZ-33",
+    "province": "Жетысуская область",
+    "kind": "city",
+    "population": 19243,
+    "lat": 45.25138,
+    "lon": 77.98381,
+    "is_region_center": false,
+    "osm_id": 534084948
+  },
+  {
+    "name": "Зайсан",
+    "name_kz": "Зайсан",
+    "name_en": "Zaisan",
+    "aliases": [
+      "Zaisan"
+    ],
+    "region_id": "KZ-63",
+    "province": "Восточно-Казахстанская область",
+    "kind": "city",
+    "population": 18422,
+    "lat": 47.46723,
+    "lon": 84.87182,
+    "is_region_center": false,
+    "osm_id": 2623402075
+  },
+  {
+    "name": "Шемонаиха",
+    "name_kz": "Шемонаиха",
+    "name_en": "Şemonaiha",
+    "aliases": [
+      "Şemonaiha"
+    ],
+    "region_id": "KZ-63",
+    "province": "Восточно-Казахстанская область",
+    "kind": "city",
+    "population": 18365,
+    "lat": 50.62872,
+    "lon": 81.91555,
+    "is_region_center": false,
+    "osm_id": 311797652
+  },
+  {
+    "name": "Макинск",
+    "name_kz": "Макинск",
+    "name_en": "Makinsk",
+    "aliases": [
+      "Makinsk"
+    ],
+    "region_id": "KZ-11",
+    "province": "Акмолинская область",
+    "kind": "city",
+    "population": 18098,
+    "lat": 52.63287,
+    "lon": 70.41821,
+    "is_region_center": false,
+    "osm_id": 453920694
+  },
+  {
+    "name": "Саркан",
+    "name_kz": "Сарқан",
+    "name_en": "Sarqan",
+    "aliases": [
+      "Sarqan",
+      "Сарқан"
+    ],
+    "region_id": "KZ-33",
+    "province": "Жетысуская область",
+    "kind": "city",
+    "population": 17939,
+    "lat": 45.41092,
+    "lon": 79.91552,
+    "is_region_center": false,
+    "osm_id": 243324293
+  },
+  {
+    "name": "Жанаарка",
+    "name_kz": "Жаңаарқа",
+    "name_en": "Jañaarqa",
+    "aliases": [
+      "Jañaarqa",
+      "Жаңаарқа"
+    ],
+    "region_id": "KZ-62",
+    "province": "Улытауская область",
+    "kind": "town",
+    "population": 17528,
+    "lat": 48.68617,
+    "lon": 71.63559,
+    "is_region_center": false,
+    "osm_id": 271293913
+  },
+  {
+    "name": "Мырзакент",
+    "name_kz": "Мырзакент",
+    "name_en": null,
+    "aliases": [],
+    "region_id": "KZ-61",
+    "province": "Туркестанская область",
+    "kind": "town",
+    "population": 17487,
+    "lat": 40.6655,
+    "lon": 68.54999,
+    "is_region_center": false,
+    "osm_id": 247318736
+  },
+  {
+    "name": "Балпык-Би",
+    "name_kz": "Балпық би",
+    "name_en": "Balpıq bï",
+    "aliases": [
+      "Balpıq bï",
+      "Балпық би"
+    ],
+    "region_id": "KZ-33",
+    "province": "Жетысуская область",
+    "kind": "town",
+    "population": 17224,
+    "lat": 44.90132,
+    "lon": 78.23307,
+    "is_region_center": false,
+    "osm_id": 243487112
+  },
+  {
+    "name": "Мерке",
+    "name_kz": "Меркі",
+    "name_en": "Merki",
+    "aliases": [
+      "Merki",
+      "Меркі"
+    ],
+    "region_id": "KZ-31",
+    "province": "Жамбылская область",
+    "kind": "town",
+    "population": 17133,
+    "lat": 42.86514,
+    "lon": 73.18611,
+    "is_region_center": false,
+    "osm_id": 244526819
+  },
+  {
+    "name": "Урджар",
+    "name_kz": "Үржар",
+    "name_en": "Ürjar",
+    "aliases": [
+      "Ürjar",
+      "Үржар"
+    ],
+    "region_id": "KZ-10",
+    "province": "Абайская область",
+    "kind": "town",
+    "population": 17096,
+    "lat": 47.09601,
+    "lon": 81.62142,
+    "is_region_center": false,
+    "osm_id": 243465319
+  },
+  {
+    "name": "Шетпе",
+    "name_kz": "Шетпе",
+    "name_en": "Şetpe",
+    "aliases": [
+      "Şetpe"
+    ],
+    "region_id": "KZ-47",
+    "province": "Мангистауская область",
+    "kind": "town",
+    "population": 17078,
+    "lat": 44.14131,
+    "lon": 52.15564,
+    "is_region_center": false,
+    "osm_id": 476263135
+  },
+  {
+    "name": "Индерборский",
+    "name_kz": "Индербор",
+    "name_en": "Inderbor",
+    "aliases": [
+      "Inderbor",
+      "Индербор"
+    ],
+    "region_id": "KZ-23",
+    "province": "Атырауская область",
+    "kind": "town",
+    "population": 16117,
+    "lat": 48.56102,
+    "lon": 51.74788,
+    "is_region_center": false,
+    "osm_id": 253725345
+  },
+  {
+    "name": "Акколь",
+    "name_kz": "Ақкөл",
+    "name_en": "Aqköl",
+    "aliases": [
+      "Aqköl",
+      "Ақкөл"
+    ],
+    "region_id": "KZ-11",
+    "province": "Акмолинская область",
+    "kind": "city",
+    "population": 16017,
+    "lat": 51.99567,
+    "lon": 70.95601,
+    "is_region_center": false,
+    "osm_id": 2567720890
+  },
+  {
+    "name": "Жалагаш",
+    "name_kz": "Жалағаш",
+    "name_en": "Zhalagash",
+    "aliases": [
+      "Zhalagash",
+      "Жалағаш"
+    ],
+    "region_id": "KZ-43",
+    "province": "Кызылординская область",
+    "kind": "town",
+    "population": 15725,
+    "lat": 45.0809,
+    "lon": 64.68092,
+    "is_region_center": false,
+    "osm_id": 2264861871
+  },
+  {
+    "name": "село имени Бауыржан Момышулы",
+    "name_kz": "Бауыржан Момышұлы ауылы",
+    "name_en": null,
+    "aliases": [
+      "Бауыржан Момышұлы ауылы"
+    ],
+    "region_id": "KZ-31",
+    "province": "Жамбылская область",
+    "kind": "town",
+    "population": 15436,
+    "lat": 42.6184,
+    "lon": 70.76952,
+    "is_region_center": false,
+    "osm_id": 240614298
+  },
+  {
+    "name": "Жибек Жолы",
+    "name_kz": "Жібек жолы",
+    "name_en": "Jıbek joly",
+    "aliases": [
+      "Jıbek joly",
+      "Жібек жолы"
+    ],
+    "region_id": "KZ-19",
+    "province": "Алматинская область",
+    "kind": "town",
+    "population": 15163,
+    "lat": 43.37045,
+    "lon": 76.62443,
+    "is_region_center": false,
+    "osm_id": 243997970
+  },
+  {
+    "name": "Сарыозек",
+    "name_kz": "Сарыөзек",
+    "name_en": "Sarıözek",
+    "aliases": [
+      "Sarıözek",
+      "Сарыөзек"
+    ],
+    "region_id": "KZ-33",
+    "province": "Жетысуская область",
+    "kind": "town",
+    "population": 15024,
+    "lat": 44.36239,
+    "lon": 77.97459,
+    "is_region_center": false,
+    "osm_id": 242415806
+  },
+  {
+    "name": "Курмангазы",
+    "name_kz": "Құрманғазы",
+    "name_en": "Qūrmanğazy",
+    "aliases": [
+      "Qūrmanğazy",
+      "Құрманғазы"
+    ],
+    "region_id": "KZ-23",
+    "province": "Атырауская область",
+    "kind": "town",
+    "population": 14592,
+    "lat": 46.60468,
+    "lon": 49.27018,
+    "is_region_center": false,
+    "osm_id": 11019835973
+  },
+  {
+    "name": "Шубаркудук",
+    "name_kz": "Шұбарқұдық",
+    "name_en": "Şūbarqūdyq",
+    "aliases": [
+      "Şūbarqūdyq",
+      "Шұбарқұдық"
+    ],
+    "region_id": "KZ-15",
+    "province": "Актюбинская область",
+    "kind": "town",
+    "population": 14348,
+    "lat": 49.14315,
+    "lon": 56.48203,
+    "is_region_center": false,
+    "osm_id": 254143253
+  },
+  {
+    "name": "Асыката",
+    "name_kz": "Асықата",
+    "name_en": null,
+    "aliases": [
+      "Асықата"
+    ],
+    "region_id": "KZ-61",
+    "province": "Туркестанская область",
+    "kind": "town",
+    "population": 14245,
+    "lat": 40.89647,
+    "lon": 68.36668,
+    "is_region_center": false,
+    "osm_id": 5644287102
+  },
+  {
+    "name": "Макат",
+    "name_kz": "Мақат",
+    "name_en": "Maqat",
+    "aliases": [
+      "Maqat",
+      "Мақат"
+    ],
+    "region_id": "KZ-23",
+    "province": "Атырауская область",
+    "kind": "town",
+    "population": 13939,
+    "lat": 47.64715,
+    "lon": 53.35053,
+    "is_region_center": false,
+    "osm_id": 253725107
+  },
+  {
+    "name": "Доссор",
+    "name_kz": "Доссор",
+    "name_en": "Dossor",
+    "aliases": [
+      "Dossor"
+    ],
+    "region_id": "KZ-23",
+    "province": "Атырауская область",
+    "kind": "town",
+    "population": 13806,
+    "lat": 47.52277,
+    "lon": 52.97944,
+    "is_region_center": false,
+    "osm_id": 253730815
+  },
+  {
+    "name": "Аса",
+    "name_kz": "Аса",
+    "name_en": "Asa",
+    "aliases": [
+      "Asa"
+    ],
+    "region_id": "KZ-31",
+    "province": "Жамбылская область",
+    "kind": "town",
+    "population": 13164,
+    "lat": 43.03605,
+    "lon": 71.15106,
+    "is_region_center": false,
+    "osm_id": 2434826360
+  },
+  {
+    "name": "Тайынша",
+    "name_kz": "Тайынша",
+    "name_en": "Taiynsha",
+    "aliases": [
+      "Taiynsha"
+    ],
+    "region_id": "KZ-59",
+    "province": "Северо-Казахстанская область",
+    "kind": "city",
+    "population": 13037,
+    "lat": 53.84774,
+    "lon": 69.76144,
+    "is_region_center": false,
+    "osm_id": 525492535
+  },
+  {
+    "name": "Агадырь",
+    "name_kz": "Ақадыр",
+    "name_en": null,
+    "aliases": [
+      "Ақадыр"
+    ],
+    "region_id": "KZ-35",
+    "province": "Карагандинская область",
+    "kind": "town",
+    "population": 13000,
+    "lat": 48.25907,
+    "lon": 72.85496,
+    "is_region_center": false,
+    "osm_id": 254313000
+  },
+  {
+    "name": "Эмба",
+    "name_kz": "Ембі",
+    "name_en": "Embı",
+    "aliases": [
+      "Embı",
+      "Ембі"
+    ],
+    "region_id": "KZ-15",
+    "province": "Актюбинская область",
+    "kind": "town",
+    "population": 12998,
+    "lat": 48.83376,
+    "lon": 58.14537,
+    "is_region_center": false,
+    "osm_id": 271125900
+  },
+  {
+    "name": "Ерейментау",
+    "name_kz": "Ерейментау",
+    "name_en": "Ereymentaw",
+    "aliases": [
+      "Ereymentaw"
+    ],
+    "region_id": "KZ-11",
+    "province": "Акмолинская область",
+    "kind": "city",
+    "population": 12652,
+    "lat": 51.61988,
+    "lon": 73.10335,
+    "is_region_center": false,
+    "osm_id": 298109357
+  },
+  {
+    "name": "Маканчи",
+    "name_kz": "Мақаншы",
+    "name_en": null,
+    "aliases": [
+      "Мақаншы"
+    ],
+    "region_id": "KZ-10",
+    "province": "Абайская область",
+    "kind": "town",
+    "population": 11929,
+    "lat": 46.79039,
+    "lon": 82.02063,
+    "is_region_center": false,
+    "osm_id": 243464146
+  },
+  {
+    "name": "Теренозек",
+    "name_kz": "Тереңөзек",
+    "name_en": "Terenozek",
+    "aliases": [
+      "Terenozek",
+      "Тереңөзек"
+    ],
+    "region_id": "KZ-43",
+    "province": "Кызылординская область",
+    "kind": "town",
+    "population": 11647,
+    "lat": 45.04734,
+    "lon": 64.98439,
+    "is_region_center": false,
+    "osm_id": 3615728204
+  },
+  {
+    "name": "Курык",
+    "name_kz": "Құрық",
+    "name_en": "Qūryq",
+    "aliases": [
+      "Qūryq",
+      "Құрық"
+    ],
+    "region_id": "KZ-47",
+    "province": "Мангистауская область",
+    "kind": "town",
+    "population": 11565,
+    "lat": 43.17666,
+    "lon": 51.67968,
+    "is_region_center": false,
+    "osm_id": 253075983
+  },
+  {
+    "name": "Есиль",
+    "name_kz": "Есіл",
+    "name_en": "Esil",
+    "aliases": [
+      "Esil",
+      "Есіл"
+    ],
+    "region_id": "KZ-11",
+    "province": "Акмолинская область",
+    "kind": "town",
+    "population": 11484,
+    "lat": 51.96073,
+    "lon": 66.40488,
+    "is_region_center": false,
+    "osm_id": 303908697
+  },
+  {
+    "name": "Карауылкелды",
+    "name_kz": "Қарауылкелді",
+    "name_en": "Qarauylkeldı",
+    "aliases": [
+      "Qarauylkeldı",
+      "Қарауылкелді"
+    ],
+    "region_id": "KZ-15",
+    "province": "Актюбинская область",
+    "kind": "town",
+    "population": 11349,
+    "lat": 48.69308,
+    "lon": 55.87865,
+    "is_region_center": false,
+    "osm_id": 254139962
+  },
+  {
+    "name": "Приозёрск",
+    "name_kz": "Приозёрск",
+    "name_en": "Priozersk",
+    "aliases": [
+      "Priozersk"
+    ],
+    "region_id": "KZ-35",
+    "province": "Карагандинская область",
+    "kind": "city",
+    "population": 11153,
+    "lat": 46.03082,
+    "lon": 73.69252,
+    "is_region_center": false,
+    "osm_id": 271311323
+  },
+  {
+    "name": "Махамбет",
+    "name_kz": "Махамбет",
+    "name_en": "Mahambet",
+    "aliases": [
+      "Mahambet"
+    ],
+    "region_id": "KZ-23",
+    "province": "Атырауская область",
+    "kind": "town",
+    "population": 11072,
+    "lat": 47.67558,
+    "lon": 51.58654,
+    "is_region_center": false,
+    "osm_id": 253729284
+  },
+  {
+    "name": "Карабалык",
+    "name_kz": "Қарабалық",
+    "name_en": "Qarabalıq",
+    "aliases": [
+      "Qarabalıq",
+      "Қарабалық"
+    ],
+    "region_id": "KZ-39",
+    "province": "Костанайская область",
+    "kind": "town",
+    "population": 10966,
+    "lat": 53.74818,
+    "lon": 62.06251,
+    "is_region_center": false,
+    "osm_id": 303821397
+  },
+  {
+    "name": "Мартук",
+    "name_kz": "Мәртөк",
+    "name_en": "Märtök",
+    "aliases": [
+      "Märtök",
+      "Мәртөк"
+    ],
+    "region_id": "KZ-15",
+    "province": "Актюбинская область",
+    "kind": "town",
+    "population": 10760,
+    "lat": 50.74432,
+    "lon": 56.49958,
+    "is_region_center": false,
+    "osm_id": 1456004422
+  },
+  {
+    "name": "Калбатау",
+    "name_kz": "Қалбатау",
+    "name_en": "Qalbatau",
+    "aliases": [
+      "Qalbatau",
+      "Қалбатау"
+    ],
+    "region_id": "KZ-10",
+    "province": "Абайская область",
+    "kind": "town",
+    "population": 10753,
+    "lat": 49.33001,
+    "lon": 81.57348,
+    "is_region_center": false,
+    "osm_id": 244118007
+  },
+  {
+    "name": "Шаульдер",
+    "name_kz": "Шәуілдір",
+    "name_en": "Shauildir",
+    "aliases": [
+      "Shauildir",
+      "Шәуілдір"
+    ],
+    "region_id": "KZ-61",
+    "province": "Туркестанская область",
+    "kind": "town",
+    "population": 10503,
+    "lat": 42.78697,
+    "lon": 68.37092,
+    "is_region_center": false,
+    "osm_id": 1515019354
+  },
+  {
+    "name": "Курчатов",
+    "name_kz": "Курчатов",
+    "name_en": "Kurchatov",
+    "aliases": [
+      "Kurchatov"
+    ],
+    "region_id": "KZ-10",
+    "province": "Абайская область",
+    "kind": "city",
+    "population": 10348,
+    "lat": 50.75653,
+    "lon": 78.54867,
+    "is_region_center": false,
+    "osm_id": 377600470
+  },
+  {
+    "name": "Топар",
+    "name_kz": "Топар",
+    "name_en": "Topar",
+    "aliases": [
+      "Topar"
+    ],
+    "region_id": "KZ-35",
+    "province": "Карагандинская область",
+    "kind": "town",
+    "population": 10000,
+    "lat": 49.51729,
+    "lon": 72.83042,
+    "is_region_center": false,
+    "osm_id": 301761659
+  },
+  {
+    "name": "Качар",
+    "name_kz": "Қашар",
+    "name_en": null,
+    "aliases": [
+      "Қашар"
+    ],
+    "region_id": "KZ-39",
+    "province": "Костанайская область",
+    "kind": "town",
+    "population": 9928,
+    "lat": 53.36943,
+    "lon": 62.86927,
+    "is_region_center": false,
+    "osm_id": 914021120
+  },
+  {
+    "name": "Жансугуров",
+    "name_kz": "Жансүгіров",
+    "name_en": null,
+    "aliases": [
+      "Жансүгіров"
+    ],
+    "region_id": "KZ-33",
+    "province": "Жетысуская область",
+    "kind": "town",
+    "population": 9913,
+    "lat": 45.39831,
+    "lon": 79.5086,
+    "is_region_center": false,
+    "osm_id": 243325633
+  },
+  {
+    "name": "Атамекен",
+    "name_kz": "Атамекен",
+    "name_en": "Atameken",
+    "aliases": [
+      "Atameken"
+    ],
+    "region_id": "KZ-55",
+    "province": "Павлодарская область",
+    "kind": "town",
+    "population": 9381,
+    "lat": 52.26037,
+    "lon": 76.78717,
+    "is_region_center": false,
+    "osm_id": 534085666
+  },
+  {
+    "name": "Майкаин",
+    "name_kz": "Майқайың",
+    "name_en": null,
+    "aliases": [
+      "Майқайың"
+    ],
+    "region_id": "KZ-55",
+    "province": "Павлодарская область",
+    "kind": "town",
+    "population": 9224,
+    "lat": 51.45943,
+    "lon": 75.79791,
+    "is_region_center": false,
+    "osm_id": 3069778014
+  },
+  {
+    "name": "Каркаралинск",
+    "name_kz": "Қарқаралы",
+    "name_en": "Qarqaraly",
+    "aliases": [
+      "Qarqaraly",
+      "Қарқаралы"
+    ],
+    "region_id": "KZ-35",
+    "province": "Карагандинская область",
+    "kind": "town",
+    "population": 9134,
+    "lat": 49.41241,
+    "lon": 75.47045,
+    "is_region_center": false,
+    "osm_id": 271309842
+  },
+  {
+    "name": "Жайрем",
+    "name_kz": "Жәйрем",
+    "name_en": "Jäirem",
+    "aliases": [
+      "Jäirem",
+      "Жәйрем"
+    ],
+    "region_id": "KZ-62",
+    "province": "Улытауская область",
+    "kind": "town",
+    "population": 9133,
+    "lat": 48.33568,
+    "lon": 70.161,
+    "is_region_center": false,
+    "osm_id": 301717251
+  },
+  {
+    "name": "Форт-Шевченко",
+    "name_kz": "Форт-Шевченко",
+    "name_en": "Fort-Şevtşenko",
+    "aliases": [
+      "Fort-Şevtşenko"
+    ],
+    "region_id": "KZ-47",
+    "province": "Мангистауская область",
+    "kind": "city",
+    "population": 8778,
+    "lat": 44.50856,
+    "lon": 50.26193,
+    "is_region_center": false,
+    "osm_id": 98054566
+  },
+  {
+    "name": "Сарыколь",
+    "name_kz": "Сарыкөл",
+    "name_en": null,
+    "aliases": [
+      "Сарыкөл"
+    ],
+    "region_id": "KZ-39",
+    "province": "Костанайская область",
+    "kind": "town",
+    "population": 8738,
+    "lat": 53.31736,
+    "lon": 65.54684,
+    "is_region_center": false,
+    "osm_id": 533338426
+  },
+  {
+    "name": "Булаево",
+    "name_kz": "Булаев",
+    "name_en": "Bulaev",
+    "aliases": [
+      "Bulaev",
+      "Булаев"
+    ],
+    "region_id": "KZ-59",
+    "province": "Северо-Казахстанская область",
+    "kind": "city",
+    "population": 8550,
+    "lat": 54.89665,
+    "lon": 70.44719,
+    "is_region_center": false,
+    "osm_id": 1467100075
+  },
+  {
+    "name": "Кеген",
+    "name_kz": "Кеген",
+    "name_en": "Kegen",
+    "aliases": [
+      "Kegen"
+    ],
+    "region_id": "KZ-19",
+    "province": "Алматинская область",
+    "kind": "town",
+    "population": 8456,
+    "lat": 43.0217,
+    "lon": 79.22316,
+    "is_region_center": false,
+    "osm_id": 243723775
+  },
+  {
+    "name": "Каражал",
+    "name_kz": "Қаражал",
+    "name_en": "Qarajal",
+    "aliases": [
+      "Qarajal",
+      "Қаражал"
+    ],
+    "region_id": "KZ-62",
+    "province": "Улытауская область",
+    "kind": "city",
+    "population": 8180,
+    "lat": 48.0045,
+    "lon": 70.79362,
+    "is_region_center": false,
+    "osm_id": 271292059
+  },
+  {
+    "name": "Сергеевка",
+    "name_kz": "Сергеевка",
+    "name_en": "Sergeyevka",
+    "aliases": [
+      "Sergeyevka"
+    ],
+    "region_id": "KZ-59",
+    "province": "Северо-Казахстанская область",
+    "kind": "city",
+    "population": 8112,
+    "lat": 53.88095,
+    "lon": 67.41586,
+    "is_region_center": false,
+    "osm_id": 411850771
+  },
+  {
+    "name": "Иртышск",
+    "name_kz": "Ертіс",
+    "name_en": "Ertis",
+    "aliases": [
+      "Ertis",
+      "Ертіс"
+    ],
+    "region_id": "KZ-55",
+    "province": "Павлодарская область",
+    "kind": "town",
+    "population": 7965,
+    "lat": 53.3326,
+    "lon": 75.45842,
+    "is_region_center": false,
+    "osm_id": 481045720
+  },
+  {
+    "name": "Жезкент",
+    "name_kz": "Жезкент",
+    "name_en": null,
+    "aliases": [],
+    "region_id": "KZ-10",
+    "province": "Абайская область",
+    "kind": "town",
+    "population": 7917,
+    "lat": 50.92204,
+    "lon": 81.39574,
+    "is_region_center": false,
+    "osm_id": 2042648689
+  },
+  {
+    "name": "Аршалы",
+    "name_kz": "Аршалы",
+    "name_en": "Arshaly",
+    "aliases": [
+      "Arshaly"
+    ],
+    "region_id": "KZ-11",
+    "province": "Акмолинская область",
+    "kind": "town",
+    "population": 7909,
+    "lat": 50.83041,
+    "lon": 72.18116,
+    "is_region_center": false,
+    "osm_id": 1799615339
+  },
+  {
+    "name": "Шахан",
+    "name_kz": "Шахан",
+    "name_en": null,
+    "aliases": [],
+    "region_id": "KZ-35",
+    "province": "Карагандинская область",
+    "kind": "town",
+    "population": 7494,
+    "lat": 49.81869,
+    "lon": 72.65481,
+    "is_region_center": false,
+    "osm_id": 301715316
+  },
+  {
+    "name": "Казалы",
+    "name_kz": "Қазалы",
+    "name_en": "Kazaly",
+    "aliases": [
+      "Kazaly",
+      "Қазалы"
+    ],
+    "region_id": "KZ-43",
+    "province": "Кызылординская область",
+    "kind": "city",
+    "population": 7462,
+    "lat": 45.76255,
+    "lon": 62.10118,
+    "is_region_center": false,
+    "osm_id": 271085442
+  },
+  {
+    "name": "Село Темирбека Жургенова",
+    "name_kz": "Темірбек Жүргенов ауылы",
+    "name_en": "Temırbek Jürgenov",
+    "aliases": [
+      "Temırbek Jürgenov",
+      "Темірбек Жүргенов ауылы"
+    ],
+    "region_id": "KZ-15",
+    "province": "Актюбинская область",
+    "kind": "town",
+    "population": 7292,
+    "lat": 50.43091,
+    "lon": 60.49662,
+    "is_region_center": false,
+    "osm_id": 1905127946
+  },
+  {
+    "name": "Аксуат",
+    "name_kz": "Ақсуат",
+    "name_en": "Aqsuat",
+    "aliases": [
+      "Aqsuat",
+      "Ақсуат"
+    ],
+    "region_id": "KZ-10",
+    "province": "Абайская область",
+    "kind": "town",
+    "population": 7219,
+    "lat": 47.762,
+    "lon": 82.80614,
+    "is_region_center": false,
+    "osm_id": 534087995
+  },
+  {
+    "name": "Державинск",
+    "name_kz": "Державинск",
+    "name_en": null,
+    "aliases": [],
+    "region_id": "KZ-11",
+    "province": "Акмолинская область",
+    "kind": "city",
+    "population": 7097,
+    "lat": 51.09908,
+    "lon": 66.31385,
+    "is_region_center": false,
+    "osm_id": 410079696
+  },
+  {
+    "name": "Серебрянск",
+    "name_kz": "Серебрянск",
+    "name_en": "Serebriansk",
+    "aliases": [
+      "Serebriansk"
+    ],
+    "region_id": "KZ-63",
+    "province": "Восточно-Казахстанская область",
+    "kind": "city",
+    "population": 6989,
+    "lat": 49.68461,
+    "lon": 83.29709,
+    "is_region_center": false,
+    "osm_id": 521734849
+  },
+  {
+    "name": "Жана Каратон",
+    "name_kz": "Жаңа Қаратон",
+    "name_en": "Jaña Qaraton",
+    "aliases": [
+      "Jaña Qaraton",
+      "Жаңа Қаратон"
+    ],
+    "region_id": "KZ-23",
+    "province": "Атырауская область",
+    "kind": "town",
+    "population": 6966,
+    "lat": 46.93156,
+    "lon": 53.87419,
+    "is_region_center": false,
+    "osm_id": 2378836174
+  },
+  {
+    "name": "Мамлютка",
+    "name_kz": "Мамлют",
+    "name_en": "Mamlyut",
+    "aliases": [
+      "Mamlyut",
+      "Мамлют"
+    ],
+    "region_id": "KZ-59",
+    "province": "Северо-Казахстанская область",
+    "kind": "city",
+    "population": 6944,
+    "lat": 54.9377,
+    "lon": 68.53865,
+    "is_region_center": false,
+    "osm_id": 1298132253
+  },
+  {
+    "name": "Кушмурун",
+    "name_kz": "Құсмұрын",
+    "name_en": "Qusmuryn",
+    "aliases": [
+      "Qusmuryn",
+      "Құсмұрын"
+    ],
+    "region_id": "KZ-39",
+    "province": "Костанайская область",
+    "kind": "town",
+    "population": 6795,
+    "lat": 52.4518,
+    "lon": 64.6152,
+    "is_region_center": false,
+    "osm_id": 1338974760
+  },
+  {
+    "name": "Шар",
+    "name_kz": "Шар",
+    "name_en": "Charsk",
+    "aliases": [
+      "Charsk"
+    ],
+    "region_id": "KZ-10",
+    "province": "Абайская область",
+    "kind": "city",
+    "population": 6719,
+    "lat": 49.58322,
+    "lon": 81.05063,
+    "is_region_center": false,
+    "osm_id": 3856065876
+  },
+  {
+    "name": "Уил",
+    "name_kz": "Ойыл",
+    "name_en": "Oiyl",
+    "aliases": [
+      "Oiyl",
+      "Ойыл"
+    ],
+    "region_id": "KZ-15",
+    "province": "Актюбинская область",
+    "kind": "town",
+    "population": 6579,
+    "lat": 49.07249,
+    "lon": 54.66274,
+    "is_region_center": false,
+    "osm_id": 1801694073
+  },
+  {
+    "name": "Шортанды",
+    "name_kz": "Шортанды",
+    "name_en": null,
+    "aliases": [],
+    "region_id": "KZ-11",
+    "province": "Акмолинская область",
+    "kind": "town",
+    "population": 6407,
+    "lat": 51.69743,
+    "lon": 70.98716,
+    "is_region_center": false,
+    "osm_id": 732623217
+  },
+  {
+    "name": "Ботакара",
+    "name_kz": "Ботақара",
+    "name_en": null,
+    "aliases": [
+      "Ботақара"
+    ],
+    "region_id": "KZ-35",
+    "province": "Карагандинская область",
+    "kind": "town",
+    "population": 6387,
+    "lat": 50.05969,
+    "lon": 73.71671,
+    "is_region_center": false,
+    "osm_id": 546773876
+  },
+  {
+    "name": "Баканас",
+    "name_kz": "Бақанас",
+    "name_en": "Baqanas",
+    "aliases": [
+      "Baqanas",
+      "Бақанас"
+    ],
+    "region_id": "KZ-19",
+    "province": "Алматинская область",
+    "kind": "town",
+    "population": 6218,
+    "lat": 44.80781,
+    "lon": 76.27463,
+    "is_region_center": false,
+    "osm_id": 1844646380
+  },
+  {
+    "name": "Круглоозёрное",
+    "name_kz": "Круглоозёрное",
+    "name_en": "Krugloozernoe",
+    "aliases": [
+      "Krugloozernoe"
+    ],
+    "region_id": "KZ-27",
+    "province": "Западно-Казахстанская область",
+    "kind": "town",
+    "population": 6187,
+    "lat": 51.07827,
+    "lon": 51.28223,
+    "is_region_center": false,
+    "osm_id": 2712315210
+  },
+  {
+    "name": "Тобол",
+    "name_kz": "Тобыл",
+    "name_en": null,
+    "aliases": [
+      "Тобыл"
+    ],
+    "region_id": "KZ-39",
+    "province": "Костанайская область",
+    "kind": "town",
+    "population": 6186,
+    "lat": 52.69364,
+    "lon": 62.59477,
+    "is_region_center": false,
+    "osm_id": 1642224535
+  },
+  {
+    "name": "Молодёжный",
+    "name_kz": "Молодёжный",
+    "name_en": null,
+    "aliases": [],
+    "region_id": "KZ-35",
+    "province": "Карагандинская область",
+    "kind": "town",
+    "population": 6139,
+    "lat": 50.72226,
+    "lon": 73.5313,
+    "is_region_center": false,
+    "osm_id": 1238308608
+  },
+  {
+    "name": "Кабанбай",
+    "name_kz": "Қабанбай",
+    "name_en": "Kabanbay",
+    "aliases": [
+      "Kabanbay",
+      "Қабанбай"
+    ],
+    "region_id": "KZ-33",
+    "province": "Жетысуская область",
+    "kind": "town",
+    "population": 6049,
+    "lat": 45.83427,
+    "lon": 80.63084,
+    "is_region_center": false,
+    "osm_id": 244109105
+  },
+  {
+    "name": "Кобда",
+    "name_kz": "Қобда",
+    "name_en": "Qobda",
+    "aliases": [
+      "Qobda",
+      "Қобда"
+    ],
+    "region_id": "KZ-15",
+    "province": "Актюбинская область",
+    "kind": "town",
+    "population": 6029,
+    "lat": 50.15218,
+    "lon": 55.66792,
+    "is_region_center": false,
+    "osm_id": 521722378
+  },
+  {
+    "name": "Кенкияк",
+    "name_kz": "Кеңқияқ",
+    "name_en": "Keñqiiaq",
+    "aliases": [
+      "Keñqiiaq",
+      "Кеңқияқ"
+    ],
+    "region_id": "KZ-15",
+    "province": "Актюбинская область",
+    "kind": "town",
+    "population": 6015,
+    "lat": 48.60747,
+    "lon": 57.11388,
+    "is_region_center": false,
+    "osm_id": 5385728484
+  },
+  {
+    "name": "Бадамша",
+    "name_kz": "Бадамша",
+    "name_en": "Badamşa",
+    "aliases": [
+      "Badamşa"
+    ],
+    "region_id": "KZ-15",
+    "province": "Актюбинская область",
+    "kind": "town",
+    "population": 5967,
+    "lat": 50.56296,
+    "lon": 58.28315,
+    "is_region_center": false,
+    "osm_id": 1801622013
+  },
+  {
+    "name": "Нарынкол",
+    "name_kz": "Нарынқол",
+    "name_en": "Narynkol",
+    "aliases": [
+      "Narynkol",
+      "Нарынқол"
+    ],
+    "region_id": "KZ-19",
+    "province": "Алматинская область",
+    "kind": "town",
+    "population": 5944,
+    "lat": 42.72928,
+    "lon": 80.17759,
+    "is_region_center": false,
+    "osm_id": 243741613
+  },
+  {
+    "name": "Бестобе",
+    "name_kz": "Бестөбе",
+    "name_en": null,
+    "aliases": [
+      "Бестөбе"
+    ],
+    "region_id": "KZ-11",
+    "province": "Акмолинская область",
+    "kind": "town",
+    "population": 5782,
+    "lat": 52.49803,
+    "lon": 73.09695,
+    "is_region_center": false,
+    "osm_id": 2598879179
+  },
+  {
+    "name": "Солнечный",
+    "name_kz": "Солнечный",
+    "name_en": null,
+    "aliases": [],
+    "region_id": "KZ-55",
+    "province": "Павлодарская область",
+    "kind": "town",
+    "population": 5739,
+    "lat": 52.03487,
+    "lon": 75.46139,
+    "is_region_center": false,
+    "osm_id": 2760429033
+  },
+  {
+    "name": "Актау",
+    "name_kz": "Ақтау",
+    "name_en": "Aqtau",
+    "aliases": [
+      "Aqtau",
+      "Ақтау",
+      "Шевченко"
+    ],
+    "region_id": "KZ-35",
+    "province": "Карагандинская область",
+    "kind": "town",
+    "population": 5690,
+    "lat": 50.21913,
+    "lon": 73.0613,
+    "is_region_center": false,
+    "osm_id": 299978968
+  },
+  {
+    "name": "Ават",
+    "name_kz": "Ават",
+    "name_en": null,
+    "aliases": [],
+    "region_id": "KZ-19",
+    "province": "Алматинская область",
+    "kind": "town",
+    "population": 5670,
+    "lat": 43.40181,
+    "lon": 77.27035,
+    "is_region_center": false,
+    "osm_id": 432195513
+  },
+  {
+    "name": "Ульба",
+    "name_kz": "Үлбі",
+    "name_en": "Ülbı",
+    "aliases": [
+      "Ülbı",
+      "Үлбі"
+    ],
+    "region_id": "KZ-63",
+    "province": "Восточно-Казахстанская область",
+    "kind": "town",
+    "population": 4607,
+    "lat": 50.26516,
+    "lon": 83.37774,
+    "is_region_center": false,
+    "osm_id": 521372223
+  },
+  {
+    "name": "Отар",
+    "name_kz": "Отар",
+    "name_en": "Otar",
+    "aliases": [
+      "Otar"
+    ],
+    "region_id": "KZ-31",
+    "province": "Жамбылская область",
+    "kind": "town",
+    "population": 4540,
+    "lat": 43.53613,
+    "lon": 75.21603,
+    "is_region_center": false,
+    "osm_id": 242121562
+  },
+  {
+    "name": "Степняк",
+    "name_kz": "Степняк",
+    "name_en": "Stepnyak",
+    "aliases": [
+      "Stepnyak"
+    ],
+    "region_id": "KZ-11",
+    "province": "Акмолинская область",
+    "kind": "city",
+    "population": 4212,
+    "lat": 52.83128,
+    "lon": 70.78694,
+    "is_region_center": false,
+    "osm_id": 453920742
+  },
+  {
+    "name": "Бакбакты",
+    "name_kz": "Бақбақты",
+    "name_en": "Baqbaqty",
+    "aliases": [
+      "Baqbaqty",
+      "Бақбақты"
+    ],
+    "region_id": "KZ-19",
+    "province": "Алматинская область",
+    "kind": "town",
+    "population": 4048,
+    "lat": 44.568,
+    "lon": 76.71899,
+    "is_region_center": false,
+    "osm_id": 3419371856
+  },
+  {
+    "name": "Булакты",
+    "name_kz": "Бұлақты",
+    "name_en": null,
+    "aliases": [
+      "Бұлақты"
+    ],
+    "region_id": "KZ-33",
+    "province": "Жетысуская область",
+    "kind": "town",
+    "population": 3740,
+    "lat": 46.18603,
+    "lon": 81.09321,
+    "is_region_center": false,
+    "osm_id": 534086826
+  },
+  {
+    "name": "имени Сакена Сейфуллина",
+    "name_kz": "Сәкен Сейфуллин",
+    "name_en": null,
+    "aliases": [
+      "Сәкен Сейфуллин"
+    ],
+    "region_id": "KZ-35",
+    "province": "Карагандинская область",
+    "kind": "town",
+    "population": 3696,
+    "lat": 48.8553,
+    "lon": 72.83536,
+    "is_region_center": false,
+    "osm_id": 271296615
+  },
+  {
+    "name": "Шубарши",
+    "name_kz": "Шұбарши",
+    "name_en": "Şūbarşi",
+    "aliases": [
+      "Şūbarşi",
+      "Шұбарши"
+    ],
+    "region_id": "KZ-15",
+    "province": "Актюбинская область",
+    "kind": "town",
+    "population": 3691,
+    "lat": 48.58326,
+    "lon": 57.18392,
+    "is_region_center": false,
+    "osm_id": 5385728483
+  },
+  {
+    "name": "Октябрьский",
+    "name_kz": "Октябрь",
+    "name_en": null,
+    "aliases": [
+      "Октябрь"
+    ],
+    "region_id": "KZ-39",
+    "province": "Костанайская область",
+    "kind": "town",
+    "population": 3541,
+    "lat": 52.59536,
+    "lon": 62.61592,
+    "is_region_center": false,
+    "osm_id": 1618693280
+  },
+  {
+    "name": "Большой Аксу",
+    "name_kz": "Үлкен Ақсу",
+    "name_en": null,
+    "aliases": [
+      "Үлкен Ақсу"
+    ],
+    "region_id": "KZ-19",
+    "province": "Алматинская область",
+    "kind": "town",
+    "population": 3534,
+    "lat": 43.36694,
+    "lon": 79.61,
+    "is_region_center": false,
+    "osm_id": 3395614061
+  },
+  {
+    "name": "Бурабай",
+    "name_kz": "Бурабай",
+    "name_en": "Burabay",
+    "aliases": [
+      "Burabay"
+    ],
+    "region_id": "KZ-11",
+    "province": "Акмолинская область",
+    "kind": "town",
+    "population": 3503,
+    "lat": 53.08299,
+    "lon": 70.3086,
+    "is_region_center": false,
+    "osm_id": 2028877634
+  },
+  {
+    "name": "Шантобе",
+    "name_kz": "Шаңтөбе",
+    "name_en": null,
+    "aliases": [
+      "Шаңтөбе"
+    ],
+    "region_id": "KZ-11",
+    "province": "Акмолинская область",
+    "kind": "town",
+    "population": 3303,
+    "lat": 52.45312,
+    "lon": 68.17674,
+    "is_region_center": false,
+    "osm_id": 1631157085
+  },
+  {
+    "name": "Карабас",
+    "name_kz": "Қарабас",
+    "name_en": "Qarabas",
+    "aliases": [
+      "Qarabas",
+      "Қарабас"
+    ],
+    "region_id": "KZ-35",
+    "province": "Карагандинская область",
+    "kind": "town",
+    "population": 3000,
+    "lat": 49.57398,
+    "lon": 72.9032,
+    "is_region_center": false,
+    "osm_id": 271301949
+  },
+  {
+    "name": "Шидерты",
+    "name_kz": "Шідерті",
+    "name_en": "Shiderti",
+    "aliases": [
+      "Shiderti",
+      "Шідерті"
+    ],
+    "region_id": "KZ-55",
+    "province": "Павлодарская область",
+    "kind": "town",
+    "population": 2995,
+    "lat": 51.71424,
+    "lon": 74.67283,
+    "is_region_center": false,
+    "osm_id": 554059814
+  },
+  {
+    "name": "Аксу",
+    "name_kz": "Ақсу",
+    "name_en": null,
+    "aliases": [
+      "Ақсу"
+    ],
+    "region_id": "KZ-11",
+    "province": "Акмолинская область",
+    "kind": "town",
+    "population": 2911,
+    "lat": 52.4613,
+    "lon": 71.98578,
+    "is_region_center": false,
+    "osm_id": 494764580
+  },
+  {
+    "name": "Шульбинск",
+    "name_kz": "Шүлбі",
+    "name_en": null,
+    "aliases": [
+      "Шүлбі"
+    ],
+    "region_id": "KZ-10",
+    "province": "Абайская область",
+    "kind": "town",
+    "population": 2845,
+    "lat": 50.39099,
+    "lon": 81.0676,
+    "is_region_center": false,
+    "osm_id": 457427340
+  },
+  {
+    "name": "Ауэзов",
+    "name_kz": "Әуезов",
+    "name_en": null,
+    "aliases": [
+      "Әуезов"
+    ],
+    "region_id": "KZ-10",
+    "province": "Абайская область",
+    "kind": "town",
+    "population": 2766,
+    "lat": 49.7109,
+    "lon": 81.57948,
+    "is_region_center": false,
+    "osm_id": 534090085
+  },
+  {
+    "name": "Станционный",
+    "name_kz": "Станционный",
+    "name_en": null,
+    "aliases": [],
+    "region_id": "KZ-11",
+    "province": "Акмолинская область",
+    "kind": "town",
+    "population": 2670,
+    "lat": 53.35546,
+    "lon": 69.49202,
+    "is_region_center": false,
+    "osm_id": 1800424613
+  },
+  {
+    "name": "Лепсы",
+    "name_kz": "Лепсі",
+    "name_en": "Lepsy",
+    "aliases": [
+      "Lepsy",
+      "Лепсі"
+    ],
+    "region_id": "KZ-33",
+    "province": "Жетысуская область",
+    "kind": "town",
+    "population": 2567,
+    "lat": 46.23694,
+    "lon": 78.93539,
+    "is_region_center": false,
+    "osm_id": 243178767
+  },
+  {
+    "name": "Жангизтобе",
+    "name_kz": "Жаңғызтөбе",
+    "name_en": null,
+    "aliases": [
+      "Жаңғызтөбе"
+    ],
+    "region_id": "KZ-10",
+    "province": "Абайская область",
+    "kind": "town",
+    "population": 2545,
+    "lat": 49.21107,
+    "lon": 81.21709,
+    "is_region_center": false,
+    "osm_id": 243060934
+  },
+  {
+    "name": "Мойынты",
+    "name_kz": "Мойынты",
+    "name_en": null,
+    "aliases": [],
+    "region_id": "KZ-35",
+    "province": "Карагандинская область",
+    "kind": "town",
+    "population": 2300,
+    "lat": 47.22272,
+    "lon": 73.35546,
+    "is_region_center": false,
+    "osm_id": 254316151
+  },
+  {
+    "name": "Темир",
+    "name_kz": "Темір",
+    "name_en": "Temir",
+    "aliases": [
+      "Temir",
+      "Темір"
+    ],
+    "region_id": "KZ-15",
+    "province": "Актюбинская область",
+    "kind": "city",
+    "population": 2210,
+    "lat": 49.14257,
+    "lon": 57.12598,
+    "is_region_center": false,
+    "osm_id": 1802656616
+  },
+  {
+    "name": "Жезды",
+    "name_kz": "Жезді",
+    "name_en": "Jezdı",
+    "aliases": [
+      "Jezdı",
+      "Жезді"
+    ],
+    "region_id": "KZ-62",
+    "province": "Улытауская область",
+    "kind": "town",
+    "population": 2114,
+    "lat": 48.06732,
+    "lon": 67.04503,
+    "is_region_center": false,
+    "osm_id": 2751448253
+  },
+  {
+    "name": "Кызылжар",
+    "name_kz": "Қызылжар",
+    "name_en": "Qyzyljar",
+    "aliases": [
+      "Qyzyljar",
+      "Қызылжар"
+    ],
+    "region_id": "KZ-62",
+    "province": "Улытауская область",
+    "kind": "town",
+    "population": 1439,
+    "lat": 48.29666,
+    "lon": 69.65084,
+    "is_region_center": false,
+    "osm_id": 301374694
+  },
+  {
+    "name": "Алексеевка",
+    "name_kz": "Алексеев",
+    "name_en": null,
+    "aliases": [
+      "Алексеев"
+    ],
+    "region_id": "KZ-11",
+    "province": "Акмолинская область",
+    "kind": "town",
+    "population": 1405,
+    "lat": 53.5121,
+    "lon": 69.51379,
+    "is_region_center": false,
+    "osm_id": 2046517084
+  },
+  {
+    "name": "Жем",
+    "name_kz": "Жем",
+    "name_en": "Jem",
+    "aliases": [
+      "Jem"
+    ],
+    "region_id": "KZ-15",
+    "province": "Актюбинская область",
+    "kind": "city",
+    "population": 1218,
+    "lat": 48.7749,
+    "lon": 58.07394,
+    "is_region_center": false,
+    "osm_id": 1821097811
+  },
+  {
+    "name": "Карсакпай",
+    "name_kz": "Қарсақпай",
+    "name_en": "Qarsaqpai",
+    "aliases": [
+      "Qarsaqpai",
+      "Қарсақпай"
+    ],
+    "region_id": "KZ-62",
+    "province": "Улытауская область",
+    "kind": "town",
+    "population": 1159,
+    "lat": 47.83559,
+    "lon": 66.72473,
+    "is_region_center": false,
+    "osm_id": 5066761962
+  },
+  {
+    "name": "Горняцкий",
+    "name_kz": "Горняк",
+    "name_en": null,
+    "aliases": [
+      "Горняк"
+    ],
+    "region_id": "KZ-39",
+    "province": "Костанайская область",
+    "kind": "town",
+    "population": 1152,
+    "lat": 53.03017,
+    "lon": 63.11352,
+    "is_region_center": false,
+    "osm_id": 1668717539
+  },
+  {
+    "name": "Суыкбулак",
+    "name_kz": "Суықбұлақ",
+    "name_en": null,
+    "aliases": [
+      "Суықбұлақ"
+    ],
+    "region_id": "KZ-10",
+    "province": "Абайская область",
+    "kind": "town",
+    "population": 965,
+    "lat": 49.79476,
+    "lon": 80.8245,
+    "is_region_center": false,
+    "osm_id": 519895163
+  },
+  {
+    "name": "Жарма",
+    "name_kz": "Жарма",
+    "name_en": null,
+    "aliases": [],
+    "region_id": "KZ-10",
+    "province": "Абайская область",
+    "kind": "town",
+    "population": 725,
+    "lat": 48.78231,
+    "lon": 80.87832,
+    "is_region_center": false,
+    "osm_id": 242863116
+  },
+  {
+    "name": "Чаган",
+    "name_kz": "Шаған",
+    "name_en": null,
+    "aliases": [
+      "Шаған"
+    ],
+    "region_id": "KZ-10",
+    "province": "Абайская область",
+    "kind": "town",
+    "population": 465,
+    "lat": 50.60936,
+    "lon": 79.23101,
+    "is_region_center": false,
+    "osm_id": 473505835
+  },
+  {
+    "name": "Актас",
+    "name_kz": "Ақтас",
+    "name_en": "Aqtas",
+    "aliases": [
+      "Aqtas",
+      "Ақтас"
+    ],
+    "region_id": "KZ-62",
+    "province": "Улытауская область",
+    "kind": "town",
+    "population": 140,
+    "lat": 48.05641,
+    "lon": 66.37753,
+    "is_region_center": false,
+    "osm_id": 5208782557
+  },
+  {
+    "name": "Красногорский",
+    "name_kz": "Красногор",
+    "name_en": "Krasnogor",
+    "aliases": [
+      "Krasnogor",
+      "Красногор"
+    ],
+    "region_id": "KZ-11",
+    "province": "Акмолинская область",
+    "kind": "town",
+    "population": 101,
+    "lat": 52.24327,
+    "lon": 66.51368,
+    "is_region_center": false,
+    "osm_id": 3160605499
+  }
+]
