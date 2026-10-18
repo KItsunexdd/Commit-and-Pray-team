@@ -1,0 +1,13 @@
+# В образ попадает только перечисленное ниже; рабочие данные и исходники интерфейса остаются снаружи.
+*
+!requirements.txt
+!constraints.txt
+!AddressParser/*.py
+!artifacts/address_db/runtime/v002-territories/address_runtime.sqlite
+!artifacts/baseline/neighbours-v1.sqlite
+!artifacts/baseline/v3/uniform-v3/uniform.sqlite
+!web/dist
+!app/*.py
+!app/static
+app/test_*.py
+**/__pycache__

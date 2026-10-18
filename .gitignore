@@ -1,0 +1,27 @@
+# Зависимости и окружения
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Секреты и локальные настройки
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+
+# Данные хакатона не выносятся за пределы мероприятия
+train.json
+**/train*.json
+data/raw/
+
+# Docker-образы для передачи жюри
+*.tar
+
+# Системное
+.DS_Store
+Thumbs.db
+*.log
