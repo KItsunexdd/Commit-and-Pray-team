@@ -287,7 +287,7 @@ Commit-and-Pray-team/
 
 ```bash
 pip install -r requirements-dev.txt
-python scripts/run_tests.py        # 125 тестов API и парсера
+python scripts/run_tests.py        # 133 теста API и парсера
 python -m app                      # сервис на http://localhost:8000
 cd web && npm ci && npm test && npm run build
 ```

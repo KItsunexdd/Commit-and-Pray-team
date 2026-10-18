@@ -1,6 +1,6 @@
 # JanaAddress: базовый офлайн-парсер
 
-Финальная версия — v13.1, справочник v002-territories: train **100.00%**, dev **100.00%** на просмотренных
+Финальная версия — v14.1, справочник v002-territories: train **100.00%**, dev **100.00%** на просмотренных
 синтетических наборах разработки. Это не оценка на новых адресах. Город с маркером
 распознаётся независимо от запятых; поддержаны сельские, постфиксные, латинские
 и слитные маркеры. Без маркера допускаются только типы city/town, включая
@@ -16,6 +16,15 @@ settlement не считается городским типом автомат�
 train; его используют только тесты и оценщик. Неохваченные фрагменты видны
 в diagnostics.uncovered и reasons, а исходная строка сохраняется целиком.
 
+
+V14.1 ограничивает префикс района справочным именем выбранного города,
+включая границы слитных слов. Остаток разбирается как улица; значения — срезы raw.
+Основное имя города имеет приоритет над переводным вариантом имени района.
+Обратный вывод блокируется, если у более крупного населённого пункта
+одноимённая улица не имеет известных домов. Размер — число строк houses.
+Непустое покрытие больше не служит основанием запрета; полнота не гарантируется.
+Совместимый явно указанный город подтверждается уникальной парой улица/дом.
+Туран 55/6 снова даёт Астану и район Нұра. Латинский защитный фильтр сохранён.
 
 V13.1 сверяет нераспознанный городской фрагмент с единственным населённым
 пунктом по улице и дому. Совместимый фрагмент, включая одну опечатку,
@@ -146,7 +155,7 @@ inferred-метод — `geonim_uniform`. Это проверка на метк�
 Полная проверка:
 
 ```text
-python -B -S -m unittest AddressParser.test_parser AddressParser.test_evaluate AddressParser.test_neighbours AddressParser.test_regressions AddressParser.test_boundaries_v3 AddressParser.test_city_scope AddressParser.test_runtime_v002 AddressParser.test_cf_edges AddressParser.test_findings_v7 AddressParser.test_findings_v8 AddressParser.test_findings_v9 AddressParser.test_findings_v10 AddressParser.test_findings_v11 AddressParser.test_findings_v12 AddressParser.test_findings_v13 -v
+python -B -S -m unittest AddressParser.test_parser AddressParser.test_evaluate AddressParser.test_neighbours AddressParser.test_regressions AddressParser.test_boundaries_v3 AddressParser.test_city_scope AddressParser.test_runtime_v002 AddressParser.test_cf_edges AddressParser.test_findings_v7 AddressParser.test_findings_v8 AddressParser.test_findings_v9 AddressParser.test_findings_v10 AddressParser.test_findings_v11 AddressParser.test_findings_v12 AddressParser.test_findings_v13 AddressParser.test_findings_v14 -v
 ```
 Явно созданный экземпляр можно закрыть методом `close()` после работы.
 
@@ -252,7 +261,7 @@ python -B -m AddressParser.build_neighbours --out artifacts/baseline/neighbours-
 и повторно используется экземплярами. Он содержит только строки и разделён
 по городам; SQL-соединения не разделяются. С v13 также кешируется наличие
 точных имён, чтобы не выполнять заведомо пустые SQL-запросы. Ответы по целому
-адресу не кешируются. Для 1000 разных строк в v13.1 полный разбор занял 0.935 с. Это единичный замер на прежнем пакете; время зависит от нагрузки машины.
+адресу не кешируются. Для 1000 разных строк в v14.1 полный разбор занял 0.743 с. Это единичный замер на прежнем пакете; время зависит от нагрузки машины.
 
 ## Оценка и ограничения
 

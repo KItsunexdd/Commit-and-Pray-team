@@ -241,6 +241,23 @@ class AddressParser:
 
         # Маркер определяет начало имени, справочник — его границу в общем потоке.
         locality_types = LOCALITY_TYPES
+        district_segments=[]
+        district_locality_ambiguous=False
+        free=mask(consumed)
+        for segment in re.finditer(r'[^,;\n]+',free):
+            a,b=trim(free,*segment.span());start,end=a,b
+            prefix=re.match(r'(?i)(?:район|р-н|аудан)\s+',raw[a:b])
+            suffix=re.search(r'(?i)\s+(?:район(?:а)?|р-н|ауданы)$',raw[a:b])
+            if prefix:start=a+prefix.end()
+            if suffix:end=a+suffix.start()
+            if start>=end:continue
+            associations=ref.district_localities(raw[start:end])
+            if not associations:continue
+            # Без сельского маркера прямое чтение населённого пункта допускает city/town.
+            localities=[] if prefix or suffix else [v for v in ref.admins(raw[start:end]) if v['type'] in ('city','town')]
+            if any(v['province']==v['city'] for v in localities):continue
+            district_segments.append(dict(segment=(a,b),span=(start,end),associations=associations,localities=localities,marked=bool(prefix or suffix)))
+            consumed.append((a,b))
         city_options = find_city_options(raw,mask(consumed),ref,record['province'])
         tail=tail_locality(raw,mask(consumed),ref) if not city_options else None
         if tail:city_options=[tail['city']]
@@ -303,13 +320,45 @@ class AddressParser:
                                     message='Номер перед нераспознанным хвостом принят за дом.'))
                 break
 
+        # Подтверждённый префикс района заканчивается на границе слов,
+        # в том числе внутри слитной записи; значения остаются срезами строки.
+        if city_id and not record['district']:
+            free=mask(consumed)
+            for segment in re.finditer(r'[^,;\n]+',free):
+                a,b=trim(free,*segment.span())
+                if a>=b:continue
+                marker=re.match(r'(?i)(?:район|р-н|ауданы)',free[a:b])
+                start=a+marker.end() if marker else a
+                start,_=trim(raw,start,b)
+                ends={start+n for n in word_boundaries(raw[start:b])}
+                ends.update(start+m.start() for m in re.finditer(r'\s+',raw[start:b]))
+                ends.add(b)
+                for end in sorted(ends,reverse=True):
+                    na,nb=trim(raw,start,end)
+                    if na>=nb:continue
+                    matches=[d for d in ref.district_localities(spaced_words(raw[na:nb])) if d['city']['id']==city_id]
+                    if len({d['district_id'] for d in matches})!=1:continue
+                    # Постфиксный маркер остаётся за отдельным разбором ниже.
+                    if re.match(r'(?i)\s*(?:район|р-н|ауданы)(?!\w)',raw[nb:b]):break
+                    if not marker and not any(a<n<b for n in word_boundaries(raw)):continue
+                    put('district',raw[na:nb],[(na,nb)],'district_prefix_dictionary',ref.evidence([d['district_id'] for d in matches]))
+                    consumed.append((a,nb));break
+                else:
+                    if marker and a+marker.end()<b and not raw[a+marker.end()].isspace():
+                        consumed.append((a,a+marker.end()))
+                        reasons.append(dict(code='unconfirmed_district_prefix',fields=['district'],message='Маркер района не подтверждён для выбранного города.'))
+
         # Явный район сохраняет падеж исходной строки.
         district_pattern = r'(?P<name>'+WORD+'(?:'+SPACE_CF+'+'+WORD+r'){0,2})'+SPACE_CF+r'+(?:район(?:а)?|р-н)(?!\w)'
         for m in re.finditer(district_pattern,mask(consumed),re.I):
+            segment_start=max(raw.rfind(',',0,m.start()),raw.rfind(';',0,m.start()),raw.rfind('\n',0,m.start()))+1
+            if STREET_RE.search(raw,segment_start,m.start('name')):continue
             put('district',raw[m.start('name'):m.end('name')],[m.span('name')],'district_marker')
             consumed.append(m.span())
         district_free=mask(consumed)
         for m in re.finditer(r'(?<!\w)(?:район|р-н)'+SPACE_CF+'+',district_free,re.I):
+            segment_start=max(raw.rfind(',',0,m.start()),raw.rfind(';',0,m.start()),raw.rfind('\n',0,m.start()))+1
+            if STREET_RE.search(district_free,segment_start,m.start()):continue
             start=m.end()
             boundaries=[len(raw)]
             for pattern in (re.compile(r'[,;\n]'),STREET_RE,CITY_PREFIX,
@@ -582,7 +631,53 @@ class AddressParser:
                 put('province',next(iter(provinces)),method='city_parent',proof=ref.evidence([a['id'] for a in admins]))
             all_candidates.extend(supplied)
 
-        if self.variant=='B' and not record['city'] and record['district']:
+        for item in district_segments:
+            a,b=item['span'];associations=item['associations']
+            parents={v['city']['id']:v['city'] for v in associations}
+            proof=ref.evidence([v['district_id'] for v in associations])
+            if record['city']:
+                if item['marked'] or city_id in parents:
+                    put('district',raw[a:b],[(a,b)],'district_segment',proof)
+                else:consumed.remove(item['segment'])
+                continue
+            choose=None;as_locality=False
+            if city_id:
+                if city_id in parents:choose=parents[city_id]
+                else:consumed.remove(item['segment']);continue
+            elif item['localities']:
+                scopes=ref.street_localities(record['street_name']) if record['street_name'] else {}
+                district_cities=set(parents)&set(scopes)
+                localities={v['id']:v for v in item['localities']}
+                locality_cities=set(localities)&set(scopes)
+                # Основное имя города сильнее переведённого варианта имени района.
+                primary_district_names={normalize(re.sub(r'(?i)(?:^район\s+|\s+(?:район|ауданы)$)\s*','',ref.admin_display(v['district_id'])['name'])) for v in associations}
+                primary_localities={i for i,v in localities.items() if normalize(v['name'])==normalize(raw[a:b])}
+                prefer_locality=primary_localities if normalize(raw[a:b]) not in primary_district_names else set()
+                proof.update(street_name=record['street_name'],district_city_ids=sorted(district_cities),locality_ids=sorted(locality_cities))
+                if len(prefer_locality)==1:
+                    choose=localities[next(iter(prefer_locality))];as_locality=True
+                elif len(district_cities)==1 and not locality_cities:choose=parents[next(iter(district_cities))]
+                elif len(locality_cities)==1 and not district_cities:
+                    choose=localities[next(iter(locality_cities))];as_locality=True
+            elif len(parents)==1:choose=next(iter(parents.values()))
+            if choose:
+                if as_locality:
+                    city_id=choose['id']
+                    put('city',raw[a:b],[(a,b)],'district_or_locality_street',proof)
+                else:
+                    put('district',raw[a:b],[(a,b)],'district_segment',proof)
+                    if not record['city']:
+                        city_id=choose['id']
+                        put('city',choose['city'] or choose['name'],method='district_parent',proof=proof)
+                if not record['province']:put('province',choose['province'],method='city_parent' if as_locality else 'district_parent',proof=proof)
+            else:
+                district_locality_ambiguous=True
+                consumed.remove(item['segment'])
+                proof.update(start=a,end=b,text=raw[a:b])
+                reasons.append(dict(code='ambiguous_district_or_locality',fields=['city','district','province'],
+                    message='Название может обозначать район или населённый пункт; улица не разрешила неоднозначность.',evidence=proof))
+
+        if self.variant=='B' and not record['city'] and record['district'] and not district_locality_ambiguous:
             associations=ref.district_localities(record['district'])
             if record['province']:
                 associations=[a for a in associations if a['city']['province']==record['province']]
@@ -594,7 +689,7 @@ class AddressParser:
                 if not record['province']:put('province',city['province'],method='district_parent',proof=proof)
 
         reverse_diagnostic=None
-        if self.variant=='B' and not record['city'] and record['street_name'] and record['house']:
+        if self.variant=='B' and not record['city'] and record['street_name'] and record['house'] and not district_locality_ambiguous:
             number=record['house'];corpus=None
             hm=HOUSE_PARTS.fullmatch(number)
             if hm:number,corpus=hm.groups()
@@ -605,6 +700,9 @@ class AddressParser:
             if matches and all(m['generated_latin_only'] for m in matches):
                 blocked.append(dict(cause='generated_latin_only',matched_names=sorted({n for m in matches for n in m['matched_names']})))
             if len(matches)==1:
+                coverage=ref.reverse_coverage(record['street_name'],number,matches[0]['city']['id'])
+                reverse_diagnostic['coverage']=coverage
+                if not coverage['safe']:blocked.append(dict(cause='sparse_house_coverage',coverage=coverage))
                 # Проверяются целые оставшиеся сегменты, а не подстроки улиц.
                 remaining_for_city=mask(consumed)
                 for segment in re.finditer(r'[^,;\n]+',remaining_for_city):
@@ -623,6 +721,13 @@ class AddressParser:
                             proof.update(name_span=[start,end],joint_candidate_ids=[matches[0]['city']['id']])
                             corroborating.append(proof)
                         else:blocked.append(dict(proof,cause='unrecognized_locality'))
+            if corroborating:
+                context={matches[0]['city']['id']}
+                for fragment in corroborating:context.intersection_update(fragment['fragment_candidate_ids'])
+                if context=={matches[0]['city']['id']}:
+                    # Город уже независимо указан в строке; пустые дома других городов не создают конкурента.
+                    blocked=[b for b in blocked if b['cause']!='sparse_house_coverage']
+                    reverse_diagnostic['locality_context_ids']=sorted(context)
             if blocked:
                 reverse_diagnostic['blocked']=blocked
                 reasons.append(dict(code='ambiguous_street_city',fields=['city','province'],
@@ -764,7 +869,7 @@ class AddressParser:
             reasons.append(dict(code='uncovered_text',fields=[],message='Часть текста осталась неразобранной.'))
         if not explicit:
             reasons.append(dict(code='empty_parse',fields=[],message='Адресные поля не найдены.'))
-        ambiguous=any(r['code'] in ('ambiguous_k_marker','reverse_locality_ambiguous','ambiguous_street_city') for r in reasons)
+        ambiguous=any(r['code'] in ('ambiguous_k_marker','reverse_locality_ambiguous','ambiguous_street_city','ambiguous_district_or_locality') for r in reasons)
         if ambiguous:rating=min(rating,.59)
         rating=round(max(.02,min(.99,rating)),4)
         raw_rating=rating

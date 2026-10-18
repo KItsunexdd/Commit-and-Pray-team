@@ -33,6 +33,27 @@ def name_forms(name):
             forms.add(normalize(' '.join([first[:-1],*parts[1:]])))
     return forms
 
+STREET_WORDS=r'(?:улица|ул|проспект|пр т|пр|переулок|пер|бульвар|бул|проезд|көшесі|көше|көш|даңғылы|даңғыл|street|str|st|avenue|ave)'
+def street_body(name):
+    key=normalize(name)
+    key=re.sub('^'+STREET_WORDS+r'\s+','',key)
+    return re.sub(r'\s+'+STREET_WORDS+'$','',key)
+
+@lru_cache(maxsize=2)
+def native_street_index(path,modified,size):
+    """Связи исходных языковых имён; тип улицы не входит в ключ имени."""
+    db=sqlite3.connect(Path(path).as_uri()+'?mode=ro',uri=True)
+    try:
+        db.execute('PRAGMA query_only=ON')
+        by_name={};by_gid={}
+        for gid,identity,locality,names,city in db.execute("SELECT g.gid,g.id,g.locality,g.names_json,a.id FROM geonims g LEFT JOIN admin a ON a.aid=g.locality WHERE g.role='street'"):
+            keys={street_body(n) for n in json.loads(names).values() if n}
+            keys.discard('')
+            by_gid[gid]=(identity,locality,city,keys)
+            for key in keys:by_name.setdefault(key,set()).add(gid)
+        return {key:frozenset(ids) for key,ids in by_name.items()},by_gid
+    finally:db.close()
+
 def one_edit(left,right):
     """Одна вставка, потеря, замена или перестановка соседних букв."""
     if abs(len(left)-len(right))>1:return False
@@ -89,6 +110,8 @@ class EmptyReference:
     def district_localities(self,name): return []
     def reverse_house(self,name,number,corpus=None):return []
     def locality_hint(self,name):return []
+    def street_localities(self,name):return {}
+    def reverse_coverage(self,name,number,city_id):return dict(safe=False,reason='reference_unavailable')
     def geonim_forms(self,name,city_id):return []
     def confirm_geonims(self,name,city_id):return [],None
     def confirm_district(self,name,city_id):return [],None
@@ -106,6 +129,57 @@ class Reference(EmptyReference):
         stamp=self.path.stat()
         (self._street_names,self._geonim_names,self._city_names,self._admin_targets,
          self._districts,self._district_names)=street_name_index(str(self.path),stamp.st_mtime_ns,stamp.st_size)
+        self._native_names,self._native_geonims=native_street_index(str(self.path),stamp.st_mtime_ns,stamp.st_size)
+
+    @lru_cache(maxsize=2048)
+    def street_localities(self,name):
+        """Исходные ru/kk/source_default точных совпадений, без цепочек переименований."""
+        keys={street_body(n) for n in name_forms(name)}
+        seeds={gid for key in keys for gid in self._native_names.get(key,())}
+        aliases=keys|{key for gid in seeds for key in self._native_geonims[gid][3]}
+        gids={gid for key in aliases for gid in self._native_names.get(key,())}
+        result={}
+        for gid in sorted(gids):
+            identity,locality,city,keys=self._native_geonims[gid]
+            if city:result.setdefault(city,[]).append(gid)
+        return result
+
+    @lru_cache(maxsize=8192)
+    def _house_range(self,gid):
+        identity,locality,city,keys=self._native_geonims[gid]
+        numbers=[]
+        exact=set()
+        for row in self.db.execute('SELECT number FROM houses WHERE locality=? AND geonim=?',(locality,gid)):
+            exact.add(row[0].casefold())
+            value=re.match(r'^\d+',row[0])
+            if value:numbers.append(int(value[0]))
+        return (min(numbers),max(numbers),len(numbers),frozenset(exact)) if numbers else (None,None,0,frozenset(exact))
+
+    @lru_cache(maxsize=2048)
+    def locality_house_count(self,city_id):
+        return self.db.execute('SELECT COUNT(*) FROM houses WHERE locality=(SELECT aid FROM admin WHERE id=?)',(city_id,)).fetchone()[0]
+
+    @lru_cache(maxsize=2048)
+    def reverse_coverage(self,name,number,city_id):
+        scopes=self.street_localities(name)
+        value=re.match(r'^\d+',number)
+        target=int(value[0]) if value else None
+        selected_size=self.locality_house_count(city_id)
+        others=[]
+        for city,gids in sorted(scopes.items()):
+            if city==city_id:continue
+            ranges=[self._house_range(gid) for gid in gids]
+            known=[r for r in ranges if r[2]]
+            lower=min(r[0] for r in known) if known else None
+            upper=max(r[1] for r in known) if known else None
+            same_number=any(number.casefold() in r[3] for r in ranges)
+            covered=bool(target is not None and known and lower<target<upper and not same_number)
+            others.append(dict(city_id=city,geonim_ids=[self._native_geonims[g][0] for g in gids],
+                locality_house_count=self.locality_house_count(city),larger_than_selected=self.locality_house_count(city)>selected_size,
+                known_number_count=sum(r[2] for r in known),minimum=lower,maximum=upper,known_same_number=same_number,number_interior=covered))
+        return dict(safe=bool(scopes) and all(not r['larger_than_selected'] or r['known_number_count']>0 for r in others),
+            criterion='larger_localities_with_no_known_street_houses',selected_locality_house_count=selected_size,
+            street_locality_count=len(scopes),number=number,other_localities=others)
 
     @lru_cache(maxsize=8192)
     def admin_display(self, entity_id, profile='project'):
@@ -253,6 +327,8 @@ class Reference(EmptyReference):
     def district_localities(self,name):
         key=normalize(name)
         forms={key}
+        if key.endswith('ский'):
+            forms.update((key[:-4],key[:-4]+'ь'))
         if key.endswith('ского'):forms.add(key[:-5]+'ский')
         if key.endswith('ного'):forms.add(key[:-4]+'ный')
         matches=[]
