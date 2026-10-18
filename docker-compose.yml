@@ -1,0 +1,11 @@
+services:
+  jana-address:
+    image: jana-address:1.0.0
+    build: .
+    pull_policy: never
+    ports:
+      - "${PORT:-8000}:8000"
+    environment:
+      PORT: "8000"
+      API_PREFIX: /api
+    restart: unless-stopped
