@@ -1,0 +1,61 @@
+.about-screen { scroll-behavior: smooth; }
+.about-card { padding: 26px; margin-bottom: 20px; border: 1px solid var(--edge-1); border-radius: 10px; background: var(--surface-1); min-width: 0; }
+.about-section-title { display: flex; gap: 14px; align-items: center; margin-bottom: 12px; }
+.about-section-title > span { font: 11px var(--font-mono); color: var(--neon); }
+.about-section-title h2 { font-size: 21px; font-weight: 500; letter-spacing: -.025em; }
+.about-note, .about-example-note { color: var(--copy-1); font-size: 12px; line-height: 1.8; overflow-wrap: anywhere; }
+.about-steps { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 20px; margin-top: 26px; }
+.about-steps li { position: relative; min-width: 0; padding-top: 16px; border-top: 1px solid var(--edge-2); }
+.about-steps li:not(:last-child)::after { content: '→'; position: absolute; top: -12px; right: -17px; color: var(--neon); background: var(--surface-2); }
+.about-step-number { font: 10px var(--font-mono); color: var(--copy-2); }
+.about-steps h3 { font-size: 15px; margin: 8px 0; font-weight: 500; }
+.about-steps p { font-size: 12px; color: var(--copy-1); line-height: 1.7; min-height: 62px; }
+.about-steps code { display: block; margin-top: 14px; padding: 10px; border: 1px solid var(--edge-3); background: var(--surface-3); border-radius: 4px; font: 10px/1.8 var(--font-mono); white-space: pre-wrap; overflow-wrap: anywhere; color: var(--copy-3); }
+.about-example-note { margin-top: 22px; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.about-grid .about-card { margin-inline: 0; }
+.about-status { font-size: 12px; color: var(--copy-4); line-height: 1.8; margin: 12px 0; overflow-wrap: anywhere; }
+.about-status--fallback { border-left: 2px solid var(--edge-4); padding-left: 12px; color: var(--copy-5); }
+.about-sources { display: grid; gap: 8px; margin-block: 12px; }
+.about-sources li { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; column-gap: 12px; }
+.about-card a { display: inline-flex; align-items: center; min-height: 44px; color: var(--copy-6); text-decoration: underline; text-underline-offset: 4px; font-size: 13px; overflow-wrap: anywhere; }
+.about-card a:hover { color: var(--neon); }
+.about-counts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 18px 0; }
+.about-counts > div { border-top: 1px solid var(--edge-5); padding-top: 12px; display: flex; flex-direction: column-reverse; gap: 8px; overflow-wrap: anywhere; }
+.about-counts dt { font-size: 12px; color: var(--copy-1); }
+.about-counts dd { font: 26px var(--font-mono); color: var(--copy-3); }
+.about-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.about-actions:empty { display: none; }
+.about-empty-metrics { padding: 24px 0; max-width: 320px; font-size: 15px; line-height: 1.9; color: var(--copy-1); }
+.about-table-wrap { overflow: auto; margin-top: 18px; scrollbar-width: thin; scrollbar-color: var(--edge-6) transparent; }
+.about-metrics { border-collapse: collapse; width: 100%; font: 11px/1.8 var(--font-mono); text-align: left; }
+.about-metrics th, .about-metrics td { border-bottom: 1px solid var(--edge-5); padding: 12px 9px; }
+.about-metrics thead { color: var(--copy-1); }
+.about-metrics th { font-weight: 400; }
+.about-metrics tbody th { overflow-wrap: anywhere; max-width: 140px; min-width: 55px; }
+.about-licenses > div:last-child { display: flex; flex-wrap: wrap; column-gap: 48px; }
+.about-licenses p { display: flex; flex-direction: column; }
+.about-licenses p > span { font-size: 11px; color: var(--copy-1); line-height: 1.8; }
+.app-navigation .nav-short, .app-navigation .nav-about-icon { display: none; }
+.app-navigation .nav-full { color: inherit; }
+@media (max-width: 999px) {
+  .about-steps { grid-template-columns: 1fr; gap: 22px; }
+  .about-steps li { padding-left: 40px; padding-top: 0; border-top: 0; border-left: 1px solid var(--edge-2); }
+  .about-steps li:not(:last-child)::after { content: '↓'; top: auto; bottom: -20px; right: auto; left: -6px; }
+  .about-step-number { position: absolute; left: 12px; top: 5px; }
+  .about-steps h3 { margin-top: 0; }
+  .about-steps p { min-height: 0; }
+  .about-steps code { margin-top: 10px; }
+  .about-grid { grid-template-columns: 1fr; gap: 0; }
+}
+@media (max-width: 639px) {
+  .about-card { padding: 20px 16px; }
+  .about-section-title { gap: 10px; }
+  .about-section-title h2 { font-size: 20px; }
+  .app-navigation .nav-full, .app-navigation .nav-arrow { display: none; }
+  .app-navigation .nav-short, .app-navigation .nav-about-icon { display: inline; color: inherit; }
+  .app-navigation a { padding-inline: 10px; font-size: 11px; }
+  .app-navigation .nav-about { width: 44px; padding: 0; flex-shrink: 0; }
+  .nav-about-icon { font: 18px var(--font-mono); }
+}
+@media (prefers-reduced-motion: reduce) { .about-screen { scroll-behavior: auto; } }

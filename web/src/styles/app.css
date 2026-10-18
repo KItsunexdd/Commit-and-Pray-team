@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-elev: var(--bg-elev);
+  --color-line: var(--line);
+  --color-neon: var(--neon);
+  --color-brand: var(--brand);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Noto Sans Mono', monospace;
+}
+
+@layer base {
+  html { background: var(--bg); }
+  body { margin: 0; min-width: 320px; font-family: var(--font-sans); }
+  button, input, textarea, select { font: inherit; }
+  input, textarea, select { font-size: 16px; }
+  button, [role='button'] { min-width: 44px; min-height: 44px; }
+  button:not(:disabled), [role='button']:not([aria-disabled='true']) { cursor: pointer; }
+  ::selection { color: var(--bg); background: var(--neon); }
+  :focus-visible { outline: 2px solid var(--neon); outline-offset: 6px; }
+}
+
+.app-shell {
+  position: relative;
+  isolation: isolate;
+  padding: max(24px, env(safe-area-inset-top)) max(24px, env(safe-area-inset-right))
+    max(24px, env(safe-area-inset-bottom)) max(24px, env(safe-area-inset-left));
+  background:
+    radial-gradient(ellipse at 0% 0%, var(--surface-50) 0%, transparent 45%),
+    radial-gradient(ellipse at 100% 95%, var(--surface-51) 0%, transparent 40%),
+    var(--bg);
+}
+
+.brand-symbol { width: 36px; height: 36px; stroke: var(--neon); stroke-width: 1.4; }
+.brand-symbol circle { fill: var(--neon); stroke: none; }
+.country-badge { padding: 8px 10px; border: 1px solid var(--edge-45); color: var(--neon); }
+.hero { padding-block: 72px 100px; }
+.hero-eyebrow { max-width: 260px; font-size: 10px; line-height: 1.9; letter-spacing: 0.15em; }
+.hero-title { margin-block: 20px 18px; font-size: clamp(46px, 7.6vw, 108px); line-height: 1.06; letter-spacing: -0.065em; }
+.hero-subtitle { max-width: 420px; font-size: 17px; line-height: 1.75; text-wrap: pretty; }
+.hero-rule { width: 100%; max-width: 520px; height: 1px; margin-block: 36px 20px; background: var(--surface-52); }
+.hero-rule span { display: block; width: 44px; height: 1px; background: var(--neon); }
+.hero-description { max-width: 270px; font-size: 12px; line-height: 1.8; }
+.country-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--neon); }
+.skip-link { position: fixed; top: -100px; left: 24px; z-index: 10; padding: 12px 18px; color: var(--text); background: var(--bg); }
+.skip-link:focus { top: max(16px, env(safe-area-inset-top)); }
+
+@media (min-width: 640px) {
+  .app-shell { padding: max(36px, env(safe-area-inset-top)) max(48px, env(safe-area-inset-right)) max(28px, env(safe-area-inset-bottom)) max(48px, env(safe-area-inset-left)); }
+  .hero-eyebrow { max-width: none; font-size: 11px; }
+  .hero-subtitle { max-width: none; font-size: 20px; }
+  .hero-description { max-width: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
+}

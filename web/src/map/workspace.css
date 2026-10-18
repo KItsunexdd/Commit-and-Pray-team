@@ -1,0 +1,32 @@
+.map-toggle { min-width: 52px; min-height: 44px; padding: 0 10px; border: 1px solid var(--line); border-radius: 5px; color: var(--muted); background: var(--bg-elev); font-size: 12px; }
+.map-toggle[aria-pressed='true'] { color: var(--neon); border-color: var(--neon); }
+.map-stage[data-visible='false'] { visibility: hidden; opacity: 0; pointer-events: none; }
+.app-shell--workspace { height: auto; min-height: 100dvh; overflow: visible; padding: max(24px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(32px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left)); }
+.app-shell--workspace .map-stage { height: 100dvh; bottom: auto; }
+.app-shell--workspace .app-header { position: relative; inset: auto; }
+.app-shell--workspace .map-hero { position: relative; inset: auto; width: 100%; max-width: 760px; margin: 38px auto 28px; transform: none; }
+.app-shell--workspace .hero-content { display: block; }
+.app-shell--workspace .hero-title { font-size: clamp(30px, 6vw, 52px); }
+.app-shell--workspace .hero-subtitle { display: block; }
+.app-shell--workspace .place-search { width: 100%; max-width: none; margin-top: 24px; }
+.app-shell--workspace .result-panel { position: relative; inset: auto; width: 100%; max-width: 760px; height: auto; max-height: none; margin: 0 auto; visibility: visible; }
+.app-shell--workspace .result-grab { display: none; }
+.app-shell--workspace .result-header { padding: 18px 20px 14px; }
+.app-shell--workspace .result-body { overflow: visible; }
+.result-breadcrumb { width: 100%; max-width: 760px; margin: 0 auto 16px; color: var(--neon); font-size: 14px; }
+.analytics-region-bars { margin-bottom: 24px; }
+.analytics-region-bars ul { display: grid; gap: 6px; margin-top: 12px; }
+.analytics-region-bars button { position: relative; display: flex; justify-content: space-between; align-items: center; gap: 12px; width: 100%; min-height: 44px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 5px; overflow: hidden; text-align: left; font-size: 13px; }
+.analytics-region-bars button span, .analytics-region-bars button strong { position: relative; z-index: 1; }
+.analytics-region-bars button i { position: absolute; inset: 0 auto 0 0; background: var(--brand); opacity: .14; }
+.analytics-region-bars button:hover { border-color: var(--neon); }
+@media (max-width: 639px) {
+  .app-navigation { gap: 3px; }
+  .app-navigation a, .demo-start, .map-toggle { min-width: 44px; padding-inline: 0; font-size: 10px; }
+  .app-header { gap: 6px; }
+  .app-header .brand-word { font-size: 11px; letter-spacing: .12em; }
+  .app-header .brand-suffix { font-size: 7.5px; letter-spacing: .12em; }
+  .app-shell--workspace { padding-inline: max(16px, env(safe-area-inset-left)); }
+  .app-shell--workspace .map-hero { margin-top: 28px; }
+  .app-shell--workspace .analytics-heading { flex-direction: column; }
+}

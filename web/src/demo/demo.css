@@ -1,0 +1,15 @@
+.app-navigation { display: flex; gap: 8px; }
+.demo-start { min-height: 44px; padding: 0 14px; border: 1px solid var(--edge-12); border-radius: 5px; background: var(--surface-9); color: var(--neon); font-size: 12px; }
+.demo-start:hover, .demo-start[aria-pressed='true'] { border-color: var(--neon); background: var(--surface-10); }
+.demo-controls { display: flex; justify-content: center; align-items: center; gap: 8px; margin: 8px auto 0; width: min(620px, 100%); pointer-events: auto; }
+.demo-controls p { margin-right: auto; font-size: 10px; color: var(--neon); letter-spacing: .04em; text-align: left; }
+.demo-controls button { min-height: 44px; padding: 0 14px; border: 1px solid var(--edge-12); border-radius: 5px; background: var(--surface-11); font-size: 12px; }
+.demo-controls button:hover, .demo-controls button[aria-pressed='true'] { border-color: var(--neon); color: var(--neon); }
+.has-result .demo-controls { max-width: 560px; }
+@media (max-width: 639px) {
+  .app-navigation { gap: 6px; }
+  .demo-start { padding-inline: 10px; font-size: 11px; }
+  .demo-controls { gap: 6px; }
+  .demo-controls p { font-size: 9px; letter-spacing: 0; }
+  .demo-controls button { padding-inline: 10px; font-size: 11px; }
+}

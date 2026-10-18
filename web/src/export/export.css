@@ -1,0 +1,15 @@
+.export-menu { position: relative; }
+.export-menu > .file-button { width: 100%; }
+.export-options { position: absolute; z-index: 8; top: calc(100% + 8px); right: 0; width: min(285px, calc(100vw - 64px)); display: grid; gap: 8px; padding: 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg-elev); box-shadow: 0 12px 32px var(--shadow-5); }
+.export-options label, .export-options p { font-size: 12px; color: var(--muted); }
+.export-options select { width: 100%; min-width: 0; min-height: 44px; background: var(--bg); border: 1px solid var(--line); border-radius: 4px; padding: 8px; color: var(--text); font-size: 16px; }
+.export-options .file-button { justify-content: center; }
+.result-export { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); }
+.export-message { width: 100%; color: var(--neon); font-size: 12px; }
+.export-error { color: var(--text); }
+.analytics-export { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 18px; }
+@media (max-width: 639px) {
+  .export-options { right: auto; left: 0; }
+  .file-toolbar-actions .export-menu { position: static; }
+  .file-toolbar-actions { position: relative; }
+}

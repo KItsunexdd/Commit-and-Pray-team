@@ -1,0 +1,8 @@
+node_modules/
+public/geo/
+public/licenses/
+.env*
+*.local
+*.tsbuildinfo
+coverage/
+.qa/

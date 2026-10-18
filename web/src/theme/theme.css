@@ -1,0 +1,36 @@
+.theme-toggle { width: 44px; height: 44px; flex: 0 0 44px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 5px; color: var(--neon); background: var(--bg-elev); }
+.theme-toggle svg { width: 21px; height: 21px; stroke: currentColor; stroke-width: 1.7; }
+.theme-toggle:hover { border-color: var(--neon); }
+.brand-word { color: var(--brand); }
+.brand-suffix { color: var(--text); }
+.search-submit, .file-button--primary { background: var(--action); color: var(--on-action); border-color: var(--action); }
+.file-button--primary:hover:not(:disabled) { background: var(--neon); color: var(--on-action); }
+.map-svg path { stroke: var(--map-seam); }
+.map-svg path.map-svg-selected { fill: var(--map-selected); }
+.map-svg-plate path { stroke: var(--map-plate-0) !important; }
+.map-borders { stroke: var(--map-seam); }
+.map-country, .map-country-halo { stroke: var(--map-contour); }
+.map-city, .map-city--major { color: var(--map-label); }
+.map-city-dot { background: var(--map-dot); }
+.map-city-name { text-shadow: 0 1px 3px var(--map-label-halo), 0 0 5px var(--map-label-halo); }
+.map-arcs { display: none; position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke: var(--arc-gray); stroke-width: 1; pointer-events: none; }
+.map-arcs .green { stroke: var(--arc-green); }
+html[data-theme='light'] .map-arcs { display: block; }
+html[data-theme='light'] .map-atmosphere { background: var(--bg); }
+html[data-theme='light'] .map-grid { opacity: .08; }
+html[data-theme='light'] .map-country-halo, html[data-theme='light'] .map-selected-halo { opacity: .1; animation: none; stroke-width: 3; }
+html[data-theme='light'] .hud-frame, html[data-theme='light'] .hud-crosshair, html[data-theme='light'] .hud-ruler { opacity: .3; }
+html[data-theme='light'] .map-city--selected .map-city-name { background: var(--bg); padding: 3px 6px; border-radius: 4px; text-shadow: none; }
+html[data-theme='light'] .map-svg path.map-svg-dim { fill: var(--map-dim); opacity: 1 !important; }
+html[data-theme='light'] .search-spinner { border-color: var(--on-action); border-top-color: var(--action); }
+@media (max-width: 639px) {
+  .app-header { left: 16px; right: 16px; gap: 8px; }
+  .app-navigation { gap: 4px; }
+  .app-navigation a, .demo-start { padding-inline: 8px; }
+  .app-header .brand-word { font-size: 13px; letter-spacing: .16em; }
+  .app-header .brand-suffix { font-size: 8px; }
+  .has-result .app-header { right: 80px; }
+}
+@media (min-width: 640px) and (max-width: 1366px) {
+  .app-shell--map:not(.has-result) .map-hero { top: 104px; }
+}
