@@ -1,0 +1,36 @@
+{
+  "schema_version": "baseline-neighbours/1",
+  "source": "address_db/neighbours-v009",
+  "allowed": [
+    [
+      "kato:151010000",
+      "osm_boundary"
+    ],
+    [
+      "kato:311010000",
+      "osm_boundary"
+    ],
+    [
+      "kato:710000000",
+      "osm_boundary"
+    ],
+    [
+      "kato:750000000",
+      "osm_boundary"
+    ],
+    [
+      "kato:790000000",
+      "osm_boundary"
+    ]
+  ],
+  "source_sha256": {
+    "families-000.json": "d870cb1e4a6ec8d2c7f8a45e0f186cd8a0943154b3c53d699cb0a3129ab86bff",
+    "families-001.json": "db0e3db085383def999cd633ea56ffe65df7d48663d19739bb1f636d10f5d9c3",
+    "policy.json": "c01d4559fc397556729e349350635f1495211337742392a34e63201941ff631f",
+    "validation.json": "22b20ec3c1bfbc78bf7a1b19117a34f6d022064930cd96485b1ccace09675e47",
+    "families.json": "af1ec8dc876de6e3b75368bcfd3a7ffc7ed94299197638ed44eda3f3a649bf3e"
+  },
+  "records": 249717,
+  "edge_enabled": false,
+  "output_sha256": "6ab7157825459af5ad15de35c13653a8311fbfbd834852a722e83118daa11727"
+}

@@ -1,0 +1,300 @@
+{"record_key": "T3.1-dev-0001", "position_zero_based": 0, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0002", "position_zero_based": 1, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0003", "position_zero_based": 2, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0004", "position_zero_based": 3, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0005", "position_zero_based": 4, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0006", "position_zero_based": 5, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0007", "position_zero_based": 6, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0008", "position_zero_based": 7, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0009", "position_zero_based": 8, "eligible_scored_fields": ["province", "city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0010", "position_zero_based": 9, "eligible_scored_fields": ["province", "city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0011", "position_zero_based": 10, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0012", "position_zero_based": 11, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0013", "position_zero_based": 12, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0014", "position_zero_based": 13, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0015", "position_zero_based": 14, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0016", "position_zero_based": 15, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0017", "position_zero_based": 16, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0018", "position_zero_based": 17, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0019", "position_zero_based": 18, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0020", "position_zero_based": 19, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0021", "position_zero_based": 20, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0022", "position_zero_based": 21, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0023", "position_zero_based": 22, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0024", "position_zero_based": 23, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0025", "position_zero_based": 24, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0026", "position_zero_based": 25, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0027", "position_zero_based": 26, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0028", "position_zero_based": 27, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0029", "position_zero_based": 28, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0030", "position_zero_based": 29, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0031", "position_zero_based": 30, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0032", "position_zero_based": 31, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0033", "position_zero_based": 32, "eligible_scored_fields": ["city", "street_name", "house", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0034", "position_zero_based": 33, "eligible_scored_fields": ["city", "street_name", "house", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0035", "position_zero_based": 34, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0036", "position_zero_based": 35, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0037", "position_zero_based": 36, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0038", "position_zero_based": 37, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0039", "position_zero_based": 38, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0040", "position_zero_based": 39, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0041", "position_zero_based": 40, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0042", "position_zero_based": 41, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0043", "position_zero_based": 42, "eligible_scored_fields": ["street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0044", "position_zero_based": 43, "eligible_scored_fields": ["street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0045", "position_zero_based": 44, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0046", "position_zero_based": 45, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0047", "position_zero_based": 46, "eligible_scored_fields": ["city", "street_name", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0048", "position_zero_based": 47, "eligible_scored_fields": ["city", "street_name", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0049", "position_zero_based": 48, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0050", "position_zero_based": 49, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0051", "position_zero_based": 50, "eligible_scored_fields": ["city", "street_name", "house", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0052", "position_zero_based": 51, "eligible_scored_fields": ["city", "street_name", "house", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0053", "position_zero_based": 52, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0054", "position_zero_based": 53, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0055", "position_zero_based": 54, "eligible_scored_fields": ["province", "city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0056", "position_zero_based": 55, "eligible_scored_fields": ["province", "city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0057", "position_zero_based": 56, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0058", "position_zero_based": 57, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0059", "position_zero_based": 58, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0060", "position_zero_based": 59, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0061", "position_zero_based": 60, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0062", "position_zero_based": 61, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0063", "position_zero_based": 62, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0064", "position_zero_based": 63, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0065", "position_zero_based": 64, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0066", "position_zero_based": 65, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0067", "position_zero_based": 66, "eligible_scored_fields": ["city", "street_name", "house", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0068", "position_zero_based": 67, "eligible_scored_fields": ["city", "street_name", "house", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0069", "position_zero_based": 68, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0070", "position_zero_based": 69, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0071", "position_zero_based": 70, "eligible_scored_fields": ["province", "city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0072", "position_zero_based": 71, "eligible_scored_fields": ["province", "city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0073", "position_zero_based": 72, "eligible_scored_fields": ["province", "city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0074", "position_zero_based": 73, "eligible_scored_fields": ["province", "city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0075", "position_zero_based": 74, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0076", "position_zero_based": 75, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0077", "position_zero_based": 76, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0078", "position_zero_based": 77, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0079", "position_zero_based": 78, "eligible_scored_fields": ["city", "street_name", "house", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0080", "position_zero_based": 79, "eligible_scored_fields": ["city", "street_name", "house", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0081", "position_zero_based": 80, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": ["apartment", "house", "street_name"]}
+{"record_key": "T3.1-dev-0082", "position_zero_based": 81, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": ["apartment", "house", "street_name"]}
+{"record_key": "T3.1-dev-0083", "position_zero_based": 82, "eligible_scored_fields": ["street_name", "house"], "excluded_unresolved_fields": ["city", "province"]}
+{"record_key": "T3.1-dev-0084", "position_zero_based": 83, "eligible_scored_fields": ["street_name", "house"], "excluded_unresolved_fields": ["city", "province"]}
+{"record_key": "T3.1-dev-0085", "position_zero_based": 84, "eligible_scored_fields": ["city", "street_name"], "excluded_unresolved_fields": ["apartment", "house"]}
+{"record_key": "T3.1-dev-0086", "position_zero_based": 85, "eligible_scored_fields": ["city", "street_name"], "excluded_unresolved_fields": ["apartment", "house"]}
+{"record_key": "T3.1-dev-0087", "position_zero_based": 86, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": ["apartment", "house", "living_area", "street_name"]}
+{"record_key": "T3.1-dev-0088", "position_zero_based": 87, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": ["apartment", "house", "living_area", "street_name"]}
+{"record_key": "T3.1-dev-0089", "position_zero_based": 88, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0090", "position_zero_based": 89, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0091", "position_zero_based": 90, "eligible_scored_fields": ["city", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0092", "position_zero_based": 91, "eligible_scored_fields": ["city", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0093", "position_zero_based": 92, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0094", "position_zero_based": 93, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0095", "position_zero_based": 94, "eligible_scored_fields": [], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0096", "position_zero_based": 95, "eligible_scored_fields": [], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0097", "position_zero_based": 96, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0098", "position_zero_based": 97, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0099", "position_zero_based": 98, "eligible_scored_fields": ["city", "street_name", "house", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0100", "position_zero_based": 99, "eligible_scored_fields": ["city", "street_name", "house", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0101", "position_zero_based": 100, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0102", "position_zero_based": 101, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0103", "position_zero_based": 102, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0104", "position_zero_based": 103, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0105", "position_zero_based": 104, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0106", "position_zero_based": 105, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0107", "position_zero_based": 106, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0108", "position_zero_based": 107, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0109", "position_zero_based": 108, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0110", "position_zero_based": 109, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0111", "position_zero_based": 110, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0112", "position_zero_based": 111, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0113", "position_zero_based": 112, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0114", "position_zero_based": 113, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0115", "position_zero_based": 114, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0116", "position_zero_based": 115, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0117", "position_zero_based": 116, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0118", "position_zero_based": 117, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0119", "position_zero_based": 118, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0120", "position_zero_based": 119, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0121", "position_zero_based": 120, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0122", "position_zero_based": 121, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0123", "position_zero_based": 122, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0124", "position_zero_based": 123, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0125", "position_zero_based": 124, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0126", "position_zero_based": 125, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0127", "position_zero_based": 126, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0128", "position_zero_based": 127, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0129", "position_zero_based": 128, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0130", "position_zero_based": 129, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0131", "position_zero_based": 130, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0132", "position_zero_based": 131, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0133", "position_zero_based": 132, "eligible_scored_fields": ["city", "street_name", "house", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0134", "position_zero_based": 133, "eligible_scored_fields": ["city", "street_name", "house", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0135", "position_zero_based": 134, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0136", "position_zero_based": 135, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0137", "position_zero_based": 136, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0138", "position_zero_based": 137, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0139", "position_zero_based": 138, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0140", "position_zero_based": 139, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0141", "position_zero_based": 140, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0142", "position_zero_based": 141, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0143", "position_zero_based": 142, "eligible_scored_fields": ["street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0144", "position_zero_based": 143, "eligible_scored_fields": ["street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0145", "position_zero_based": 144, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0146", "position_zero_based": 145, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0147", "position_zero_based": 146, "eligible_scored_fields": ["city", "street_name", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0148", "position_zero_based": 147, "eligible_scored_fields": ["city", "street_name", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0149", "position_zero_based": 148, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0150", "position_zero_based": 149, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0151", "position_zero_based": 150, "eligible_scored_fields": ["city", "street_name", "house", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0152", "position_zero_based": 151, "eligible_scored_fields": ["city", "street_name", "house", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0153", "position_zero_based": 152, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0154", "position_zero_based": 153, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0155", "position_zero_based": 154, "eligible_scored_fields": ["province", "city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0156", "position_zero_based": 155, "eligible_scored_fields": ["province", "city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0157", "position_zero_based": 156, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0158", "position_zero_based": 157, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0159", "position_zero_based": 158, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0160", "position_zero_based": 159, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0161", "position_zero_based": 160, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0162", "position_zero_based": 161, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0163", "position_zero_based": 162, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0164", "position_zero_based": 163, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0165", "position_zero_based": 164, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0166", "position_zero_based": 165, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0167", "position_zero_based": 166, "eligible_scored_fields": ["city", "street_name", "house", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0168", "position_zero_based": 167, "eligible_scored_fields": ["city", "street_name", "house", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0169", "position_zero_based": 168, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0170", "position_zero_based": 169, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0171", "position_zero_based": 170, "eligible_scored_fields": ["province", "city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0172", "position_zero_based": 171, "eligible_scored_fields": ["province", "city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0173", "position_zero_based": 172, "eligible_scored_fields": ["province", "city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0174", "position_zero_based": 173, "eligible_scored_fields": ["province", "city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0175", "position_zero_based": 174, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0176", "position_zero_based": 175, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0177", "position_zero_based": 176, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0178", "position_zero_based": 177, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0179", "position_zero_based": 178, "eligible_scored_fields": ["city", "street_name", "house", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0180", "position_zero_based": 179, "eligible_scored_fields": ["city", "street_name", "house", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0181", "position_zero_based": 180, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": ["apartment", "house", "street_name"]}
+{"record_key": "T3.1-dev-0182", "position_zero_based": 181, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": ["apartment", "house", "street_name"]}
+{"record_key": "T3.1-dev-0183", "position_zero_based": 182, "eligible_scored_fields": ["street_name", "house"], "excluded_unresolved_fields": ["city", "province"]}
+{"record_key": "T3.1-dev-0184", "position_zero_based": 183, "eligible_scored_fields": ["street_name", "house"], "excluded_unresolved_fields": ["city", "province"]}
+{"record_key": "T3.1-dev-0185", "position_zero_based": 184, "eligible_scored_fields": ["city", "street_name"], "excluded_unresolved_fields": ["apartment", "house"]}
+{"record_key": "T3.1-dev-0186", "position_zero_based": 185, "eligible_scored_fields": ["city", "street_name"], "excluded_unresolved_fields": ["apartment", "house"]}
+{"record_key": "T3.1-dev-0187", "position_zero_based": 186, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": ["apartment", "house", "living_area", "street_name"]}
+{"record_key": "T3.1-dev-0188", "position_zero_based": 187, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": ["apartment", "house", "living_area", "street_name"]}
+{"record_key": "T3.1-dev-0189", "position_zero_based": 188, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0190", "position_zero_based": 189, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0191", "position_zero_based": 190, "eligible_scored_fields": ["city", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0192", "position_zero_based": 191, "eligible_scored_fields": ["city", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0193", "position_zero_based": 192, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0194", "position_zero_based": 193, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0195", "position_zero_based": 194, "eligible_scored_fields": ["city", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0196", "position_zero_based": 195, "eligible_scored_fields": ["city", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0197", "position_zero_based": 196, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0198", "position_zero_based": 197, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0199", "position_zero_based": 198, "eligible_scored_fields": ["city", "street_name", "house", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0200", "position_zero_based": 199, "eligible_scored_fields": ["city", "street_name", "house", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0201", "position_zero_based": 200, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0202", "position_zero_based": 201, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0203", "position_zero_based": 202, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0204", "position_zero_based": 203, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0205", "position_zero_based": 204, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0206", "position_zero_based": 205, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0207", "position_zero_based": 206, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0208", "position_zero_based": 207, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0209", "position_zero_based": 208, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0210", "position_zero_based": 209, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0211", "position_zero_based": 210, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0212", "position_zero_based": 211, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0213", "position_zero_based": 212, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0214", "position_zero_based": 213, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0215", "position_zero_based": 214, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0216", "position_zero_based": 215, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0217", "position_zero_based": 216, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0218", "position_zero_based": 217, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0219", "position_zero_based": 218, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0220", "position_zero_based": 219, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0221", "position_zero_based": 220, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0222", "position_zero_based": 221, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0223", "position_zero_based": 222, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0224", "position_zero_based": 223, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0225", "position_zero_based": 224, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0226", "position_zero_based": 225, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0227", "position_zero_based": 226, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0228", "position_zero_based": 227, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0229", "position_zero_based": 228, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0230", "position_zero_based": 229, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0231", "position_zero_based": 230, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0232", "position_zero_based": 231, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0233", "position_zero_based": 232, "eligible_scored_fields": ["city", "street_name", "house", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0234", "position_zero_based": 233, "eligible_scored_fields": ["city", "street_name", "house", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0235", "position_zero_based": 234, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0236", "position_zero_based": 235, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0237", "position_zero_based": 236, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0238", "position_zero_based": 237, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0239", "position_zero_based": 238, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0240", "position_zero_based": 239, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0241", "position_zero_based": 240, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0242", "position_zero_based": 241, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0243", "position_zero_based": 242, "eligible_scored_fields": ["street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0244", "position_zero_based": 243, "eligible_scored_fields": ["street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0245", "position_zero_based": 244, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0246", "position_zero_based": 245, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0247", "position_zero_based": 246, "eligible_scored_fields": ["city", "street_name", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0248", "position_zero_based": 247, "eligible_scored_fields": ["city", "street_name", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0249", "position_zero_based": 248, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0250", "position_zero_based": 249, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0251", "position_zero_based": 250, "eligible_scored_fields": ["city", "street_name", "house", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0252", "position_zero_based": 251, "eligible_scored_fields": ["city", "street_name", "house", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0253", "position_zero_based": 252, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0254", "position_zero_based": 253, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0255", "position_zero_based": 254, "eligible_scored_fields": ["province", "city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0256", "position_zero_based": 255, "eligible_scored_fields": ["province", "city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0257", "position_zero_based": 256, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0258", "position_zero_based": 257, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0259", "position_zero_based": 258, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0260", "position_zero_based": 259, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0261", "position_zero_based": 260, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0262", "position_zero_based": 261, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0263", "position_zero_based": 262, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0264", "position_zero_based": 263, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0265", "position_zero_based": 264, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0266", "position_zero_based": 265, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0267", "position_zero_based": 266, "eligible_scored_fields": ["city", "street_name", "house", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0268", "position_zero_based": 267, "eligible_scored_fields": ["city", "street_name", "house", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0269", "position_zero_based": 268, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0270", "position_zero_based": 269, "eligible_scored_fields": ["city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0271", "position_zero_based": 270, "eligible_scored_fields": ["province", "city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0272", "position_zero_based": 271, "eligible_scored_fields": ["province", "city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0273", "position_zero_based": 272, "eligible_scored_fields": ["province", "city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0274", "position_zero_based": 273, "eligible_scored_fields": ["province", "city", "street_name", "house"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0275", "position_zero_based": 274, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0276", "position_zero_based": 275, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor", "living_area"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0277", "position_zero_based": 276, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0278", "position_zero_based": 277, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "district"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0279", "position_zero_based": 278, "eligible_scored_fields": ["city", "street_name", "house", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0280", "position_zero_based": 279, "eligible_scored_fields": ["city", "street_name", "house", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0281", "position_zero_based": 280, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": ["apartment", "house", "street_name"]}
+{"record_key": "T3.1-dev-0282", "position_zero_based": 281, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": ["apartment", "house", "street_name"]}
+{"record_key": "T3.1-dev-0283", "position_zero_based": 282, "eligible_scored_fields": ["street_name", "house"], "excluded_unresolved_fields": ["city", "province"]}
+{"record_key": "T3.1-dev-0284", "position_zero_based": 283, "eligible_scored_fields": ["street_name", "house"], "excluded_unresolved_fields": ["city", "province"]}
+{"record_key": "T3.1-dev-0285", "position_zero_based": 284, "eligible_scored_fields": ["city", "street_name"], "excluded_unresolved_fields": ["apartment", "house"]}
+{"record_key": "T3.1-dev-0286", "position_zero_based": 285, "eligible_scored_fields": ["city", "street_name"], "excluded_unresolved_fields": ["apartment", "house"]}
+{"record_key": "T3.1-dev-0287", "position_zero_based": 286, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": ["apartment", "house", "living_area", "street_name"]}
+{"record_key": "T3.1-dev-0288", "position_zero_based": 287, "eligible_scored_fields": ["city"], "excluded_unresolved_fields": ["apartment", "house", "living_area", "street_name"]}
+{"record_key": "T3.1-dev-0289", "position_zero_based": 288, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0290", "position_zero_based": 289, "eligible_scored_fields": ["city", "street_name", "house", "apartment", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0291", "position_zero_based": 290, "eligible_scored_fields": ["city", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0292", "position_zero_based": 291, "eligible_scored_fields": ["city", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0293", "position_zero_based": 292, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0294", "position_zero_based": 293, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0295", "position_zero_based": 294, "eligible_scored_fields": ["city", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0296", "position_zero_based": 295, "eligible_scored_fields": ["city", "entrance"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0297", "position_zero_based": 296, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0298", "position_zero_based": 297, "eligible_scored_fields": ["city", "street_name", "house", "apartment"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0299", "position_zero_based": 298, "eligible_scored_fields": ["city", "street_name", "house", "floor"], "excluded_unresolved_fields": []}
+{"record_key": "T3.1-dev-0300", "position_zero_based": 299, "eligible_scored_fields": ["city", "street_name", "house", "floor"], "excluded_unresolved_fields": []}

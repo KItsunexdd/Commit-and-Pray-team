@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0.0",
+  "spec_version": "1.1",
+  "status": "provisional_interpretation_before_organizer_clarification",
+  "path_base": "project_root",
+  "fields": [
+    "province",
+    "city",
+    "district",
+    "living_area",
+    "street_type",
+    "street_name",
+    "house",
+    "apartment",
+    "entrance",
+    "floor",
+    "landmark"
+  ],
+  "groups": {
+    "address": {
+      "weight": 0.6,
+      "fields": [
+        "province",
+        "city",
+        "street_name",
+        "house"
+      ]
+    },
+    "details": {
+      "weight": 0.25,
+      "fields": [
+        "apartment",
+        "entrance",
+        "floor"
+      ]
+    },
+    "reference": {
+      "weight": 0.15,
+      "fields": [
+        "district",
+        "living_area"
+      ]
+    }
+  },
+  "eligibility": "origin == explicit and expected != null and field not in unresolved ambiguity fields",
+  "primary": "weighted mean of group means of nonempty per-field accuracies",
+  "empty_field": "exclude from group mean",
+  "empty_group": "exclude and renormalize remaining group weights",
+  "no_eligible_fields": null,
+  "secondary": [
+    "micro_accuracy_eligible_cells",
+    "group_exact_match_over_nonempty_record_groups",
+    "fully_present_group_exact_match",
+    "absent_extra_rate",
+    "inferred_accuracy"
+  ],
+  "normalization": {
+    "case": "lower",
+    "punctuation": "remove Unicode categories P* except / and - in number fields",
+    "whitespace": "Unicode split/join",
+    "unicode_normal_form": "none",
+    "format_characters": "preserve",
+    "homoglyphs": "preserve",
+    "yo_to_ye": false,
+    "numbers": "string"
+  },
+  "number_fields": [
+    "house",
+    "apartment",
+    "entrance",
+    "floor"
+  ],
+  "sensitivity_modes": [
+    "judge_literal",
+    "corpus_policy",
+    "kk_city_policy",
+    "unresolved_alternative_scenarios",
+    "province_name_policy"
+  ],
+  "inferred_in_primary": false,
+  "absent_in_primary": false,
+  "extra_value_interpretation": "separate unsupported-fill diagnostic; enrichment may be legitimate; not subtracted from primary",
+  "unscored_fields": [
+    "street_type",
+    "landmark",
+    "confidence"
+  ],
+  "span_unit": "unicode_code_point",
+  "span_end": "exclusive",
+  "record_matching": "array_position_only",
+  "require_input_id_and_raw_exact": true,
+  "street_type_markers": {
+    "ул": "улица",
+    "ул.": "улица",
+    "улица": "улица",
+    "ул .": "улица",
+    "көшесі": "улица",
+    "көш.": "улица",
+    "street": "улица",
+    "st": "улица",
+    "пр": "проспект",
+    "пр.": "проспект",
+    "проспект": "проспект",
+    "даңғылы": "проспект",
+    "мкр": "микрорайон",
+    "мкр.": "микрорайон",
+    "микрорайон": "микрорайон",
+    "шағын аудан": "микрорайон",
+    "пер.": "переулок",
+    "переулок": "переулок",
+    "квартал": "квартал",
+    "бульвар": "бульвар",
+    "проезд": "проезд"
+  },
+  "selection_protocol": {
+    "status": "not_run_no_candidates_or_gold_available",
+    "default": "freeze one candidate C and baseline B before test; one paired comparison",
+    "gold_required": "independently reviewed and adjudicated; never t_only",
+    "cluster": "entity_group",
+    "additional_cluster_sensitivity": "template_family",
+    "bootstrap_seed": 20261017,
+    "bootstrap_replicates": 10000,
+    "interval": "paired percentile 95%",
+    "accept_C_if": "lower bound of primary delta > 0 and resource/contract gates pass",
+    "multiple_comparisons": "requires preregistered correction before test access"
+  },
+  "named_province_forms": {
+    "Абай область": {
+      "canonical": "Абайская область",
+      "official": "область Абай"
+    },
+    "Абайская область": {
+      "canonical": "Абайская область",
+      "official": "область Абай"
+    },
+    "область Абай": {
+      "canonical": "Абайская область",
+      "official": "область Абай"
+    },
+    "область Абайская": {
+      "canonical": "Абайская область",
+      "official": "область Абай"
+    },
+    "Жетісу область": {
+      "canonical": "Жетысуская область",
+      "official": "область Жетісу"
+    },
+    "Жетысуская область": {
+      "canonical": "Жетысуская область",
+      "official": "область Жетісу"
+    },
+    "область Жетісу": {
+      "canonical": "Жетысуская область",
+      "official": "область Жетісу"
+    },
+    "область Жетысуская": {
+      "canonical": "Жетысуская область",
+      "official": "область Жетісу"
+    },
+    "Ұлытау область": {
+      "canonical": "Улытауская область",
+      "official": "область Ұлытау"
+    },
+    "Улытауская область": {
+      "canonical": "Улытауская область",
+      "official": "область Ұлытау"
+    },
+    "область Ұлытау": {
+      "canonical": "Улытауская область",
+      "official": "область Ұлытау"
+    },
+    "область Улытауская": {
+      "canonical": "Улытауская область",
+      "official": "область Ұлытау"
+    }
+  },
+  "province_policy_source": "Team correction before independent annotation; official alternative pending organizer answer",
+  "province_policy_reason": "до ответа организаторов"
+}

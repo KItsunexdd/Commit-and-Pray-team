@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "gold_version": "T3.1_A1",
+  "source_release": "T3.1",
+  "spec_version": "1.1",
+  "frozen_at": "2026-10-17T09:44:10.955619+05:00",
+  "path_base": "project_root",
+  "rows": 300,
+  "access": "parser developer: only files listed here and this manifest",
+  "status": "adjudicated_with_unresolved_and_correlated_review",
+  "artifacts": {
+    "datasets/evaluation/gold/T3.1_A1/dev.jsonl": {
+      "sha256": "ea5ae419c50a94aaf3486472573e8580211cf0f13a8c30bd55174af87655c4bc",
+      "bytes": 485923
+    },
+    "datasets/evaluation/gold/T3.1_A1/eligibility/dev.jsonl": {
+      "sha256": "73edd0225bb485a3362fbbfcb4c3d5c97f69e6e63b29ab23121045fa04dc9b5c",
+      "bytes": 50698
+    },
+    "datasets/evaluation/gold/T3.1_A1/annotation_spec.md": {
+      "sha256": "67cae2931b5a1c0a42075ea4005a049865ec6172d78b92e8d601ee4f4310b911",
+      "bytes": 22188
+    },
+    "datasets/evaluation/gold/T3.1_A1/evaluation_config.json": {
+      "sha256": "940eb2ffdc5c3f09f58c84afa9d2ed41279a647c5725ddf548a79e4d4eba20cf",
+      "bytes": 5718
+    },
+    "datasets/evaluation/gold/T3.1_A1/README.md": {
+      "sha256": "9bb8b1c5f43930e272bdbb204ec0a780744a384de444ec2e02999d26edb2ead5",
+      "bytes": 1752
+    }
+  }
+}

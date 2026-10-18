@@ -1,0 +1,13 @@
+{
+  "schema_version": "geonim-uniform/1",
+  "minimum_houses": 3,
+  "minimum_precision": 0.99,
+  "minimum_wilson_lower_95": 0.97,
+  "minimum_predictions": 100,
+  "minimum_geonims": 10,
+  "incomplete_labels": "abstain",
+  "conflicting_observations": "abstain",
+  "unit": "unique locality/geonim/house number/corpus; all observations of held-out key removed",
+  "validation": "leave_one_house_out; mixed-district groups included; alias groups deduplicated",
+  "selection": "fixed thresholds before measurements; no test/calibration input"
+}
