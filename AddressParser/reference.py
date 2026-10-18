@@ -54,14 +54,29 @@ def street_name_index(path,modified,size):
     try:
         db.execute('PRAGMA query_only=ON')
         db.execute('PRAGMA mmap_size=134217728')
-        result={}
-        for city,key in db.execute('SELECT a.id,n.key FROM name_targets n '
-                'JOIN geonims g ON g.gid=n.target JOIN admin a ON a.aid=g.locality '
-                'WHERE n.kind=1 AND g.role=?',('street',)):
-            if len(key)>=3:result.setdefault(city,{}).setdefault(len(key),set()).add(key)
-        return {city:{length:(tuple(sorted(keys)),tuple(sorted(k[::-1] for k in keys)))
+        result={};all_names=set();city_names={}
+        for city,key,role in db.execute('SELECT a.id,n.key,g.role FROM name_targets n '
+                'JOIN geonims g ON g.gid=n.target LEFT JOIN admin a ON a.aid=g.locality '
+                'WHERE n.kind=1'):
+            all_names.add(key)
+            city_names.setdefault(city,set()).add(key)
+            if city and role=='street' and len(key)>=3:result.setdefault(city,{}).setdefault(len(key),set()).add(key)
+        spellings={city:{length:(tuple(sorted(keys)),tuple(sorted(k[::-1] for k in keys)))
                       for length,keys in lengths.items()}
                 for city,lengths in result.items()}
+        admin_targets={}
+        for key,identity in db.execute('SELECT n.key,a.id FROM name_targets n JOIN admin a ON a.aid=n.target '
+                'WHERE n.kind=0 ORDER BY a.aid'):
+            admin_targets.setdefault(key,[]).append(identity)
+        districts=[];district_spellings={}
+        for identity,names,variants,city in db.execute('SELECT d.id,d.names_json,d.variants_json,c.id FROM admin d '
+                "JOIN admin c ON c.aid=d.locality WHERE d.type='urban_district'"):
+            keys=frozenset(normalize(district_name(n)) for n in [*json.loads(names).values(),*json.loads(variants)] if n)
+            districts.append((identity,city,keys))
+            for key in keys:district_spellings.setdefault(city,{}).setdefault(key,set()).add(identity)
+        return (spellings,frozenset(all_names),{city:frozenset(keys) for city,keys in city_names.items()},
+                {key:tuple(ids) for key,ids in admin_targets.items()},tuple(districts),
+                {city:{key:frozenset(ids) for key,ids in names.items()} for city,names in district_spellings.items()})
     finally:db.close()
 
 class EmptyReference:
@@ -73,6 +88,7 @@ class EmptyReference:
     def evidence(self, ids): return {}
     def district_localities(self,name): return []
     def reverse_house(self,name,number,corpus=None):return []
+    def locality_hint(self,name):return []
     def geonim_forms(self,name,city_id):return []
     def confirm_geonims(self,name,city_id):return [],None
     def confirm_district(self,name,city_id):return [],None
@@ -88,7 +104,8 @@ class Reference(EmptyReference):
         self.has_territories=bool(self.db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='territory_districts'").fetchone())
         self.source='address_runtime/v002-territories' if self.has_territories else 'address_runtime/v001-project'
         stamp=self.path.stat()
-        self._street_names=street_name_index(str(self.path),stamp.st_mtime_ns,stamp.st_size)
+        (self._street_names,self._geonim_names,self._city_names,self._admin_targets,
+         self._districts,self._district_names)=street_name_index(str(self.path),stamp.st_mtime_ns,stamp.st_size)
 
     @lru_cache(maxsize=8192)
     def admin_display(self, entity_id, profile='project'):
@@ -102,9 +119,8 @@ class Reference(EmptyReference):
 
     @lru_cache(maxsize=8192)
     def admins(self, name):
-        rows = self.db.execute('SELECT a.id FROM name_targets n JOIN admin a ON a.aid=n.target '
-                              'WHERE n.key=? AND n.kind=0 ORDER BY a.aid', (normalize(name),))
-        found=[self.admin_display(r['id'], profile='project') for r in rows]
+        key=normalize(name)
+        found=[self.admin_display(identity, profile='project') for identity in self._admin_targets.get(key,())]
         alias=LOCALITY_ALIASES.get(normalize(name))
         if alias:
             found.extend(a for a in self.admins(alias) if a['type'] in ('city','town'))
@@ -112,14 +128,17 @@ class Reference(EmptyReference):
 
     @lru_cache(maxsize=8192)
     def geonims(self, name, city_id=None):
+        key=normalize(name)
+        if key not in (self._city_names.get(city_id,()) if city_id else self._geonim_names):return []
         sql = ('SELECT g.*,a.id AS city_id FROM name_targets n JOIN geonims g ON g.gid=n.target '
                'LEFT JOIN admin a ON a.aid=g.locality WHERE n.key=? AND n.kind=1')
-        args = [normalize(name)]
+        args = [key]
         if city_id:
             sql += ' AND a.id=?'; args.append(city_id)
         sql += ' ORDER BY g.gid'
         return [dict(r) for r in self.db.execute(sql, args)]
 
+    @lru_cache(maxsize=8192)
     def house(self, city_id, geonim_id, number, corpus=None):
         row = self.db.execute('SELECT a.aid,g.gid FROM admin a,geonims g WHERE a.id=? AND g.id=?',
                               (city_id, geonim_id)).fetchone()
@@ -177,13 +196,7 @@ class Reference(EmptyReference):
 
     @lru_cache(maxsize=256)
     def _district_spellings(self,city_id):
-        result={}
-        for row in self.db.execute('SELECT id,names_json,variants_json FROM admin WHERE type=? '
-                'AND locality=(SELECT aid FROM admin WHERE id=?)',('urban_district',city_id)):
-            names=list(json.loads(row['names_json']).values())+json.loads(row['variants_json'])
-            for name in names:
-                if name:result.setdefault(normalize(district_name(name)),set()).add(row['id'])
-        return result
+        return self._district_names.get(city_id,{})
 
     @lru_cache(maxsize=2048)
     def confirm_district(self,name,city_id):
@@ -207,16 +220,34 @@ class Reference(EmptyReference):
         forms=name_forms(name)
         found={}
         for key in sorted(forms):
-            rows=self.db.execute('SELECT a.id city_id,g.id geonim_id FROM name_targets n '
+            rows=self.db.execute('SELECT a.id city_id,g.id geonim_id,n.name_class FROM name_targets n '
                 'JOIN geonims g ON g.gid=n.target JOIN houses h ON h.locality=g.locality AND h.geonim=g.gid '
                 'JOIN admin a ON a.aid=h.locality WHERE n.key=? AND n.kind=1 AND g.role=? '
                 'AND h.number=? AND h.corpus=? ORDER BY a.id,g.id',
                 (key,'street',number,'0' if corpus is None else '1'+corpus))
             for row in rows:
-                c=found.setdefault(row['city_id'],dict(city=self.admin_display(row['city_id']),geonim_ids=[],matched_names=[]))
+                c=found.setdefault(row['city_id'],dict(city=self.admin_display(row['city_id']),geonim_ids=[],matched_names=[],generated_latin_only=True))
+                if row['name_class'] & ~4:c['generated_latin_only']=False
                 if row['geonim_id'] not in c['geonim_ids']:c['geonim_ids'].append(row['geonim_id'])
                 if key not in c['matched_names']:c['matched_names'].append(key)
         return list(found.values())
+
+    @lru_cache(maxsize=2048)
+    def locality_hint(self,name):
+        """Имена для совместной сверки с парой улица/дом; точные приоритетны."""
+        key=normalize(name)
+        key=re.sub(r'^(?:city of|city)\s+|\s+(?:city|сити)$','',key)
+        if len(key)<4 or any(c.isdigit() for c in key):return []
+        if not hasattr(self,'_locality_hint_names'):
+            names={}
+            for row in self.db.execute('SELECT DISTINCT n.key FROM name_targets n JOIN admin a ON a.aid=n.target '
+                    "WHERE n.kind=0 AND a.type IN ('city','town','settlement','rural_locality','small_settlement')"):
+                names.setdefault(len(row[0]),set()).add(row[0])
+            for alias in LOCALITY_ALIASES:names.setdefault(len(alias),set()).add(alias)
+            self._locality_hint_names=names
+        if key in self._locality_hint_names.get(len(key),()):return [key]
+        return sorted(candidate for length in range(len(key)-1,len(key)+2)
+                      for candidate in self._locality_hint_names.get(length,()) if one_edit(key,candidate))
 
     @lru_cache(maxsize=512)
     def district_localities(self,name):
@@ -225,9 +256,6 @@ class Reference(EmptyReference):
         if key.endswith('ского'):forms.add(key[:-5]+'ский')
         if key.endswith('ного'):forms.add(key[:-4]+'ный')
         matches=[]
-        for row in self.db.execute('SELECT d.id,d.names_json,d.variants_json,c.id AS city_id FROM admin d '
-                                   'JOIN admin c ON c.aid=d.locality WHERE d.type=?',('urban_district',)):
-            names=list(json.loads(row['names_json']).values())+json.loads(row['variants_json'])
-            keys={normalize(district_name(n)) for n in names if n}
-            if keys & forms:matches.append(dict(district_id=row['id'],city=self.admin_display(row['city_id'],profile='project')))
+        for identity,city,keys in self._districts:
+            if keys & forms:matches.append(dict(district_id=identity,city=self.admin_display(city,profile='project')))
         return matches

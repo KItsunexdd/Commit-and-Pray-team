@@ -17,6 +17,8 @@ LET = r'[^\W\d_]'
 LITERAL = r'(?:[кk]\d+|[a-zа-яәғқңөұүһіё](?![^\W\d_]))'
 NUM = r'-?\d+'+LITERAL+r'?(?:/\d+'+LITERAL+r'?)?'
 NUMBER = re.compile(NUM, re.I)
+CORPUS_GAP=r'(?:'+SPACE_CF+r'+|'+SPACE_CF+r'*[,;]'+SPACE_CF+r'*)'
+HOUSE_PARTS=re.compile(r'(.+?)(?:'+CORPUS_GAP+r'(?:корп(?:ус|\.)?|[кk]\.?)'+SPACE_CF+r'*|[кk])([\w]+)',re.I)
 HOUSE_APARTMENT=re.compile(r'(?<![\d/-])(?P<house>\d+'+LITERAL+r'?(?:/\d+'+LITERAL+r'?)?)-(?P<apartment>\d+)$',re.I)
 WORD = r'[^\W\d_][\w\-\u0300-\u036f'+CF_CLASS+']*'
 MARKERS = {
@@ -26,7 +28,7 @@ MARKERS = {
     'floor': r'(?:этаж|етаж|этж)\.?|эт\.?|қабат|floor',
 }
 STREET_TYPES = {
-    'улица': r'улица|ул\s*\.?|көшесі|көш\.?|street|str\.?|st\.?',
+    'улица': r'улица|ул(?:\s*\.)?|көшесі|көш\.?|street|str\.?|st\.?',
     'проспект': r'проспект|пр-т|пр\.?|avenue|ave\.?|даңғылы',
     'микрорайон': r'микрорайон|мкр(?:-?н)?\.?|м-н\.?|шағын\s+аудан(?:ы)?|microdistrict|mkr\.?',
     'переулок': r'переулок|пер\.?', 'квартал': r'квартал',
@@ -182,7 +184,9 @@ class AddressParser:
         methods = dict.fromkeys(ADDRESS_FIELDS)
         span_map = {f:[] for f in ADDRESS_FIELDS}
         evidence, reasons, all_candidates, consumed = {}, [], [], []
-        reserved=[]
+        # Пояснение к территории не превращается в отдельную улицу или район.
+        reserved=[m.span('annotation') for m in re.finditer(
+            r'(?i)(?<!\w)(?:квартал|микрорайон|мкр(?:-?н)?\.?|жк)\s+[^,;()\n]+(?P<annotation>\([^()]*\))',raw)]
         ref = self.reference
         # Виртуальный разделитель той же длины: raw и все смещения неизменны.
         structural=re.sub(r'(?<=\s)[-–—](?=\s)',',',raw)
@@ -336,7 +340,26 @@ class AddressParser:
         number_candidates=[]
         number_free=mask(consumed)
         house_marker=re.compile(r'(?<![^\W\d_])(?:'+MARKERS['house']+r')(?![^\W\d_])',re.I)
-        for corpus in re.finditer(r'(?<![\w/-])'+NUM+r'\s+корп(?:ус|\.)?\s*[\w]+',number_free,re.I):
+        apartment_marker=re.compile(r'(?<![^\W\d_])(?:'+MARKERS['apartment']+r')(?![^\W\d_])',re.I)
+        explicit_apartment=bool(apartment_marker.search(number_free))
+        for short in re.finditer(r'(?<!\w)[кk]\.?'+SPACE_CF+r'*'+NUM+r'(?!\w)',number_free,re.I):
+            before=list(NUMBER.finditer(number_free,0,short.start()))
+            previous=before[-1] if before else None
+            if not previous or not re.fullmatch(CORPUS_GAP,number_free[previous.end():short.start()]):continue
+            if re.search(r'(?<!\w)(?:'+'|'.join(MARKERS[f] for f in ('apartment','entrance','floor'))+')'+SPACE_CF+'*$',number_free[:previous.start()],re.I):continue
+            if explicit_apartment:
+                c=candidate('house',previous.start(),short.end(),10.0,'house_with_corpus')
+                previous_markers=list(house_marker.finditer(number_free,0,previous.start()))
+                if previous_markers and re.fullmatch(SPACE_CF+'*(?:№'+SPACE_CF+'*)?',number_free[previous_markers[-1].end():previous.start()]):
+                    c['marker_span']=list(previous_markers[-1].span())
+                number_candidates.append(c)
+            else:
+                consumed.append(short.span())
+                reasons.append(dict(code='ambiguous_k_marker',fields=['house','apartment'],
+                                    message='Отдельное «к» может означать корпус или квартиру; значение не назначено.',
+                                    evidence=dict(start=short.start(),end=short.end(),text=raw[short.start():short.end()])))
+        number_free=mask(consumed)
+        for corpus in re.finditer(r'(?<![\w/-])'+NUM+CORPUS_GAP+r'корп(?:ус|\.)?'+SPACE_CF+r'*[\w]+',number_free,re.I):
             c=candidate('house',*corpus.span(),10.0,'house_with_corpus')
             previous=list(house_marker.finditer(number_free,0,corpus.start()))
             if previous and re.fullmatch(SPACE_CF+'*(?:№'+SPACE_CF+'*)?',number_free[previous[-1].end():corpus.start()]):
@@ -345,6 +368,9 @@ class AddressParser:
         detail_marker=re.compile(r'(?<![^\W\d_])(?:'+'|'.join(MARKERS[f] for f in ('apartment','entrance','floor'))+r')(?![^\W\d_])',re.I)
         for field,pattern in MARKERS.items():
             for m in re.finditer(r'(?<![^\W\d_])(?:'+pattern+r')(?![^\W\d_])',mask(consumed),re.I):
+                if (field=='house' and re.fullmatch(r'д\s*\.?',m.group(),re.I)
+                        and re.search(r'(?i)(?:квартал|микрорайон|мкр(?:-?н)?\.?|м-н\.?)\s*$',number_free[:m.start()])):
+                    continue
                 post_start=m.end()+re.match(SPACE_CF+'*(?:№'+SPACE_CF+'*)?',raw[m.end():]).end()
                 post = NUMBER.match(raw,post_start)
                 before = list(NUMBER.finditer(raw[:m.start()]))
@@ -433,8 +459,11 @@ class AddressParser:
             name_candidates.append(c)
         # Без маркера остаётся одна адресная часть; соседняя числовая часть — дом.
         if not any(c['field']=='street_name' for c in name_candidates):
-            for m in re.finditer(r'[^,;\n]+',free):
-                a,b=trim(free,*m.span())
+            name_free=list(free)
+            for a,b in consumed+reserved:name_free[a:b]=','*(b-a)
+            name_free=''.join(name_free)
+            for m in re.finditer(r'[^,;\n]+',name_free):
+                a,b=trim(name_free,*m.span())
                 while a<b and unicodedata.category(raw[a]) in ('So','Cf'): a+=1
                 a,b=trim(raw,a,b)
                 if not a<b or any(overlap((a,b),s) for s in type_spans): continue
@@ -567,16 +596,53 @@ class AddressParser:
         reverse_diagnostic=None
         if self.variant=='B' and not record['city'] and record['street_name'] and record['house']:
             number=record['house'];corpus=None
-            hm=re.fullmatch(r'(.+?)(?:\s+корп(?:ус|\.)?\s*|[кk])([\w]+)',number,re.I)
+            hm=HOUSE_PARTS.fullmatch(number)
             if hm:number,corpus=hm.groups()
             matches=ref.reverse_house(record['street_name'],number,corpus)
             reverse_diagnostic=dict(candidate_count=len(matches),candidate_ids=[m['city']['id'] for m in matches])
+            blocked=[]
+            corroborating=[]
+            if matches and all(m['generated_latin_only'] for m in matches):
+                blocked.append(dict(cause='generated_latin_only',matched_names=sorted({n for m in matches for n in m['matched_names']})))
             if len(matches)==1:
+                # Проверяются целые оставшиеся сегменты, а не подстроки улиц.
+                remaining_for_city=mask(consumed)
+                for segment in re.finditer(r'[^,;\n]+',remaining_for_city):
+                    a,b=trim(remaining_for_city,*segment.span())
+                    if a>=b:continue
+                    hints=ref.locality_hint(raw[a:b])
+                    if hints:
+                        ids={x['id'] for name in hints for x in ref.admins(name) if x['type'] in LOCALITY_TYPES}
+                        proof=dict(start=a,end=b,text=raw[a:b],matched_names=hints,fragment_candidate_ids=sorted(ids))
+                        if matches[0]['city']['id'] in ids:
+                            # Одноимённые сёла различает уникальная пара улица/дом.
+                            prefix=re.match(r'(?i)(?:city of|city)\s+',raw[a:b])
+                            suffix=re.search(r'(?i)\s+(?:city|сити)$',raw[a:b])
+                            start=a+(prefix.end() if prefix else 0)
+                            end=a+suffix.start() if suffix else b
+                            proof.update(name_span=[start,end],joint_candidate_ids=[matches[0]['city']['id']])
+                            corroborating.append(proof)
+                        else:blocked.append(dict(proof,cause='unrecognized_locality'))
+            if blocked:
+                reverse_diagnostic['blocked']=blocked
+                reasons.append(dict(code='ambiguous_street_city',fields=['city','province'],
+                                    message='Недостаточно свидетельств для безопасного вывода города по улице и дому.',
+                                    evidence=reverse_diagnostic))
+            if len(matches)>1:
+                reasons.append(dict(code='reverse_locality_ambiguous',fields=['city','province'],
+                                    message='Улица и дом найдены в нескольких населённых пунктах; город не выбран.',
+                                    evidence=reverse_diagnostic))
+            if len(matches)==1 and not blocked:
                 match=matches[0];city=match['city']
                 if not record['province'] or record['province']==city['province']:
                     city_id=city['id'];proof=ref.evidence([city_id,*match['geonim_ids']])
                     proof.update(candidate_count=1,matched_names=match['matched_names'],house=number,corpus=corpus)
-                    put('city',city['city'] or city['name'],method='unique_street_house',proof=proof)
+                    if corroborating:
+                        proof['corroborating_fragments']=corroborating
+                        start,end=corroborating[0]['name_span']
+                        put('city',raw[start:end],[(start,end)],method='unique_street_house',proof=proof)
+                        consumed.extend((p['start'],p['end']) for p in corroborating)
+                    else:put('city',city['city'] or city['name'],method='unique_street_house',proof=proof)
                     if not record['province']:put('province',city['province'],method='unique_street_house',proof=proof)
         # Нестрогая сверка возможна лишь после установления города. Значение
         # и интервалы остаются исходными, справочник служит подтверждением.
@@ -598,7 +664,8 @@ class AddressParser:
 
         district_diagnostic=None
         enrichment_name=record['street_name'] or record['living_area']
-        if self.variant=='B' and city_id and enrichment_name and not reserved:
+        uncertain_house=any(r['code']=='ambiguous_k_marker' for r in reasons)
+        if self.variant=='B' and city_id and enrichment_name and not reserved and not uncertain_house:
             matches=ref.geonims(enrichment_name,city_id)
             confirmation=None
             if not matches and record['street_name']:
@@ -612,7 +679,7 @@ class AddressParser:
                 proof=ref.evidence([g['id'] for g in matches]);proof['confirmation']=confirmation
                 evidence['street_name']=proof
             house=record['house']; corpus=None
-            hm=re.fullmatch(r'(.+?)(?:\s+корп(?:ус|\.)?\s*|[кk])([\w]+)',house,re.I) if house else None
+            hm=HOUSE_PARTS.fullmatch(house) if house else None
             if hm: house,corpus=hm.groups()
             observations=[(g,ref.house(city_id,g['id'],house,corpus)) for g in matches] if house else []
             observed=[(g,h) for g,h in observations if h]
@@ -697,11 +764,14 @@ class AddressParser:
             reasons.append(dict(code='uncovered_text',fields=[],message='Часть текста осталась неразобранной.'))
         if not explicit:
             reasons.append(dict(code='empty_parse',fields=[],message='Адресные поля не найдены.'))
+        ambiguous=any(r['code'] in ('ambiguous_k_marker','reverse_locality_ambiguous','ambiguous_street_city') for r in reasons)
+        if ambiguous:rating=min(rating,.59)
         rating=round(max(.02,min(.99,rating)),4)
         raw_rating=rating
         if self.mapping:
             for a,b in zip(self.mapping,self.mapping[1:]):
                 if a[0]<=rating<=b[0]: rating=round(a[1]+(rating-a[0])/(b[0]-a[0])*(b[1]-a[1]),4); break
+        if ambiguous:rating=min(rating,.59)
         record['confidence']=rating
         validate_record(record)
         spans=[dict(field=f,start=a,end=b) for f in ADDRESS_FIELDS for a,b in span_map[f]]

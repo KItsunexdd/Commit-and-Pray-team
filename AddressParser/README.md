@@ -1,6 +1,6 @@
 # JanaAddress: базовый офлайн-парсер
 
-Финальная версия — v12, справочник v002-territories: train **100.00%**, dev **100.00%** на просмотренных
+Финальная версия — v13.1, справочник v002-territories: train **100.00%**, dev **100.00%** на просмотренных
 синтетических наборах разработки. Это не оценка на новых адресах. Город с маркером
 распознаётся независимо от запятых; поддержаны сельские, постфиксные, латинские
 и слитные маркеры. Без маркера допускаются только типы city/town, включая
@@ -15,6 +15,18 @@ settlement не считается городским типом автомат�
 дефис перед маркером детали, в том числе после ориентира. Парсер не читает
 train; его используют только тесты и оценщик. Неохваченные фрагменты видны
 в diagnostics.uncovered и reasons, а исходная строка сохраняется целиком.
+
+
+V13.1 сверяет нераспознанный городской фрагмент с единственным населённым
+пунктом по улице и дому. Совместимый фрагмент, включая одну опечатку,
+получает span города и сохраняет исходное написание; source=string,
+method=unique_street_house. Одноимённые посёлки различает уникальная
+пара улица/дом. Другой город и неоднозначная пара по-прежнему блокируют
+вывод. Запрет исключительно generated_latin-совпадений сохранён.
+Слово «поселок» внутри улицы после отдельного города не заменяет город.
+Неоднозначный корпус блокирует вывод района; пояснение в скобках к
+территории сохраняется целиком и не становится отдельным районом.
+
 
 С v6 Unicode Cf удаляется с краёв
 интервалов вместе с пробелами и `,;:.`. Cf между маркером и числом не мешает
@@ -72,6 +84,16 @@ V12 уточняет одноимённые геонимы по наличию �
 Без найденного города поиск с опечаткой не запускается. Прежний обратный
 поиск v11 по точной паре улица/дом, включая формы первого имени, сохраняется.
 
+V13 исключает уже занятые интервалы из немаркированной улицы и ограничивает
+интервал типа «ул» самим маркером. Город в начале склейки находится только
+на границе строчная→Заглавная+строчная; произвольного поиска подстрокой нет.
+Отдельное «к» после дома без маркера квартиры даёт `ambiguous_k_marker`,
+apartment=null и confidence<0,6, сохраняя улицу и дом. При явной квартире
+«к» считается корпусом. `10к5` и `10, корп 2` сохраняются целиком в house.
+Несколько населённых пунктов для улицы/дома дают
+`reverse_locality_ambiguous`, пустой city и confidence<0,6.
+На dev/train проверяется отсутствие пересечения spans разных полей.
+
 Если city отсутствует, вариант B ищет street_name + house по всему runtime.
 Ровно один населённый пункт даёт city/province с методом `unique_street_house`,
 origin=inferred, source=dictionary и без spans. Несколько совпадений либо ноль
@@ -124,7 +146,7 @@ inferred-метод — `geonim_uniform`. Это проверка на метк�
 Полная проверка:
 
 ```text
-python -B -S -m unittest AddressParser.test_parser AddressParser.test_evaluate AddressParser.test_neighbours AddressParser.test_regressions AddressParser.test_boundaries_v3 AddressParser.test_city_scope AddressParser.test_runtime_v002 AddressParser.test_cf_edges AddressParser.test_findings_v7 AddressParser.test_findings_v8 AddressParser.test_findings_v9 AddressParser.test_findings_v10 AddressParser.test_findings_v11 AddressParser.test_findings_v12 -v
+python -B -S -m unittest AddressParser.test_parser AddressParser.test_evaluate AddressParser.test_neighbours AddressParser.test_regressions AddressParser.test_boundaries_v3 AddressParser.test_city_scope AddressParser.test_runtime_v002 AddressParser.test_cf_edges AddressParser.test_findings_v7 AddressParser.test_findings_v8 AddressParser.test_findings_v9 AddressParser.test_findings_v10 AddressParser.test_findings_v11 AddressParser.test_findings_v12 AddressParser.test_findings_v13 -v
 ```
 Явно созданный экземпляр можно закрыть методом `close()` после работы.
 
@@ -176,7 +198,7 @@ python -B -m AddressParser.build_neighbours --out artifacts/baseline/neighbours-
 пути к трём SQLite явно: v002, neighbours-v1 и uniform-v3. Справочники
 открываются только для чтения. V001 сохранён только для сравнения в отчёте;
 в актуальный архив runtime он не входит.
-Готовность контейнера и совместимость с его Python проверяет роль интеграции.
+Готовность контейнера и совместимость с его Python проверяются тестами API.
 
 ## Контракт пояснений
 
@@ -228,8 +250,9 @@ python -B -m AddressParser.build_neighbours --out artifacts/baseline/neighbours-
 к справочнику; готовые ответы по всей входной строке не кешируются.
 Индекс имён для сверки опечаток строится при первом открытии снимка в процессе
 и повторно используется экземплярами. Он содержит только строки и разделён
-по городам; SQL-соединения не разделяются. На приёмочном замере первый запуск
-занял 0,541 с, полный разбор 1000 различных строк — 0,982 с.
+по городам; SQL-соединения не разделяются. С v13 также кешируется наличие
+точных имён, чтобы не выполнять заведомо пустые SQL-запросы. Ответы по целому
+адресу не кешируются. Для 1000 разных строк в v13.1 полный разбор занял 0.935 с. Это единичный замер на прежнем пакете; время зависит от нагрузки машины.
 
 ## Оценка и ограничения
 

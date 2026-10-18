@@ -1,7 +1,7 @@
 """Границы населённых пунктов независимо от разделителей адреса."""
 import re
 import unicodedata
-from .contracts import trim_span, SPACE_CF, CF_CLASS
+from .contracts import trim_span, SPACE_CF, CF_CLASS, word_boundaries
 from .reference import normalize
 
 URBAN_TYPES=('city','town')
@@ -45,6 +45,9 @@ def address_tail(text):
     return bool(text and (ADDRESS_MARKER.match(text) or re.search(r'\d|\bрайон(?:а)?\b',text,re.I)))
 
 def city_options(raw,free,reference,province=None):
+    def name_ends(word):
+        return [word.start()+i for i in word_boundaries(word.group())]+[word.end()]
+
     def lookup(name,rural=False,unmarked=False):
         name=name[slice(*trim_span(name,0,len(name)))]
         found=[a for a in reference.admins(name) if a['type'] in (URBAN_TYPES if unmarked else LOCALITY_TYPES)]
@@ -101,10 +104,27 @@ def city_options(raw,free,reference,province=None):
             if lookup(raw[a:b],rural_marker(prefix.group()) if prefix else False,unmarked=not prefix):return True
         return False
 
+    def street_locality_word(marker):
+        """Слово «поселок» внутри улицы после отдельного города — часть имени."""
+        if marker.group().strip().casefold() not in ('поселок','посёлок','село','аул','ауыл'):return False
+        segment_start=max([0]+[m.end() for m in re.finditer(r'[,;\n]',free[:marker.start()])])
+        if not any(c.isalpha() for c in free[segment_start:marker.start()]):return False
+        after=free[marker.end():].lstrip()
+        if not (re.match(r'\d',after) or POSTFIX_STREET.match(after)):return False
+        for segment in re.finditer(r'[^,;\n]+',free[:segment_start]):
+            a,b=trim_span(free,*segment.span())
+            prefix=PREFIX.match(free,a,b)
+            if prefix:a=prefix.end()
+            suffix=next((m for m in SUFFIX.finditer(free,a,b) if m.end()==b),None)
+            if suffix:b=suffix.start()
+            if lookup(raw[a:b],unmarked=True):return True
+        return False
+
     # Известное имя перед маркером задаёт его постфиксную роль. Это не даёт
     # «Алматы г. ул. ...» начать новый поиск имени со слова «ул.».
     postfix_options={}
     for marker in SUFFIX.finditer(free):
+        if street_locality_word(marker):continue
         if street_initial(marker):continue
         segment_start=max([0]+[m.end() for m in re.finditer(r'[,;/\n]',free[:marker.start()])])
         if STREET_PART.search(free,segment_start,marker.start()):continue
@@ -136,6 +156,7 @@ def city_options(raw,free,reference,province=None):
 
     options=list(postfix_options.values())
     for marker in PREFIX.finditer(free):
+        if street_locality_word(marker):continue
         if marker.start() in postfix_options:
             continue
         start=marker.end()
@@ -148,8 +169,9 @@ def city_options(raw,free,reference,province=None):
             words.append(w)
         recognized=[]
         for w in words:
-            found=lookup(raw[start:w.end()],rural)
-            if found:recognized.append((w.end(),found))
+            for end in name_ends(w):
+                found=lookup(raw[start:end],rural)
+                if found:recognized.append((end,found))
         if street_initial(marker,bool(recognized)):continue
         if recognized:end,found=recognized[-1]
         elif words and re.sub(SPACE_CF+'+$','',marker.group()).casefold()!='г':
@@ -162,6 +184,7 @@ def city_options(raw,free,reference,province=None):
         options.append(item(marker.start(),end,start,end,found,True))
 
     for marker in SUFFIX.finditer(free):
+        if street_locality_word(marker):continue
         if marker.start() in postfix_options:continue
         # Неизвестные имена по постфиксу допускаются для прежних полных
         # казахских типов. Короткий маркер требует справочного имени слева.
@@ -213,8 +236,7 @@ def city_options(raw,free,reference,province=None):
                 previous=words[-1].end() if words else a
                 if not re.fullmatch(SPACE_CF+'*',free[previous:w.start()]) or len(words)>=5:break
                 words.append(w)
-            for w in reversed(words):
-                end=w.end()
+            for end in sorted({end for w in words for end in name_ends(w)},reverse=True):
                 if end>=b or not address_tail(free[end:b]):continue
                 found=lookup(raw[a:end],unmarked=True)
                 if not found:continue
